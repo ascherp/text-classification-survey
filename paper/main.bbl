@@ -1,0 +1,3896 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{239}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Agbesi et~al\mbox{.}(2024)]%
+        {AGBESI2024e38515}
+\bibfield{author}{\bibinfo{person}{Victor~Kwaku Agbesi}, \bibinfo{person}{Wenyu
+  Chen}, \bibinfo{person}{Sophyani~Banaamwini Yussif},
+  \bibinfo{person}{Chiagoziem~C. Ukwuoma}, \bibinfo{person}{Yeong~Hyeon Gu},
+  {and} \bibinfo{person}{Mugahed~A. Al-antari}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{MuTCELM: An optimal multi-TextCNN-based ensemble
+  learning for text classification}.
+\newblock \bibinfo{journal}{\emph{Heliyon}} \bibinfo{volume}{10},
+  \bibinfo{number}{19} (\bibinfo{year}{2024}), \bibinfo{pages}{e38515}.
+\newblock
+\showISSN{2405-8440}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.heliyon.2024.e38515}
+\showDOI{\tempurl}
+
+
+\bibitem[Attieh and Tekli(2023)]%
+        {ATTIEH2023110215}
+\bibfield{author}{\bibinfo{person}{Joseph Attieh} {and} \bibinfo{person}{Joe
+  Tekli}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Supervised term-category feature weighting for
+  improved text classification}.
+\newblock \bibinfo{journal}{\emph{Knowledge-Based Systems}}
+  \bibinfo{volume}{261} (\bibinfo{year}{2023}), \bibinfo{pages}{110215}.
+\newblock
+\showISSN{0950-7051}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.knosys.2022.110215}
+\showDOI{\tempurl}
+
+
+\bibitem[Bache and Lichman(2013)]%
+        {reuters}
+\bibfield{author}{\bibinfo{person}{K. Bache} {and} \bibinfo{person}{M.
+  Lichman}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{title}{{UCI} Machine Learning Repository}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://archive.ics.uci.edu/ml}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{{U}niversity of California, Irvine, School of Information and
+  Computer Sciences}.
+
+
+\bibitem[Balloccu et~al\mbox{.}(2024)]%
+        {balloccuLeakCheatRepeat2024}
+\bibfield{author}{\bibinfo{person}{Simone Balloccu},
+  \bibinfo{person}{Patr{\'i}cia Schmidtov{\'a}}, \bibinfo{person}{Mateusz
+  Lango}, {and} \bibinfo{person}{Ondrej Dusek}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Leak, {{Cheat}}, {{Repeat}}: {{Data Contamination}}
+  and {{Evaluation Malpractices}} in {{Closed-Source LLMs}}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 18th {{Conference}} of the
+  {{European Chapter}} of the {{Association}} for {{Computational Linguistics}}
+  ({{Volume}} 1: {{Long Papers}})}}, \bibfield{editor}{\bibinfo{person}{Yvette
+  Graham} {and} \bibinfo{person}{Matthew Purver}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{67--93}.
+\newblock
+
+
+\bibitem[Bayer et~al\mbox{.}(2023)]%
+        {DBLP:journals/corr/abs-2107-03158}
+\bibfield{author}{\bibinfo{person}{Markus Bayer},
+  \bibinfo{person}{Marc{-}Andr{\'{e}} Kaufhold}, {and}
+  \bibinfo{person}{Christian Reuter}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{A Survey on Data Augmentation for Text
+  Classification}.
+\newblock \bibinfo{journal}{\emph{{ACM} Comput. Surv.}} \bibinfo{volume}{55},
+  \bibinfo{number}{7} (\bibinfo{year}{2023}), \bibinfo{pages}{146:1--146:39}.
+\newblock
+
+
+\bibitem[Beltagy et~al\mbox{.}(2020)]%
+        {DBLP:journals/corr/abs-2004-05150}
+\bibfield{author}{\bibinfo{person}{Iz Beltagy}, \bibinfo{person}{Matthew~E.
+  Peters}, {and} \bibinfo{person}{Arman Cohan}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Longformer: The Long-Document Transformer}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2004.05150}
+  (\bibinfo{year}{2020}).
+\newblock
+\showeprint[arXiv]{2004.05150}
+
+
+\bibitem[B{\'e}n{\'e}dict et~al\mbox{.}(2021)]%
+        {benedict2021sigmoidf1}
+\bibfield{author}{\bibinfo{person}{Gabriel B{\'e}n{\'e}dict},
+  \bibinfo{person}{Vincent Koops}, \bibinfo{person}{Daan Odijk}, {and}
+  \bibinfo{person}{Maarten de Rijke}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{sigmoid{F1}: A Smooth {F1} Score Surrogate Loss for
+  Multilabel Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2108.10566}
+  (\bibinfo{year}{2021}).
+\newblock
+\showeprint[arXiv]{2108.10566}
+
+
+\bibitem[Bergner et~al\mbox{.}(2024)]%
+        {DBLP:journals/corr/abs-2402-16844}
+\bibfield{author}{\bibinfo{person}{Benjamin Bergner}, \bibinfo{person}{Andrii
+  Skliar}, \bibinfo{person}{Amelie Royer}, \bibinfo{person}{Tijmen
+  Blankevoort}, \bibinfo{person}{Yuki~M. Asano}, {and}
+  \bibinfo{person}{Babak~Ehteshami Bejnordi}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Think Big, Generate Quick: LLM-to-SLM for Fast
+  Autoregressive Decoding}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2402.16844}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2402.16844}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2402.16844}
+
+
+\bibitem[Bhatia et~al\mbox{.}(2016)]%
+        {Bhatia16}
+\bibfield{author}{\bibinfo{person}{K. Bhatia}, \bibinfo{person}{K. Dahiya},
+  \bibinfo{person}{H. Jain}, \bibinfo{person}{P. Kar}, \bibinfo{person}{A.
+  Mittal}, \bibinfo{person}{Y. Prabhu}, {and} \bibinfo{person}{M. Varma}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{The extreme classification repository: Multi-label
+  datasets and code}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://manikvarma.org/downloads/XC/XMLRepository.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Blei et~al\mbox{.}(2003)]%
+        {DBLP:journals/jmlr/BleiNJ03}
+\bibfield{author}{\bibinfo{person}{David~M. Blei}, \bibinfo{person}{Andrew~Y.
+  Ng}, {and} \bibinfo{person}{Michael~I. Jordan}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Latent Dirichlet Allocation}.
+\newblock \bibinfo{journal}{\emph{J. Mach. Learn. Res.}}  \bibinfo{volume}{3}
+  (\bibinfo{year}{2003}), \bibinfo{pages}{993--1022}.
+\newblock
+
+
+\bibitem[Bojanowski et~al\mbox{.}(2017)]%
+        {DBLP:journals/tacl/BojanowskiGJM17}
+\bibfield{author}{\bibinfo{person}{Piotr Bojanowski}, \bibinfo{person}{Edouard
+  Grave}, \bibinfo{person}{Armand Joulin}, {and} \bibinfo{person}{Tom{\'{a}}s
+  Mikolov}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Enriching Word Vectors with Subword Information}.
+\newblock \bibinfo{journal}{\emph{Trans. Assoc. Comput. Linguistics}}
+  \bibinfo{volume}{5} (\bibinfo{year}{2017}), \bibinfo{pages}{135--146}.
+\newblock
+
+
+\bibitem[Breazzano et~al\mbox{.}(2021)]%
+        {DBLP:conf/aiia/BreazzanoC021a}
+\bibfield{author}{\bibinfo{person}{Claudia Breazzano}, \bibinfo{person}{Danilo
+  Croce}, {and} \bibinfo{person}{Roberto Basili}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Multi-task and Generative Adversarial Learning for
+  Robust and Sustainable Text Classification}. In
+  \bibinfo{booktitle}{\emph{AIxIA 2021 - Advances in Artificial Intelligence -
+  20th International Conference of the Italian Association for Artificial
+  Intelligence, Virtual Event, December 1-3, 2021, Revised Selected Papers}}
+  \emph{(\bibinfo{series}{Lecture Notes in Computer Science},
+  Vol.~\bibinfo{volume}{13196})}. \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{228--244}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-031-08421-8\_16}
+\showDOI{\tempurl}
+
+
+\bibitem[Brown et~al\mbox{.}(2020)]%
+        {DBLP:conf/nips/BrownMRSKDNSSAA20}
+\bibfield{author}{\bibinfo{person}{Tom~B. Brown}, \bibinfo{person}{Benjamin
+  Mann}, \bibinfo{person}{Nick Ryder}, \bibinfo{person}{Melanie Subbiah},
+  \bibinfo{person}{Jared Kaplan}, \bibinfo{person}{Prafulla Dhariwal},
+  \bibinfo{person}{Arvind Neelakantan}, \bibinfo{person}{Pranav Shyam},
+  \bibinfo{person}{Girish Sastry}, \bibinfo{person}{Amanda Askell},
+  \bibinfo{person}{Sandhini Agarwal}, \bibinfo{person}{Ariel Herbert{-}Voss},
+  \bibinfo{person}{Gretchen Krueger}, \bibinfo{person}{Tom Henighan},
+  \bibinfo{person}{Rewon Child}, \bibinfo{person}{Aditya Ramesh},
+  \bibinfo{person}{Daniel~M. Ziegler}, \bibinfo{person}{Jeffrey Wu},
+  \bibinfo{person}{Clemens Winter}, \bibinfo{person}{Christopher Hesse},
+  \bibinfo{person}{Mark Chen}, \bibinfo{person}{Eric Sigler},
+  \bibinfo{person}{Mateusz Litwin}, \bibinfo{person}{Scott Gray},
+  \bibinfo{person}{Benjamin Chess}, \bibinfo{person}{Jack Clark},
+  \bibinfo{person}{Christopher Berner}, \bibinfo{person}{Sam McCandlish},
+  \bibinfo{person}{Alec Radford}, \bibinfo{person}{Ilya Sutskever}, {and}
+  \bibinfo{person}{Dario Amodei}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Language Models are Few-Shot Learners}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems
+  33}}.
+\newblock
+
+
+\bibitem[Bucher and Martini(2024)]%
+        {bucher2024finetunedsmallllmsstill}
+\bibfield{author}{\bibinfo{person}{Martin Juan~José Bucher} {and}
+  \bibinfo{person}{Marco Martini}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Fine-Tuned 'Small' LLMs (Still) Significantly
+  Outperform Zero-Shot Generative AI Models in Text Classification}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2406.08660}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Bugue{\~n}o and {de Melo}(2023)]%
+        {buguenoConnectingDotsWhat2023}
+\bibfield{author}{\bibinfo{person}{Margarita Bugue{\~n}o} {and}
+  \bibinfo{person}{Gerard {de Melo}}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Connecting the {{Dots}}: {{What Graph-Based Text
+  Representations Work Best}} for {{Text Classification}} Using {{Graph Neural
+  Networks}}?}
+\newblock \bibinfo{journal}{\emph{{arXiv}:2305.14578}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Canuto et~al\mbox{.}(2018)]%
+        {canutoThoroughEvaluationDistanceBased2018}
+\bibfield{author}{\bibinfo{person}{S{\'e}rgio Canuto},
+  \bibinfo{person}{Daniel~Xavier Sousa}, \bibinfo{person}{Marcos~Andr{\'e}
+  Gon{\c c}alves}, {and} \bibinfo{person}{Thierson~Couto Rosa}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{A {{Thorough Evaluation}} of {{Distance-Based
+  Meta-Features}} for {{Automated Text Classification}}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge and Data
+  Engineering}} \bibinfo{volume}{30}, \bibinfo{number}{12}
+  (\bibinfo{date}{Dec.} \bibinfo{year}{2018}), \bibinfo{pages}{2242--2256}.
+\newblock
+\showISSN{1558-2191}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TKDE.2018.2820051}
+\showDOI{\tempurl}
+
+
+\bibitem[Chae and Davidson(2023)]%
+        {chae_davidson_2023}
+\bibfield{author}{\bibinfo{person}{Youngjin Chae} {and} \bibinfo{person}{Thomas
+  Davidson}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Large Language Models for Text Classification: From
+  Zero-Shot Learning to Fine-Tuning}.
+\newblock \bibinfo{journal}{\emph{SocArXiv}} (\bibinfo{date}{Aug}
+  \bibinfo{year}{2023}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.31235/osf.io/sthwk}
+\showDOI{\tempurl}
+\newblock
+\shownote{SocArXiv Preprint, https://osf.io/preprints/socarxiv/sthwk}.
+
+
+\bibitem[Chai et~al\mbox{.}(2020)]%
+        {DBLP:conf/icml/ChaiWHWL20}
+\bibfield{author}{\bibinfo{person}{Duo Chai}, \bibinfo{person}{Wei Wu},
+  \bibinfo{person}{Qinghong Han}, \bibinfo{person}{Fei Wu}, {and}
+  \bibinfo{person}{Jiwei Li}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Description Based Text Classification with
+  Reinforcement Learning}. In \bibinfo{booktitle}{\emph{Proceedings of the 37th
+  International Conference on Machine Learning, {ICML} 2020, 13-18 July 2020,
+  Virtual Event}} \emph{(\bibinfo{series}{Proceedings of Machine Learning
+  Research}, Vol.~\bibinfo{volume}{119})}. \bibinfo{publisher}{{PMLR}},
+  \bibinfo{pages}{1371--1382}.
+\newblock
+\urldef\tempurl%
+\url{http://proceedings.mlr.press/v119/chai20a.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Chalkidis et~al\mbox{.}(2020)]%
+        {chalkidis-etal-2020-empirical}
+\bibfield{author}{\bibinfo{person}{Ilias Chalkidis}, \bibinfo{person}{Manos
+  Fergadiotis}, \bibinfo{person}{Sotiris Kotitsas}, \bibinfo{person}{Prodromos
+  Malakasiotis}, \bibinfo{person}{Nikolaos Aletras}, {and} \bibinfo{person}{Ion
+  Androutsopoulos}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{An Empirical Study on Large-Scale Multi-Label Text
+  Classification Including Few and Zero-Shot Labels}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2020 Conference on Empirical
+  Methods in Natural Language Processing (EMNLP)}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Online}, \bibinfo{pages}{7503--7515}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.emnlp-main.607}
+\showDOI{\tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2021)]%
+        {DBLP:conf/acl/ChenMLY20}
+\bibfield{author}{\bibinfo{person}{Haibin Chen}, \bibinfo{person}{Qianli Ma},
+  \bibinfo{person}{Zhenxi Lin}, {and} \bibinfo{person}{Jiangyue Yan}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Hierarchy-aware Label Semantics Matching Network
+  for Hierarchical Text Classification}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 59th Annual Meeting of the
+  Association for Computational Linguistics and the 11th International Joint
+  Conference on Natural Language Processing, {ACL/IJCNLP} 2021, (Volume 1: Long
+  Papers), Virtual Event, August 1-6, 2021}}. \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{pages}{4370--4379}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.acl-long.337}
+\showDOI{\tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2024)]%
+        {DBLP:journals/corr/abs-2406-17534}
+\bibfield{author}{\bibinfo{person}{Huiyao Chen}, \bibinfo{person}{Yu Zhao},
+  \bibinfo{person}{Zulong Chen}, \bibinfo{person}{Mengjia Wang},
+  \bibinfo{person}{Liangyue Li}, \bibinfo{person}{Meishan Zhang}, {and}
+  \bibinfo{person}{Min Zhang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Retrieval-style In-Context Learning for Few-shot
+  Hierarchical Text Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2406.17534}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2406.17534}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2406.17534}
+
+
+\bibitem[Clark et~al\mbox{.}(2020)]%
+        {DBLP:conf/iclr/ClarkLLM20-electra}
+\bibfield{author}{\bibinfo{person}{Kevin Clark}, \bibinfo{person}{Minh{-}Thang
+  Luong}, \bibinfo{person}{Quoc~V. Le}, {and} \bibinfo{person}{Christopher~D.
+  Manning}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{ELECTRA:} Pre-training Text Encoders as
+  Discriminators Rather Than Generators}. In \bibinfo{booktitle}{\emph{8th
+  International Conference on Learning Representations, {ICLR} 2020, Addis
+  Ababa, Ethiopia, April 26-30, 2020}}. \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=r1xMH1BtvB}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Conneau et~al\mbox{.}(2018)]%
+        {DBLP:conf/acl/BaroniBLKC18}
+\bibfield{author}{\bibinfo{person}{Alexis Conneau},
+  \bibinfo{person}{Germ{\'{a}}n Kruszewski}, \bibinfo{person}{Guillaume
+  Lample}, \bibinfo{person}{Lo{\"{\i}}c Barrault}, {and} \bibinfo{person}{Marco
+  Baroni}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{What you can cram into a single
+  {\textbackslash}{\textdollar}{\&}!{\#}* vector: Probing sentence embeddings
+  for linguistic properties}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  56th Annual Meeting of the Association for Computational Linguistics, {ACL}
+  2018, Melbourne, Australia, July 15-20, 2018, Volume 1: Long Papers}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{2126--2136}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/P18-1198}
+\showDOI{\tempurl}
+
+
+\bibitem[Conneau et~al\mbox{.}(2017)]%
+        {DBLP:conf/eacl/SchwenkBCL17}
+\bibfield{author}{\bibinfo{person}{Alexis Conneau}, \bibinfo{person}{Holger
+  Schwenk}, \bibinfo{person}{Lo{\"{\i}}c Barrault}, {and} \bibinfo{person}{Yann
+  LeCun}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Very Deep Convolutional Networks for Text
+  Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 15th
+  Conference of the European Chapter of the Association for Computational
+  Linguistics, {EACL} 2017, Valencia, Spain, April 3-7, 2017, Volume 1: Long
+  Papers}}. \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{1107--1116}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/e17-1104}
+\showDOI{\tempurl}
+
+
+\bibitem[Cover and Thomas(1991)]%
+        {cover_elements_1991}
+\bibfield{author}{\bibinfo{person}{Thomas~M Cover} {and} \bibinfo{person}{Joy~A
+  Thomas}.} \bibinfo{year}{1991}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Elements of {Information} {Theory}}}.
+\newblock \bibinfo{publisher}{Wiley}. 413 pages.
+\newblock
+
+
+\bibitem[Dacrema et~al\mbox{.}(2019)]%
+        {DBLP:conf/recsys/DacremaCJ19}
+\bibfield{author}{\bibinfo{person}{Maurizio~Ferrari Dacrema},
+  \bibinfo{person}{Paolo Cremonesi}, {and} \bibinfo{person}{Dietmar Jannach}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Are we really making much progress? {A} worrying
+  analysis of recent neural recommendation approaches}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 13th {ACM} Conference on
+  Recommender Systems, RecSys 2019, Copenhagen, Denmark, September 16-20,
+  2019}}. \bibinfo{publisher}{{ACM}}, \bibinfo{pages}{101--109}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3298689.3347058}
+\showDOI{\tempurl}
+
+
+\bibitem[Dai et~al\mbox{.}(2024)]%
+        {DBLP:conf/sigir/DaiYCX24}
+\bibfield{author}{\bibinfo{person}{Le Dai}, \bibinfo{person}{Yu Yin},
+  \bibinfo{person}{Enhong Chen}, {and} \bibinfo{person}{Hui Xiong}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Unifying Graph Retrieval and Prompt Tuning for
+  Graph-Grounded Text Classification}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 47th International {ACM} {SIGIR} Conference on Research and
+  Development in Information Retrieval, {SIGIR} 2024, Washington DC, USA, July
+  14-18, 2024}}, \bibfield{editor}{\bibinfo{person}{Grace~Hui Yang},
+  \bibinfo{person}{Hongning Wang}, \bibinfo{person}{Sam Han},
+  \bibinfo{person}{Claudia Hauff}, \bibinfo{person}{Guido Zuccon}, {and}
+  \bibinfo{person}{Yi~Zhang}} (Eds.). \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{2682--2686}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3626772.3657934}
+\showDOI{\tempurl}
+
+
+\bibitem[Demszky et~al\mbox{.}(2020)]%
+        {demszky2020goemotions}
+\bibfield{author}{\bibinfo{person}{Dorottya Demszky}, \bibinfo{person}{Dana
+  Movshovitz{-}Attias}, \bibinfo{person}{Jeongwoo Ko}, \bibinfo{person}{Alan~S.
+  Cowen}, \bibinfo{person}{Gaurav Nemade}, {and} \bibinfo{person}{Sujith
+  Ravi}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{GoEmotions: {A} Dataset of Fine-Grained Emotions}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 58th Annual Meeting of the
+  Association for Computational Linguistics, {ACL} 2020, Online, July 5-10,
+  2020}}. \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{4040--4054}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.acl-main.372}
+\showDOI{\tempurl}
+
+
+\bibitem[Deng et~al\mbox{.}(2022)]%
+        {aggnn}
+\bibfield{author}{\bibinfo{person}{Zhaoyang Deng}, \bibinfo{person}{Chenxiang
+  Sun}, \bibinfo{person}{Guoqiang Zhong}, {and} \bibinfo{person}{Yuxu Mao}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Text {Classification} with {Attention} {Gated}
+  {Graph} {Neural} {Network}}.
+\newblock \bibinfo{journal}{\emph{Cognitive Computation}} \bibinfo{volume}{14},
+  \bibinfo{number}{4} (\bibinfo{date}{July} \bibinfo{year}{2022}),
+  \bibinfo{pages}{1464--1473}.
+\newblock
+\showISSN{1866-9964}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s12559-022-10017-3}
+\showDOI{\tempurl}
+
+
+\bibitem[Dery et~al\mbox{.}(2021)]%
+        {dery2021should}
+\bibfield{author}{\bibinfo{person}{Lucio~M Dery}, \bibinfo{person}{Paul
+  Michel}, \bibinfo{person}{Ameet Talwalkar}, {and} \bibinfo{person}{Graham
+  Neubig}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Should we be pre-training? an argument for end-task
+  aware training as an alternative}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2109.07437}
+  (\bibinfo{year}{2021}).
+\newblock
+\showeprint[arXiv]{2109.07437}
+
+
+\bibitem[Devlin et~al\mbox{.}(2019)]%
+        {DBLP:conf/naacl/DevlinCLT19}
+\bibfield{author}{\bibinfo{person}{Jacob Devlin}, \bibinfo{person}{Ming{-}Wei
+  Chang}, \bibinfo{person}{Kenton Lee}, {and} \bibinfo{person}{Kristina
+  Toutanova}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{BERT:} Pre-training of Deep Bidirectional
+  Transformers for Language Understanding}. In \bibinfo{booktitle}{\emph{North
+  American Chapter of the ACL: Human Language Technologies, {NAACL-HLT} 2019}}.
+  \bibinfo{publisher}{ACL}, \bibinfo{pages}{4171--4186}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/n19-1423}
+\showDOI{\tempurl}
+
+
+\bibitem[Ding et~al\mbox{.}(2020a)]%
+        {DBLP:conf/emnlp/DingWLLL20}
+\bibfield{author}{\bibinfo{person}{Kaize Ding}, \bibinfo{person}{Jianling
+  Wang}, \bibinfo{person}{Jundong Li}, \bibinfo{person}{Dingcheng Li}, {and}
+  \bibinfo{person}{Huan Liu}.} \bibinfo{year}{2020}\natexlab{a}.
+\newblock \showarticletitle{Be More with Less: Hypergraph Attention Networks
+  for Inductive Text Classification}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 2020 Conference on Empirical Methods in Natural Language Processing,
+  {EMNLP} 2020, Online, November 16-20, 2020}}. \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{pages}{4927--4936}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.emnlp-main.399}
+\showDOI{\tempurl}
+
+
+\bibitem[Ding et~al\mbox{.}(2020b)]%
+        {DBLP:conf/nips/DingZY020}
+\bibfield{author}{\bibinfo{person}{Ming Ding}, \bibinfo{person}{Chang Zhou},
+  \bibinfo{person}{Hongxia Yang}, {and} \bibinfo{person}{Jie Tang}.}
+  \bibinfo{year}{2020}\natexlab{b}.
+\newblock \showarticletitle{{CogLTX}: Applying {BERT} to Long Texts}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems
+  33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS
+  2020, December 6-12, 2020, virtual}}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper/2020/hash/96671501524948bc3937b4b30d0e57b9-Abstract.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Donabauer and Kruschwitz(2024)]%
+        {donabauer2024tokenlevelgraphsshorttext}
+\bibfield{author}{\bibinfo{person}{Gregor Donabauer} {and} \bibinfo{person}{Udo
+  Kruschwitz}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Token-Level Graphs for Short Text Classification}.
+\newblock  (\bibinfo{year}{2024}).
+\newblock
+\showeprint[arxiv]{2412.12754}~[cs.IR]
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2412.12754}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Dong et~al\mbox{.}(2021)]%
+        {dong2021explainable}
+\bibfield{author}{\bibinfo{person}{Hang Dong}, \bibinfo{person}{V{\'{\i}}ctor
+  Su{\'{a}}rez{-}Paniagua}, \bibinfo{person}{William Whiteley}, {and}
+  \bibinfo{person}{Honghan Wu}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Explainable automated coding of clinical notes
+  using hierarchical label-wise attention networks and label embedding
+  initialisation}.
+\newblock \bibinfo{journal}{\emph{J. Biomed. Informatics}}
+  \bibinfo{volume}{116} (\bibinfo{year}{2021}), \bibinfo{pages}{103728}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.jbi.2021.103728}
+\showDOI{\tempurl}
+
+
+\bibitem[Dosovitskiy et~al\mbox{.}(2021)]%
+        {visiontransformer}
+\bibfield{author}{\bibinfo{person}{Alexey Dosovitskiy}, \bibinfo{person}{Lucas
+  Beyer}, \bibinfo{person}{Alexander Kolesnikov}, \bibinfo{person}{Dirk
+  Weissenborn}, \bibinfo{person}{Xiaohua Zhai}, \bibinfo{person}{Thomas
+  Unterthiner}, \bibinfo{person}{Mostafa Dehghani}, \bibinfo{person}{Matthias
+  Minderer}, \bibinfo{person}{Georg Heigold}, \bibinfo{person}{Sylvain Gelly},
+  \bibinfo{person}{Jakob Uszkoreit}, {and} \bibinfo{person}{Neil Houlsby}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{An Image is Worth 16x16 Words: Transformers for
+  Image Recognition at Scale}. In \bibinfo{booktitle}{\emph{9th International
+  Conference on Learning Representations, {ICLR} 2021, Virtual Event, Austria,
+  May 3-7, 2021}}. \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=YicbFdNTTy}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Duarte and Berton(2023)]%
+        {duarte2023review}
+\bibfield{author}{\bibinfo{person}{Jos{\'e}~Marcio Duarte} {and}
+  \bibinfo{person}{Lilian Berton}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{A review of semi-supervised learning for text
+  classification}.
+\newblock \bibinfo{journal}{\emph{Artificial Intelligence Review}}
+  (\bibinfo{year}{2023}), \bibinfo{pages}{1--69}.
+\newblock
+
+
+\bibitem[Edwards and Camacho-Collados(2024)]%
+        {edwards2024language}
+\bibfield{author}{\bibinfo{person}{Aleksandra Edwards} {and}
+  \bibinfo{person}{Jose Camacho-Collados}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Language Models for Text Classification: Is
+  In-Context Learning Enough?}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  2024 Joint International Conference on Computational Linguistics, Language
+  Resources and Evaluation (LREC-COLING 2024)}},
+  \bibfield{editor}{\bibinfo{person}{Nicoletta Calzolari},
+  \bibinfo{person}{Min-Yen Kan}, \bibinfo{person}{Veronique Hoste},
+  \bibinfo{person}{Alessandro Lenci}, \bibinfo{person}{Sakriani Sakti}, {and}
+  \bibinfo{person}{Nianwen Xue}} (Eds.). \bibinfo{publisher}{ELRA and ICCL},
+  \bibinfo{address}{Torino, Italia}, \bibinfo{pages}{10058--10072}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/2024.lrec-main.879}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Fatemi et~al\mbox{.}(2024)]%
+        {fatemi2024talk}
+\bibfield{author}{\bibinfo{person}{Bahare Fatemi}, \bibinfo{person}{Jonathan
+  Halcrow}, {and} \bibinfo{person}{Bryan Perozzi}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Talk like a Graph: Encoding Graphs for Large
+  Language Models}. In \bibinfo{booktitle}{\emph{The Twelfth International
+  Conference on Learning Representations}}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=IuXR1CCrSi}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Fey et~al\mbox{.}(2021)]%
+        {DBLP:conf/icml/FeyLWL21}
+\bibfield{author}{\bibinfo{person}{Matthias Fey}, \bibinfo{person}{Jan~Eric
+  Lenssen}, \bibinfo{person}{Frank Weichert}, {and} \bibinfo{person}{Jure
+  Leskovec}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{GNNAutoScale}: Scalable and Expressive Graph
+  Neural Networks via Historical Embeddings}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 38th International Conference on
+  Machine Learning, {ICML} 2021, 18-24 July 2021, Virtual Event}}
+  \emph{(\bibinfo{series}{Proceedings of Machine Learning Research},
+  Vol.~\bibinfo{volume}{139})}. \bibinfo{publisher}{{PMLR}},
+  \bibinfo{pages}{3294--3304}.
+\newblock
+\urldef\tempurl%
+\url{http://proceedings.mlr.press/v139/fey21a.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Fields et~al\mbox{.}(2024)]%
+        {fieldsSurveyTextClassification2024}
+\bibfield{author}{\bibinfo{person}{John Fields}, \bibinfo{person}{Kevin
+  Chovanec}, {and} \bibinfo{person}{Praveen Madiraju}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{A {{Survey}} of {{Text Classification}} with
+  {{Transformers}}: {{How}} Wide? {{How}} Large? {{How}} Long? {{How}}
+  Accurate? {{How}} Expensive? {{How}} Safe?}
+\newblock \bibinfo{journal}{\emph{IEEE Access}} (\bibinfo{year}{2024}),
+  \bibinfo{pages}{1--1}.
+\newblock
+\showISSN{2169-3536}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ACCESS.2024.3349952}
+\showDOI{\tempurl}
+
+
+\bibitem[Fiok et~al\mbox{.}(2021)]%
+        {DBLP:journals/access/FiokKGDWAAZ21}
+\bibfield{author}{\bibinfo{person}{Krzysztof Fiok}, \bibinfo{person}{Waldemar
+  Karwowski}, \bibinfo{person}{Edgar Gutierrez{-}Franco},
+  \bibinfo{person}{Mohammad~Reza Davahli}, \bibinfo{person}{Maciej Wilamowski},
+  \bibinfo{person}{Tareq~Z. Ahram}, \bibinfo{person}{Awad~M. Aljuaid}, {and}
+  \bibinfo{person}{Jozef~M. Zurada}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Text Guide: Improving the Quality of Long Text
+  Classification by a Text Selection Method Based on Feature Importance}.
+\newblock \bibinfo{journal}{\emph{{IEEE} Access}}  \bibinfo{volume}{9}
+  (\bibinfo{year}{2021}), \bibinfo{pages}{105439--105450}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ACCESS.2021.3099758}
+\showDOI{\tempurl}
+
+
+\bibitem[Galke et~al\mbox{.}(2023)]%
+        {galke2023really}
+\bibfield{author}{\bibinfo{person}{Lukas Galke}, \bibinfo{person}{Andor Diera},
+  \bibinfo{person}{Bao~Xin Lin}, \bibinfo{person}{Bhakti Khera},
+  \bibinfo{person}{Tim Meuser}, \bibinfo{person}{Tushar Singhal},
+  \bibinfo{person}{Fabian Karl}, {and} \bibinfo{person}{Ansgar Scherp}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Are We Really Making Much Progress? Bag-of-Words
+  vs. Sequence vs. Graph vs. Hierarchy for Single- and Multi-Label Text
+  Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2204.03954}
+  (\bibinfo{year}{2023}).
+\newblock
+\showeprint[arxiv]{2204.03954}
+
+
+\bibitem[Galke et~al\mbox{.}(2017)]%
+        {DBLP:conf/kcap/GalkeMSBS17}
+\bibfield{author}{\bibinfo{person}{Lukas Galke}, \bibinfo{person}{Florian Mai},
+  \bibinfo{person}{Alan Schelten}, \bibinfo{person}{Dennis Brunsch}, {and}
+  \bibinfo{person}{Ansgar Scherp}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Using Titles vs. Full-text as Source for Automated
+  Semantic Document Annotation}. In \bibinfo{booktitle}{\emph{Knowledge Capture
+  Conference, {K-CAP} 2017}}. \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{20:1--20:4}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3148011.3148039}
+\showDOI{\tempurl}
+
+
+\bibitem[Galke and Scherp(2022)]%
+        {galkescherp-acl2022}
+\bibfield{author}{\bibinfo{person}{Lukas Galke} {and} \bibinfo{person}{Ansgar
+  Scherp}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Bag-of-Words vs. Graph vs. Sequence in Text
+  Classification: Questioning the Necessity of Text-Graphs and the Surprising
+  Strength of a Wide {MLP}}. In \bibinfo{booktitle}{\emph{60th Annual Meeting
+  of the Association for Computational Linguistics, {ACL} 2022}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{4038--4051}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2022.acl-long.279}
+\showDOI{\tempurl}
+
+
+\bibitem[Gao(2024)]%
+        {DBLP:journals/corr/abs-2408-15650}
+\bibfield{author}{\bibinfo{person}{Lingyu Gao}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Harnessing the Intrinsic Knowledge of Pretrained
+  Language Models for Challenging Text Classification Settings}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2408.15650}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2408.15650}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2408.15650}
+
+
+\bibitem[Ghosh et~al\mbox{.}(2021)]%
+        {DBLP:journals/corr/abs-2112-11389}
+\bibfield{author}{\bibinfo{person}{Samujjwal Ghosh}, \bibinfo{person}{Subhadeep
+  Maji}, {and} \bibinfo{person}{Maunendra~Sankar Desarkar}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Supervised Graph Contrastive Pretraining for Text
+  Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2112.11389}
+  (\bibinfo{year}{2021}).
+\newblock
+\showeprint[arXiv]{2112.11389}
+
+
+\bibitem[Gonz{\'{a}}lez{-}Carvajal and Garrido{-}Merch{\'{a}}n(2020)]%
+        {gonzales-2020-comparing-bert}
+\bibfield{author}{\bibinfo{person}{Santiago Gonz{\'{a}}lez{-}Carvajal} {and}
+  \bibinfo{person}{Eduardo~C. Garrido{-}Merch{\'{a}}n}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Comparing {BERT} against traditional machine
+  learning text classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2005.13012}
+  (\bibinfo{year}{2020}).
+\newblock
+\showeprint[arXiv]{2005.13012}
+
+
+\bibitem[Gu and Dao(2023)]%
+        {guMambaLinearTimeSequence2023b}
+\bibfield{author}{\bibinfo{person}{Albert Gu} {and} \bibinfo{person}{Tri Dao}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Mamba: {{Linear-Time Sequence Modeling}} with
+  {{Selective State Spaces}}}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2312.00752}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Guo et~al\mbox{.}(2023)]%
+        {9837023-chinese}
+\bibfield{author}{\bibinfo{person}{Jiabao Guo}, \bibinfo{person}{Bo Zhao},
+  \bibinfo{person}{Hui Liu}, \bibinfo{person}{Yifan Liu}, {and}
+  \bibinfo{person}{Qian Zhong}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Supervised Contrastive Learning with Term Weighting
+  for Improving Chinese Text Classification}.
+\newblock \bibinfo{journal}{\emph{Tsinghua Science and Technology}}
+  \bibinfo{volume}{28}, \bibinfo{number}{1} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{59--68}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.26599/TST.2021.9010079}
+\showDOI{\tempurl}
+
+
+\bibitem[Gururangan et~al\mbox{.}(2019)]%
+        {gururangan-etal-2019-variational}
+\bibfield{author}{\bibinfo{person}{Suchin Gururangan}, \bibinfo{person}{Tam
+  Dang}, \bibinfo{person}{Dallas Card}, {and} \bibinfo{person}{Noah~A. Smith}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Variational Pretraining for Semi-supervised Text
+  Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 57th Annual
+  Meeting of the Association for Computational Linguistics}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Florence, Italy}, \bibinfo{pages}{5880--5894}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/P19-1590}
+\showDOI{\tempurl}
+
+
+\bibitem[Hamilton(2020)]%
+        {book:hamilton:grl}
+\bibfield{author}{\bibinfo{person}{William~L. Hamilton}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Graph Representation Learning}}.
+\newblock \bibinfo{publisher}{Morgan and Claypool}.
+\newblock
+
+
+\bibitem[He et~al\mbox{.}(2023)]%
+        {DBLP:conf/iclr/HeGC23}
+\bibfield{author}{\bibinfo{person}{Pengcheng He}, \bibinfo{person}{Jianfeng
+  Gao}, {and} \bibinfo{person}{Weizhu Chen}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{DeBERTaV3: Improving DeBERTa using ELECTRA-Style
+  Pre-Training with Gradient-Disentangled Embedding Sharing}. In
+  \bibinfo{booktitle}{\emph{The Eleventh International Conference on Learning
+  Representations, {ICLR} 2023, Kigali, Rwanda, May 1-5, 2023}}.
+  \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=sE7-XhLxHA}
+\showURL{%
+\tempurl}
+
+
+\bibitem[He et~al\mbox{.}(2021)]%
+        {he_deberta_2021}
+\bibfield{author}{\bibinfo{person}{Pengcheng He}, \bibinfo{person}{Xiaodong
+  Liu}, \bibinfo{person}{Jianfeng Gao}, {and} \bibinfo{person}{Weizhu Chen}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{DeBERTa: Decoding-enhanced BERT with Disentangled
+  Attention}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2006.03654}
+  (\bibinfo{year}{2021}).
+\newblock
+\showeprint[arXiv]{2006.03654}
+
+
+\bibitem[Hou et~al\mbox{.}(2023)]%
+        {pmlr-v202-hou23b}
+\bibfield{author}{\bibinfo{person}{Bairu Hou}, \bibinfo{person}{Joe O'Connor},
+  \bibinfo{person}{Jacob Andreas}, \bibinfo{person}{Shiyu Chang}, {and}
+  \bibinfo{person}{Yang Zhang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{P}rompt{B}oosting: Black-Box Text Classification
+  with Ten Forward Passes}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  40th International Conference on Machine Learning}}
+  \emph{(\bibinfo{series}{Proceedings of Machine Learning Research},
+  Vol.~\bibinfo{volume}{202})}, \bibfield{editor}{\bibinfo{person}{Andreas
+  Krause}, \bibinfo{person}{Emma Brunskill}, \bibinfo{person}{Kyunghyun Cho},
+  \bibinfo{person}{Barbara Engelhardt}, \bibinfo{person}{Sivan Sabato}, {and}
+  \bibinfo{person}{Jonathan Scarlett}} (Eds.). \bibinfo{publisher}{PMLR},
+  \bibinfo{pages}{13309--13324}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.mlr.press/v202/hou23b.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Hu et~al\mbox{.}(2024b)]%
+        {DBLP:conf/aaai/Hu0CSLW024}
+\bibfield{author}{\bibinfo{person}{Beizhe Hu}, \bibinfo{person}{Qiang Sheng},
+  \bibinfo{person}{Juan Cao}, \bibinfo{person}{Yuhui Shi},
+  \bibinfo{person}{Yang Li}, \bibinfo{person}{Danding Wang}, {and}
+  \bibinfo{person}{Peng Qi}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \showarticletitle{Bad Actor, Good Advisor: Exploring the Role of
+  Large Language Models in Fake News Detection}. In
+  \bibinfo{booktitle}{\emph{Thirty-Eighth {AAAI} Conference on Artificial
+  Intelligence, {AAAI} 2024, Thirty-Sixth Conference on Innovative Applications
+  of Artificial Intelligence, {IAAI} 2024, Fourteenth Symposium on Educational
+  Advances in Artificial Intelligence, {EAAI} 2014, February 20-27, 2024,
+  Vancouver, Canada}}, \bibfield{editor}{\bibinfo{person}{Michael~J.
+  Wooldridge}, \bibinfo{person}{Jennifer~G. Dy}, {and} \bibinfo{person}{Sriraam
+  Natarajan}} (Eds.). \bibinfo{publisher}{{AAAI} Press},
+  \bibinfo{pages}{22105--22113}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1609/AAAI.V38I20.30214}
+\showDOI{\tempurl}
+
+
+\bibitem[Hu et~al\mbox{.}(2022)]%
+        {lora}
+\bibfield{author}{\bibinfo{person}{Edward~J. Hu}, \bibinfo{person}{Yelong
+  Shen}, \bibinfo{person}{Phillip Wallis}, \bibinfo{person}{Zeyuan
+  Allen{-}Zhu}, \bibinfo{person}{Yuanzhi Li}, \bibinfo{person}{Shean Wang},
+  \bibinfo{person}{Lu Wang}, {and} \bibinfo{person}{Weizhu Chen}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{LoRA: Low-Rank Adaptation of Large Language
+  Models}. In \bibinfo{booktitle}{\emph{The Tenth International Conference on
+  Learning Representations, {ICLR} 2022}}. \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=nZeVKeeFYf9}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Hu et~al\mbox{.}(2024a)]%
+        {DBLP:journals/tkde/HuLZHNL24}
+\bibfield{author}{\bibinfo{person}{Linmei Hu}, \bibinfo{person}{Zeyi Liu},
+  \bibinfo{person}{Ziwang Zhao}, \bibinfo{person}{Lei Hou},
+  \bibinfo{person}{Liqiang Nie}, {and} \bibinfo{person}{Juanzi Li}.}
+  \bibinfo{year}{2024}\natexlab{a}.
+\newblock \showarticletitle{A Survey of Knowledge Enhanced Pre-Trained Language
+  Models}.
+\newblock \bibinfo{journal}{\emph{{IEEE} Trans. Knowl. Data Eng.}}
+  \bibinfo{volume}{36}, \bibinfo{number}{4} (\bibinfo{year}{2024}),
+  \bibinfo{pages}{1413--1430}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TKDE.2023.3310002}
+\showDOI{\tempurl}
+
+
+\bibitem[Huang et~al\mbox{.}(2019)]%
+        {DBLP:conf/emnlp/HuangMLZW19}
+\bibfield{author}{\bibinfo{person}{Lianzhe Huang}, \bibinfo{person}{Dehong Ma},
+  \bibinfo{person}{Sujian Li}, \bibinfo{person}{Xiaodong Zhang}, {and}
+  \bibinfo{person}{Houfeng Wang}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Text Level Graph Neural Network for Text
+  Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 2019
+  Conference on Empirical Methods in Natural Language Processing and the 9th
+  International Joint Conference on Natural Language Processing, {EMNLP-IJCNLP}
+  2019, Hong Kong, China, November 3-7, 2019}}. \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{pages}{3442--3448}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/D19-1345}
+\showDOI{\tempurl}
+
+
+\bibitem[Huang et~al\mbox{.}(2022)]%
+        {DBLP:conf/coling/HuangCC22}
+\bibfield{author}{\bibinfo{person}{Yen{-}Hao Huang}, \bibinfo{person}{Yi{-}Hsin
+  Chen}, {and} \bibinfo{person}{Yi{-}Shin Chen}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{ConTextING: Granting Document-Wise Contextual
+  Embeddings to Graph Neural Networks for Inductive Text Classification}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 29th International Conference on
+  Computational Linguistics, {COLING} 2022, Gyeongju, Republic of Korea,
+  October 12-17, 2022}}. \bibinfo{publisher}{International Committee on
+  Computational Linguistics}, \bibinfo{pages}{1163--1168}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/2022.coling-1.100}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Huang et~al\mbox{.}(2021)]%
+        {DBLP:conf/emnlp/HuangGKOO21}
+\bibfield{author}{\bibinfo{person}{Yi Huang}, \bibinfo{person}{Buse
+  Giledereli}, \bibinfo{person}{Abdullatif K{\"{o}}ksal},
+  \bibinfo{person}{Arzucan {\"{O}}zg{\"{u}}r}, {and} \bibinfo{person}{Elif
+  Ozkirimli}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Balancing Methods for Multi-label Text
+  Classification with Long-Tailed Class Distribution}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2021 Conference on Empirical
+  Methods in Natural Language Processing, {EMNLP} 2021, Virtual Event / Punta
+  Cana, Dominican Republic, 7-11 November, 2021}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{8153--8161}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.emnlp-main.643}
+\showDOI{\tempurl}
+
+
+\bibitem[Iyyer et~al\mbox{.}(2015)]%
+        {DBLP:conf/acl/IyyerMBD15}
+\bibfield{author}{\bibinfo{person}{Mohit Iyyer}, \bibinfo{person}{Varun
+  Manjunatha}, \bibinfo{person}{Jordan~L. Boyd{-}Graber}, {and}
+  \bibinfo{person}{Hal~Daum{\'{e}} III}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Deep Unordered Composition Rivals Syntactic Methods
+  for Text Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  53rd Annual Meeting of the Association for Computational Linguistics and the
+  7th International Joint Conference on Natural Language Processing of the
+  Asian Federation of Natural Language Processing, {ACL} 2015, July 26-31,
+  2015, Beijing, China, Volume 1: Long Papers}}. \bibinfo{publisher}{The
+  Association for Computer Linguistics}, \bibinfo{pages}{1681--1691}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3115/v1/p15-1162}
+\showDOI{\tempurl}
+
+
+\bibitem[Jamshidi et~al\mbox{.}(2024a)]%
+        {10.1016/j.datak.2024.102306}
+\bibfield{author}{\bibinfo{person}{Saman Jamshidi}, \bibinfo{person}{Mahin
+  Mohammadi}, \bibinfo{person}{Saeed Bagheri}, \bibinfo{person}{Hamid~Esmaeili
+  Najafabadi}, \bibinfo{person}{Alireza Rezvanian}, \bibinfo{person}{Mehdi
+  Gheisari}, \bibinfo{person}{Mustafa Ghaderzadeh},
+  \bibinfo{person}{Amir~Shahab Shahabi}, {and} \bibinfo{person}{Zongda Wu}.}
+  \bibinfo{year}{2024}\natexlab{a}.
+\newblock \showarticletitle{Effective text classification using BERT, MTM LSTM,
+  and DT}.
+\newblock \bibinfo{journal}{\emph{Data Knowl. Eng.}} \bibinfo{volume}{151},
+  \bibinfo{number}{C} (\bibinfo{date}{jul} \bibinfo{year}{2024}),
+  \bibinfo{numpages}{17}~pages.
+\newblock
+\showISSN{0169-023X}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.datak.2024.102306}
+\showDOI{\tempurl}
+
+
+\bibitem[Jamshidi et~al\mbox{.}(2024b)]%
+        {JAMSHIDI2024102306}
+\bibfield{author}{\bibinfo{person}{Saman Jamshidi}, \bibinfo{person}{Mahin
+  Mohammadi}, \bibinfo{person}{Saeed Bagheri}, \bibinfo{person}{Hamid~Esmaeili
+  Najafabadi}, \bibinfo{person}{Alireza Rezvanian}, \bibinfo{person}{Mehdi
+  Gheisari}, \bibinfo{person}{Mustafa Ghaderzadeh},
+  \bibinfo{person}{Amir~Shahab Shahabi}, {and} \bibinfo{person}{Zongda Wu}.}
+  \bibinfo{year}{2024}\natexlab{b}.
+\newblock \showarticletitle{Effective text classification using BERT, MTM LSTM,
+  and DT}.
+\newblock \bibinfo{journal}{\emph{Data and Knowledge Engineering}}
+  \bibinfo{volume}{151} (\bibinfo{year}{2024}), \bibinfo{pages}{102306}.
+\newblock
+\showISSN{0169-023X}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.datak.2024.102306}
+\showDOI{\tempurl}
+
+
+\bibitem[Jia et~al\mbox{.}(2023)]%
+        {DBLP:journals/nca/JiaJDZLXC23-mhgat}
+\bibfield{author}{\bibinfo{person}{Xiangen Jia}, \bibinfo{person}{Min Jiang},
+  \bibinfo{person}{Yihong Dong}, \bibinfo{person}{Feng Zhu},
+  \bibinfo{person}{Haocai Lin}, \bibinfo{person}{Yu Xin}, {and}
+  \bibinfo{person}{Huahui Chen}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Multimodal heterogeneous graph attention network}.
+\newblock \bibinfo{journal}{\emph{Neural Comput. Appl.}} \bibinfo{volume}{35},
+  \bibinfo{number}{4} (\bibinfo{year}{2023}), \bibinfo{pages}{3357--3372}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/S00521-022-07862-6}
+\showDOI{\tempurl}
+
+
+\bibitem[Jiang et~al\mbox{.}(2022)]%
+        {hbgl}
+\bibfield{author}{\bibinfo{person}{Ting Jiang}, \bibinfo{person}{Deqing Wang},
+  \bibinfo{person}{Leilei Sun}, \bibinfo{person}{Zhongzhi Chen},
+  \bibinfo{person}{Fuzhen Zhuang}, {and} \bibinfo{person}{Qinghong Yang}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Exploiting Global and Local Hierarchies for
+  Hierarchical Text Classification}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 2022 Conference on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Abu Dhabi, United Arab Emirates},
+  \bibinfo{pages}{4030--4039}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/2022.emnlp-main.268}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Jiao et~al\mbox{.}(2020)]%
+        {tinybert}
+\bibfield{author}{\bibinfo{person}{Xiaoqi Jiao}, \bibinfo{person}{Yichun Yin},
+  \bibinfo{person}{Lifeng Shang}, \bibinfo{person}{Xin Jiang},
+  \bibinfo{person}{Xiao Chen}, \bibinfo{person}{Linlin Li},
+  \bibinfo{person}{Fang Wang}, {and} \bibinfo{person}{Qun Liu}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{TinyBERT}: Distilling {BERT} for Natural Language
+  Understanding}. In \bibinfo{booktitle}{\emph{Findings of the Association for
+  Computational Linguistics: {EMNLP} 2020, Online Event, 16-20 November 2020}}
+  \emph{(\bibinfo{series}{Findings of {ACL}}, Vol.~\bibinfo{volume}{{EMNLP}
+  2020})}. \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{4163--4174}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.findings-emnlp.372}
+\showDOI{\tempurl}
+
+
+\bibitem[Jin et~al\mbox{.}(2024)]%
+        {mhgat}
+\bibfield{author}{\bibinfo{person}{Yilun Jin}, \bibinfo{person}{Wei Yin},
+  \bibinfo{person}{Haoseng Wang}, {and} \bibinfo{person}{Fang He}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Capturing word positions does help: {A}
+  multi-element hypergraph gated attention network for document
+  classification}.
+\newblock \bibinfo{journal}{\emph{Expert Syst. Appl.}}  \bibinfo{volume}{251}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{124002}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/J.ESWA.2024.124002}
+\showDOI{\tempurl}
+
+
+\bibitem[Joulin et~al\mbox{.}(2017)]%
+        {DBLP:conf/eacl/GraveMJB17}
+\bibfield{author}{\bibinfo{person}{Armand Joulin}, \bibinfo{person}{Edouard
+  Grave}, \bibinfo{person}{Piotr Bojanowski}, {and}
+  \bibinfo{person}{Tom{\'{a}}s Mikolov}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Bag of Tricks for Efficient Text Classification}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 15th Conference of the
+  European Chapter of the Association for Computational Linguistics, {EACL}
+  2017, Valencia, Spain, April 3-7, 2017, Volume 2: Short Papers}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{427--431}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/e17-2068}
+\showDOI{\tempurl}
+
+
+\bibitem[Kadhim(2019)]%
+        {DBLP:journals/air/Kadhim19}
+\bibfield{author}{\bibinfo{person}{Ammar~Ismael Kadhim}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Survey on supervised machine learning techniques
+  for automatic text classification}.
+\newblock \bibinfo{journal}{\emph{Artif. Intell. Rev.}} \bibinfo{volume}{52},
+  \bibinfo{number}{1} (\bibinfo{year}{2019}), \bibinfo{pages}{273--292}.
+\newblock
+
+
+\bibitem[Kalchbrenner et~al\mbox{.}(2014)]%
+        {DBLP:conf/acl/KalchbrennerGB14}
+\bibfield{author}{\bibinfo{person}{Nal Kalchbrenner}, \bibinfo{person}{Edward
+  Grefenstette}, {and} \bibinfo{person}{Phil Blunsom}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{A Convolutional Neural Network for Modelling
+  Sentences}. In \bibinfo{booktitle}{\emph{Proceedings of the 52nd Annual
+  Meeting of the Association for Computational Linguistics, {ACL} 2014, June
+  22-27, 2014, Baltimore, MD, USA, Volume 1: Long Papers}}.
+  \bibinfo{publisher}{The Association for Computer Linguistics},
+  \bibinfo{pages}{655--665}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3115/v1/p14-1062}
+\showDOI{\tempurl}
+
+
+\bibitem[Karl and Scherp(2023)]%
+        {DBLP:conf/cdmake/KarlS23}
+\bibfield{author}{\bibinfo{person}{Fabian Karl} {and} \bibinfo{person}{Ansgar
+  Scherp}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Transformers are Short-Text Classifiers}. In
+  \bibinfo{booktitle}{\emph{Machine Learning and Knowledge Extraction - 7th
+  {IFIP} {TC} 5, {TC} 12, {WG} 8.4, {WG} 8.9, {WG} 12.9 International
+  Cross-Domain Conference, {CD-MAKE} 2023, Benevento, Italy, August 29 -
+  September 1, 2023, Proceedings}} \emph{(\bibinfo{series}{Lecture Notes in
+  Computer Science}, Vol.~\bibinfo{volume}{14065})},
+  \bibfield{editor}{\bibinfo{person}{Andreas Holzinger}, \bibinfo{person}{Peter
+  Kieseberg}, \bibinfo{person}{Federico Cabitza}, \bibinfo{person}{Andrea
+  Campagner}, \bibinfo{person}{A~Min Tjoa}, {and} \bibinfo{person}{Edgar~R.
+  Weippl}} (Eds.). \bibinfo{publisher}{Springer}, \bibinfo{pages}{103--122}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-031-40837-3\_7}
+\showDOI{\tempurl}
+
+
+\bibitem[Kharbanda et~al\mbox{.}(2023)]%
+        {xml3}
+\bibfield{author}{\bibinfo{person}{Siddhant Kharbanda},
+  \bibinfo{person}{Atmadeep Banerjee}, \bibinfo{person}{Devaansh Gupta},
+  \bibinfo{person}{Akash Palrecha}, {and} \bibinfo{person}{Rohit Babbar}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{{InceptionXML}}: {{A Lightweight Framework}} with
+  {{Synchronized Negative Sampling}} for {{Short Text Extreme
+  Classification}}}. In \bibinfo{booktitle}{\emph{Proceedings of the 46th
+  {{International ACM SIGIR Conference}} on {{Research}} and {{Development}} in
+  {{Information Retrieval}}}} \emph{(\bibinfo{series}{{{SIGIR}} '23})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{760--769}.
+\newblock
+\showISBNx{978-1-4503-9408-6}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3539618.3591699}
+\showDOI{\tempurl}
+
+
+\bibitem[Kharbanda et~al\mbox{.}(2022)]%
+        {xml2}
+\bibfield{author}{\bibinfo{person}{Siddhant Kharbanda},
+  \bibinfo{person}{Atmadeep Banerjee}, \bibinfo{person}{Erik Schultheis}, {and}
+  \bibinfo{person}{Rohit Babbar}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{{CascadeXML}}: {{Rethinking Transformers}} for
+  {{End-to-end Multi-resolution Training}} in {{Extreme Multi-label
+  Classification}}}. In \bibinfo{booktitle}{\emph{Advances in {{Neural
+  Information Processing Systems}}}}, Vol.~\bibinfo{volume}{35}.
+  \bibinfo{pages}{2074--2087}.
+\newblock
+
+
+\bibitem[Kim(2014)]%
+        {DBLP:conf/emnlp/Kim14}
+\bibfield{author}{\bibinfo{person}{Yoon Kim}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Convolutional Neural Networks for Sentence
+  Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 2014
+  Conference on Empirical Methods in Natural Language Processing, {EMNLP} 2014,
+  October 25-29, 2014, Doha, Qatar, {A} meeting of SIGDAT, a Special Interest
+  Group of the {ACL}}}. \bibinfo{publisher}{{ACL}},
+  \bibinfo{pages}{1746--1751}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3115/v1/d14-1181}
+\showDOI{\tempurl}
+
+
+\bibitem[Kipf and Welling(2017)]%
+        {DBLP:conf/iclr/KipfW17}
+\bibfield{author}{\bibinfo{person}{Thomas~N. Kipf} {and} \bibinfo{person}{Max
+  Welling}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Semi-Supervised Classification with Graph
+  Convolutional Networks}. In \bibinfo{booktitle}{\emph{5th International
+  Conference on Learning Representations, {ICLR} 2017, Toulon, France, April
+  24-26, 2017, Conference Track Proceedings}}.
+  \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=SJU4ayYgl}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kowsari et~al\mbox{.}(2017)]%
+        {DBLP:conf/icmla/KowsariBHMGB17}
+\bibfield{author}{\bibinfo{person}{Kamran Kowsari}, \bibinfo{person}{Donald~E.
+  Brown}, \bibinfo{person}{Mojtaba Heidarysafa}, \bibinfo{person}{Kiana~Jafari
+  Meimandi}, \bibinfo{person}{Matthew~S. Gerber}, {and}
+  \bibinfo{person}{Laura~E. Barnes}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{HDLTex: Hierarchical Deep Learning for Text
+  Classification}. In \bibinfo{booktitle}{\emph{16th {IEEE} International
+  Conference on Machine Learning and Applications, {ICMLA} 2017, Cancun,
+  Mexico, December 18-21, 2017}}. \bibinfo{publisher}{{IEEE}},
+  \bibinfo{pages}{364--371}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICMLA.2017.0-134}
+\showDOI{\tempurl}
+
+
+\bibitem[Kowsari et~al\mbox{.}(2019)]%
+        {DBLP:journals/information/KowsariMHMBB19}
+\bibfield{author}{\bibinfo{person}{Kamran Kowsari},
+  \bibinfo{person}{Kiana~Jafari Meimandi}, \bibinfo{person}{Mojtaba
+  Heidarysafa}, \bibinfo{person}{Sanjana Mendu}, \bibinfo{person}{Laura~E.
+  Barnes}, {and} \bibinfo{person}{Donald~E. Brown}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Text Classification Algorithms: {A} Survey}.
+\newblock \bibinfo{journal}{\emph{Inf.}} \bibinfo{volume}{10},
+  \bibinfo{number}{4} (\bibinfo{year}{2019}), \bibinfo{pages}{150}.
+\newblock
+
+
+\bibitem[Lai et~al\mbox{.}(2015)]%
+        {DBLP:conf/aaai/LaiXLZ15}
+\bibfield{author}{\bibinfo{person}{Siwei Lai}, \bibinfo{person}{Liheng Xu},
+  \bibinfo{person}{Kang Liu}, {and} \bibinfo{person}{Jun Zhao}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Recurrent Convolutional Neural Networks for Text
+  Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the Twenty-Ninth
+  {AAAI} Conference on Artificial Intelligence, January 25-30, 2015, Austin,
+  Texas, {USA}}}. \bibinfo{publisher}{{AAAI} Press},
+  \bibinfo{pages}{2267--2273}.
+\newblock
+\urldef\tempurl%
+\url{http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9745}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lan et~al\mbox{.}(2020)]%
+        {lan_albert_2020}
+\bibfield{author}{\bibinfo{person}{Zhenzhong Lan}, \bibinfo{person}{Mingda
+  Chen}, \bibinfo{person}{Sebastian Goodman}, \bibinfo{person}{Kevin Gimpel},
+  \bibinfo{person}{Piyush Sharma}, {and} \bibinfo{person}{Radu Soricut}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{ALBERT}: {A} {Lite} {BERT} for {Self}-supervised
+  {Learning} of {Language} {Representations}}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1909.11942}
+  (\bibinfo{year}{2020}).
+\newblock
+\showeprint[arXiv]{1909.11942}
+
+
+\bibitem[Leech et~al\mbox{.}(2024)]%
+        {leech2024questionablepracticesmachinelearning}
+\bibfield{author}{\bibinfo{person}{Gavin Leech}, \bibinfo{person}{Juan~J.
+  Vazquez}, \bibinfo{person}{Misha Yagudin}, \bibinfo{person}{Niclas Kupper},
+  {and} \bibinfo{person}{Laurence Aitchison}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Questionable practices in machine learning}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2407.12220}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Lehmann et~al\mbox{.}(2015)]%
+        {Lehmann2015DBpediaA}
+\bibfield{author}{\bibinfo{person}{Jens Lehmann}, \bibinfo{person}{Robert
+  Isele}, \bibinfo{person}{Max Jakob}, \bibinfo{person}{Anja Jentzsch},
+  \bibinfo{person}{Dimitris Kontokostas}, \bibinfo{person}{Pablo~N. Mendes},
+  \bibinfo{person}{Sebastian Hellmann}, \bibinfo{person}{Mohamed Morsey},
+  \bibinfo{person}{Patrick van Kleef}, \bibinfo{person}{S{\"o}ren Auer}, {and}
+  \bibinfo{person}{Christian Bizer}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{{DBpedia} - A large-scale, multilingual knowledge
+  base extracted from {W}ikipedia}.
+\newblock \bibinfo{journal}{\emph{Semantic Web}}  \bibinfo{volume}{6}
+  (\bibinfo{year}{2015}), \bibinfo{pages}{167--195}.
+\newblock
+
+
+\bibitem[Lepagnol et~al\mbox{.}(2024)]%
+        {lepagnol2024smalllanguagemodelsgood}
+\bibfield{author}{\bibinfo{person}{Pierre Lepagnol}, \bibinfo{person}{Thomas
+  Gerald}, \bibinfo{person}{Sahar Ghannay}, \bibinfo{person}{Christophe
+  Servan}, {and} \bibinfo{person}{Sophie Rosset}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Small Language Models are Good Too: An Empirical
+  Study of Zero-Shot Classification}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2404.11122}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Lester et~al\mbox{.}(2021)]%
+        {lester-etal-2021-power}
+\bibfield{author}{\bibinfo{person}{Brian Lester}, \bibinfo{person}{Rami
+  Al-Rfou}, {and} \bibinfo{person}{Noah Constant}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{The Power of Scale for Parameter-Efficient Prompt
+  Tuning}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021 Conference on
+  Empirical Methods in Natural Language Processing}},
+  \bibfield{editor}{\bibinfo{person}{Marie-Francine Moens},
+  \bibinfo{person}{Xuanjing Huang}, \bibinfo{person}{Lucia Specia}, {and}
+  \bibinfo{person}{Scott Wen-tau Yih}} (Eds.). \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{address}{Online and Punta Cana,
+  Dominican Republic}, \bibinfo{pages}{3045--3059}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.emnlp-main.243}
+\showDOI{\tempurl}
+
+
+\bibitem[Lewis et~al\mbox{.}(2004)]%
+        {rcv1-v2}
+\bibfield{author}{\bibinfo{person}{David~D. Lewis}, \bibinfo{person}{Yiming
+  Yang}, \bibinfo{person}{Tony~G. Rose}, {and} \bibinfo{person}{Fan Li}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{RCV1: A New Benchmark Collection for Text
+  Categorization Research}.
+\newblock \bibinfo{journal}{\emph{J. Mach. Learn. Res.}}  \bibinfo{volume}{5}
+  (\bibinfo{date}{dec} \bibinfo{year}{2004}), \bibinfo{pages}{361–397}.
+\newblock
+\showISSN{1532-4435}
+
+
+\bibitem[Li et~al\mbox{.}(2024)]%
+        {DBLP:journals/corr/abs-2405-11524}
+\bibfield{author}{\bibinfo{person}{Mengyu Li}, \bibinfo{person}{Yonghao Liu},
+  \bibinfo{person}{Fausto Giunchiglia}, \bibinfo{person}{Xiaoyue Feng}, {and}
+  \bibinfo{person}{Renchu Guan}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Simple-Sampling and Hard-Mixup with Prototypes to
+  Rebalance Contrastive Learning for Text Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2405.11524}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2405.11524}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2405.11524}
+
+
+\bibitem[Li et~al\mbox{.}(2022a)]%
+        {DBLP:journals/tist/LiPLXYSYH22}
+\bibfield{author}{\bibinfo{person}{Qian Li}, \bibinfo{person}{Hao Peng},
+  \bibinfo{person}{Jianxin Li}, \bibinfo{person}{Congying Xia},
+  \bibinfo{person}{Renyu Yang}, \bibinfo{person}{Lichao Sun},
+  \bibinfo{person}{Philip~S. Yu}, {and} \bibinfo{person}{Lifang He}.}
+  \bibinfo{year}{2022}\natexlab{a}.
+\newblock \showarticletitle{A Survey on Text Classification: From Traditional
+  to Deep Learning}.
+\newblock \bibinfo{journal}{\emph{{ACM} Trans. Intell. Syst. Technol.}}
+  \bibinfo{volume}{13}, \bibinfo{number}{2} (\bibinfo{year}{2022}),
+  \bibinfo{pages}{31:1--31:41}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3495162}
+\showDOI{\tempurl}
+
+
+\bibitem[Li et~al\mbox{.}(2023b)]%
+        {DBLP:conf/apweb/LiWLXY23}
+\bibfield{author}{\bibinfo{person}{Shengnan Li}, \bibinfo{person}{Xiaoming Wu},
+  \bibinfo{person}{Xiangzhi Liu}, \bibinfo{person}{Xuqiang Xue}, {and}
+  \bibinfo{person}{Yang Yu}.} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{Joint Training Graph Neural Network for the Bidding
+  Project Title Short Text Classification}. In \bibinfo{booktitle}{\emph{Web
+  and Big Data - 7th International Joint Conference, APWeb-WAIM 2023, Wuhan,
+  China, October 6-8, 2023, Proceedings, Part {I}}}
+  \emph{(\bibinfo{series}{Lecture Notes in Computer Science},
+  Vol.~\bibinfo{volume}{14331})}, \bibfield{editor}{\bibinfo{person}{Xiangyu
+  Song}, \bibinfo{person}{Ruyi Feng}, \bibinfo{person}{Yunliang Chen},
+  \bibinfo{person}{Jianxin Li}, {and} \bibinfo{person}{Geyong Min}} (Eds.).
+  \bibinfo{publisher}{Springer}, \bibinfo{pages}{252--267}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-981-97-2303-4\_17}
+\showDOI{\tempurl}
+
+
+\bibitem[Li et~al\mbox{.}(2022b)]%
+        {tsw-gnn}
+\bibfield{author}{\bibinfo{person}{Xianghua Li}, \bibinfo{person}{Xinyu Wu},
+  \bibinfo{person}{Zheng Luo}, \bibinfo{person}{Zhanwei Du},
+  \bibinfo{person}{Zhen Wang}, {and} \bibinfo{person}{Chao Gao}.}
+  \bibinfo{year}{2022}\natexlab{b}.
+\newblock \showarticletitle{Integration of global and local information for
+  text classification}.
+\newblock \bibinfo{journal}{\emph{Neural Computing and Applications}}
+  (\bibinfo{date}{Aug.} \bibinfo{year}{2022}).
+\newblock
+\showISSN{0941-0643, 1433-3058}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s00521-022-07727-y}
+\showDOI{\tempurl}
+
+
+\bibitem[Li et~al\mbox{.}(2023c)]%
+        {li2023chatgpt}
+\bibfield{author}{\bibinfo{person}{Xianzhi Li}, \bibinfo{person}{Xiaodan Zhu},
+  \bibinfo{person}{Zhiqiang Ma}, \bibinfo{person}{Xiaomo Liu}, {and}
+  \bibinfo{person}{Sameena Shah}.} \bibinfo{year}{2023}\natexlab{c}.
+\newblock \showarticletitle{Are ChatGPT and GPT-4 General-Purpose Solvers for
+  Financial Text Analytics? An Examination on Several Typical Tasks}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2305.05862}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Li et~al\mbox{.}(2016)]%
+        {DBLP:journals/corr/LiTBZ15}
+\bibfield{author}{\bibinfo{person}{Yujia Li}, \bibinfo{person}{Daniel Tarlow},
+  \bibinfo{person}{Marc Brockschmidt}, {and} \bibinfo{person}{Richard~S.
+  Zemel}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Gated Graph Sequence Neural Networks}. In
+  \bibinfo{booktitle}{\emph{4th International Conference on Learning
+  Representations, {ICLR} 2016, San Juan, Puerto Rico, May 2-4, 2016,
+  Conference Track Proceedings}}.
+\newblock
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1511.05493}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Li et~al\mbox{.}(2023a)]%
+        {li2023label}
+\bibfield{author}{\bibinfo{person}{Zongxi Li}, \bibinfo{person}{Xianming Li},
+  \bibinfo{person}{Yuzhang Liu}, \bibinfo{person}{Haoran Xie},
+  \bibinfo{person}{Jing Li}, \bibinfo{person}{Fu lee Wang},
+  \bibinfo{person}{Qing Li}, {and} \bibinfo{person}{Xiaoqin Zhong}.}
+  \bibinfo{year}{2023}\natexlab{a}.
+\newblock \showarticletitle{Label Supervised LLaMA Finetuning}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2310.01208}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Liang et~al\mbox{.}(2024)]%
+        {DBLP:conf/acl/LiangZ0Z24}
+\bibfield{author}{\bibinfo{person}{Wenxin Liang}, \bibinfo{person}{Tingyu
+  Zhang}, \bibinfo{person}{Han Liu}, {and} \bibinfo{person}{Feng Zhang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{SELP:} {A} Semantically-Driven Approach for
+  Separated and Accurate Class Prototypes in Few-Shot Text Classification}. In
+  \bibinfo{booktitle}{\emph{Findings of the Association for Computational
+  Linguistics, {ACL} 2024, Bangkok, Thailand and virtual meeting, August 11-16,
+  2024}}, \bibfield{editor}{\bibinfo{person}{Lun{-}Wei Ku},
+  \bibinfo{person}{Andre Martins}, {and} \bibinfo{person}{Vivek Srikumar}}
+  (Eds.). \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{9732--9741}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/2024.findings-acl.579}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lin et~al\mbox{.}(2021)]%
+        {DBLP:conf/acl/LinMSHKLW21}
+\bibfield{author}{\bibinfo{person}{Yuxiao Lin}, \bibinfo{person}{Yuxian Meng},
+  \bibinfo{person}{Xiaofei Sun}, \bibinfo{person}{Qinghong Han},
+  \bibinfo{person}{Kun Kuang}, \bibinfo{person}{Jiwei Li}, {and}
+  \bibinfo{person}{Fei Wu}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{BertGCN}: Transductive Text Classification by
+  Combining {GNN} and {BERT}}. In \bibinfo{booktitle}{\emph{Findings of the
+  Association for Computational Linguistics: {ACL/IJCNLP} 2021, Online Event,
+  August 1-6, 2021}} \emph{(\bibinfo{series}{Findings of {ACL}},
+  Vol.~\bibinfo{volume}{{ACL/IJCNLP} 2021})}. \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{pages}{1456--1462}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.findings-acl.126}
+\showDOI{\tempurl}
+
+
+\bibitem[lingfei wu et~al\mbox{.}(2023)]%
+        {gnns-for-nlp-survey}
+\bibfield{author}{\bibinfo{person}{lingfei wu}, \bibinfo{person}{yu chen},
+  \bibinfo{person}{kai shen}, \bibinfo{person}{xiaojie guo},
+  \bibinfo{person}{hanning gao}, \bibinfo{person}{shucheng li},
+  \bibinfo{person}{jian pei}, {and} \bibinfo{person}{bo long}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{graph neural networks for natural language
+  processing: a survey}.
+\newblock \bibinfo{journal}{\emph{foundations and trends® in machine
+  learning}} \bibinfo{volume}{16}, \bibinfo{number}{2} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{119--328}.
+\newblock
+\showISSN{1935-8237}
+\urldef\tempurl%
+\url{https://doi.org/10.1561/2200000096}
+\showDOI{\tempurl}
+
+
+\bibitem[Liu et~al\mbox{.}(2024a)]%
+        {liu2024llmembedrethinkinglightweightllms}
+\bibfield{author}{\bibinfo{person}{Chun Liu}, \bibinfo{person}{Hongguang
+  Zhang}, \bibinfo{person}{Kainan Zhao}, \bibinfo{person}{Xinghai Ju}, {and}
+  \bibinfo{person}{Lin Yang}.} \bibinfo{year}{2024}\natexlab{a}.
+\newblock \showarticletitle{LLMEmbed: Rethinking Lightweight LLM's Genuine
+  Function in Text Classification}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2406.03725}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Liu et~al\mbox{.}(2021a)]%
+        {DBLP:journals/corr/abs-2105-08050}
+\bibfield{author}{\bibinfo{person}{Hanxiao Liu}, \bibinfo{person}{Zihang Dai},
+  \bibinfo{person}{David~R. So}, {and} \bibinfo{person}{Quoc~V. Le}.}
+  \bibinfo{year}{2021}\natexlab{a}.
+\newblock \showarticletitle{Pay Attention to {MLP}s}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2105.08050}
+  (\bibinfo{year}{2021}).
+\newblock
+\showeprint[arXiv]{2105.08050}
+
+
+\bibitem[Liu et~al\mbox{.}(2021c)]%
+        {liu2021improving}
+\bibfield{author}{\bibinfo{person}{Hui Liu}, \bibinfo{person}{Danqing Zhang},
+  \bibinfo{person}{Bing Yin}, {and} \bibinfo{person}{Xiaodan Zhu}.}
+  \bibinfo{year}{2021}\natexlab{c}.
+\newblock \showarticletitle{Improving Pretrained Models for Zero-shot
+  Multi-label Text Classification through Reinforced Label Hierarchy
+  Reasoning}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2104.01666}
+  (\bibinfo{year}{2021}).
+\newblock
+\showeprint[arXiv]{2104.01666}
+
+
+\bibitem[Liu et~al\mbox{.}(2024b)]%
+        {DBLP:conf/aaai/LiuZ0ZWMCYZ24}
+\bibfield{author}{\bibinfo{person}{Han Liu}, \bibinfo{person}{Siyang Zhao},
+  \bibinfo{person}{Xiaotong Zhang}, \bibinfo{person}{Feng Zhang},
+  \bibinfo{person}{Wei Wang}, \bibinfo{person}{Fenglong Ma},
+  \bibinfo{person}{Hongyang Chen}, \bibinfo{person}{Hong Yu}, {and}
+  \bibinfo{person}{Xianchao Zhang}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \showarticletitle{Liberating Seen Classes: Boosting Few-Shot and
+  Zero-Shot Text Classification via Anchor Generation and Classification
+  Reframing}. In \bibinfo{booktitle}{\emph{Thirty-Eighth {AAAI} Conference on
+  Artificial Intelligence, {AAAI} 2024, Thirty-Sixth Conference on Innovative
+  Applications of Artificial Intelligence, {IAAI} 2024, Fourteenth Symposium on
+  Educational Advances in Artificial Intelligence, {EAAI} 2014, February 20-27,
+  2024, Vancouver, Canada}}, \bibfield{editor}{\bibinfo{person}{Michael~J.
+  Wooldridge}, \bibinfo{person}{Jennifer~G. Dy}, {and} \bibinfo{person}{Sriraam
+  Natarajan}} (Eds.). \bibinfo{publisher}{{AAAI} Press},
+  \bibinfo{pages}{18644--18652}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1609/AAAI.V38I17.29827}
+\showDOI{\tempurl}
+
+
+\bibitem[Liu et~al\mbox{.}(2022a)]%
+        {LiuEtAl2022-LongText}
+\bibfield{author}{\bibinfo{person}{Tengfei Liu}, \bibinfo{person}{Yongli Hu},
+  \bibinfo{person}{Boyue Wang}, \bibinfo{person}{Yanfeng Sun},
+  \bibinfo{person}{Junbin Gao}, {and} \bibinfo{person}{Baocai Yin}.}
+  \bibinfo{year}{2022}\natexlab{a}.
+\newblock \showarticletitle{Hierarchical Graph Convolutional Networks for
+  Structured Long Document Classification}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Neural Networks and
+  Learning Systems}} (\bibinfo{year}{2022}), \bibinfo{pages}{1--15}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TNNLS.2022.3185295}
+\showDOI{\tempurl}
+
+
+\bibitem[Liu et~al\mbox{.}(2020a)]%
+        {DBLP:journals/corr/abs-2011-11197}
+\bibfield{author}{\bibinfo{person}{Weiwei Liu}, \bibinfo{person}{Xiaobo Shen},
+  \bibinfo{person}{Haobo Wang}, {and} \bibinfo{person}{Ivor~W. Tsang}.}
+  \bibinfo{year}{2020}\natexlab{a}.
+\newblock \showarticletitle{The Emerging Trends of Multi-Label Learning}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2011.11197}
+  (\bibinfo{year}{2020}).
+\newblock
+\showeprint[arXiv]{2011.11197}
+
+
+\bibitem[Liu et~al\mbox{.}(2022b)]%
+        {liu-etal-2022-p}
+\bibfield{author}{\bibinfo{person}{Xiao Liu}, \bibinfo{person}{Kaixuan Ji},
+  \bibinfo{person}{Yicheng Fu}, \bibinfo{person}{Weng Tam},
+  \bibinfo{person}{Zhengxiao Du}, \bibinfo{person}{Zhilin Yang}, {and}
+  \bibinfo{person}{Jie Tang}.} \bibinfo{year}{2022}\natexlab{b}.
+\newblock \showarticletitle{{P}-Tuning: Prompt Tuning Can Be Comparable to
+  Fine-tuning Across Scales and Tasks}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 60th Annual Meeting of the
+  Association for Computational Linguistics (Volume 2: Short Papers)}},
+  \bibfield{editor}{\bibinfo{person}{Smaranda Muresan},
+  \bibinfo{person}{Preslav Nakov}, {and} \bibinfo{person}{Aline Villavicencio}}
+  (Eds.). \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Dublin, Ireland}, \bibinfo{pages}{61--68}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2022.acl-short.8}
+\showDOI{\tempurl}
+
+
+\bibitem[Liu et~al\mbox{.}(2020b)]%
+        {DBLP:conf/aaai/LiuYZWL20}
+\bibfield{author}{\bibinfo{person}{Xien Liu}, \bibinfo{person}{Xinxin You},
+  \bibinfo{person}{Xiao Zhang}, \bibinfo{person}{Ji Wu}, {and}
+  \bibinfo{person}{Ping Lv}.} \bibinfo{year}{2020}\natexlab{b}.
+\newblock \showarticletitle{Tensor Graph Convolutional Networks for Text
+  Classification}. In \bibinfo{booktitle}{\emph{The Thirty-Fourth {AAAI}
+  Conference on Artificial Intelligence, {AAAI} 2020, The Thirty-Second
+  Innovative Applications of Artificial Intelligence Conference, {IAAI} 2020,
+  The Tenth {AAAI} Symposium on Educational Advances in Artificial
+  Intelligence, {EAAI} 2020, New York, NY, USA, February 7-12, 2020}}.
+  \bibinfo{publisher}{{AAAI} Press}, \bibinfo{pages}{8409--8416}.
+\newblock
+\urldef\tempurl%
+\url{https://ojs.aaai.org/index.php/AAAI/article/view/6359}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Liu et~al\mbox{.}(2021b)]%
+        {DBLP:conf/emnlp/LiuGG0F21}
+\bibfield{author}{\bibinfo{person}{Yonghao Liu}, \bibinfo{person}{Renchu Guan},
+  \bibinfo{person}{Fausto Giunchiglia}, \bibinfo{person}{Yanchun Liang}, {and}
+  \bibinfo{person}{Xiaoyue Feng}.} \bibinfo{year}{2021}\natexlab{b}.
+\newblock \showarticletitle{Deep Attention Diffusion Graph Neural Networks for
+  Text Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021
+  Conference on Empirical Methods in Natural Language Processing, {EMNLP} 2021,
+  Virtual Event / Punta Cana, Dominican Republic, 7-11 November, 2021}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{8142--8152}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.emnlp-main.642}
+\showDOI{\tempurl}
+
+
+\bibitem[Liu et~al\mbox{.}(2019)]%
+        {liu_roberta:_2019}
+\bibfield{author}{\bibinfo{person}{Yinhan Liu}, \bibinfo{person}{Myle Ott},
+  \bibinfo{person}{Naman Goyal}, \bibinfo{person}{Jingfei Du},
+  \bibinfo{person}{Mandar Joshi}, \bibinfo{person}{Danqi Chen},
+  \bibinfo{person}{Omer Levy}, \bibinfo{person}{Mike Lewis},
+  \bibinfo{person}{Luke Zettlemoyer}, {and} \bibinfo{person}{Veselin
+  Stoyanov}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{RoBERTa}: {A} {Robustly} {Optimized} {BERT}
+  {Pretraining} {Approach}}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1907.11692}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1907.11692}
+
+
+\bibitem[Liu et~al\mbox{.}(2023)]%
+        {DBLP:conf/acl/LiuZHWZ0C23-k-htc}
+\bibfield{author}{\bibinfo{person}{Ye Liu}, \bibinfo{person}{Kai Zhang},
+  \bibinfo{person}{Zhenya Huang}, \bibinfo{person}{Kehang Wang},
+  \bibinfo{person}{Yanghai Zhang}, \bibinfo{person}{Qi Liu}, {and}
+  \bibinfo{person}{Enhong Chen}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Enhancing Hierarchical Text Classification through
+  Knowledge Graph Integration}. In \bibinfo{booktitle}{\emph{Findings of the
+  Association for Computational Linguistics: {ACL} 2023, Toronto, Canada, July
+  9-14, 2023}}, \bibfield{editor}{\bibinfo{person}{Anna Rogers},
+  \bibinfo{person}{Jordan~L. Boyd{-}Graber}, {and} \bibinfo{person}{Naoaki
+  Okazaki}} (Eds.). \bibinfo{publisher}{Association for Computational
+  Linguistics}, \bibinfo{pages}{5797--5810}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/V1/2023.FINDINGS-ACL.358}
+\showDOI{\tempurl}
+
+
+\bibitem[Ly et~al\mbox{.}(2024)]%
+        {DBLP:conf/coling/LyKCK24}
+\bibfield{author}{\bibinfo{person}{Khang Ly}, \bibinfo{person}{Yury
+  Kashnitsky}, \bibinfo{person}{Savvas Chamezopoulos}, {and}
+  \bibinfo{person}{Valeria~V. Krzhizhanovskaya}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Article Classification with Graph Neural Networks
+  and Multigraphs}. In \bibinfo{booktitle}{\emph{Proceedings of the 2024 Joint
+  International Conference on Computational Linguistics, Language Resources and
+  Evaluation, {LREC/COLING} 2024, 20-25 May, 2024, Torino, Italy}},
+  \bibfield{editor}{\bibinfo{person}{Nicoletta Calzolari},
+  \bibinfo{person}{Min{-}Yen Kan}, \bibinfo{person}{V{\'{e}}ronique Hoste},
+  \bibinfo{person}{Alessandro Lenci}, \bibinfo{person}{Sakriani Sakti}, {and}
+  \bibinfo{person}{Nianwen Xue}} (Eds.). \bibinfo{publisher}{{ELRA} and
+  {ICCL}}, \bibinfo{pages}{1539--1547}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/2024.lrec-main.136}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lyu and Liu(2020)]%
+        {DBLP:journals/corr/abs-2006-15795}
+\bibfield{author}{\bibinfo{person}{Shengfei Lyu} {and} \bibinfo{person}{Jiaqi
+  Liu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Combine Convolution with Recurrent Networks for
+  Text Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2006.15795}
+  (\bibinfo{year}{2020}).
+\newblock
+\showeprint[arXiv]{2006.15795}
+
+
+\bibitem[Mai et~al\mbox{.}(2018)]%
+        {DBLP:conf/jcdl/MaiGS18}
+\bibfield{author}{\bibinfo{person}{Florian Mai}, \bibinfo{person}{Lukas Galke},
+  {and} \bibinfo{person}{Ansgar Scherp}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Using Deep Learning for Title-Based Semantic
+  Subject Indexing to Reach Competitive Performance to Full-Text}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 18th {ACM/IEEE} on Joint
+  Conference on Digital Libraries, {JCDL} 2018, Fort Worth, TX, USA, June
+  03-07, 2018}}. \bibinfo{publisher}{{ACM}}, \bibinfo{pages}{169--178}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3197026.3197039}
+\showDOI{\tempurl}
+
+
+\bibitem[Mao et~al\mbox{.}(2024)]%
+        {mao2024lowresourcefasttextclassification}
+\bibfield{author}{\bibinfo{person}{Yanxu Mao}, \bibinfo{person}{Peipei Liu},
+  \bibinfo{person}{Tiehan Cui}, \bibinfo{person}{Congying Liu}, {and}
+  \bibinfo{person}{Datao You}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Low-Resource Fast Text Classification Based on
+  Intra-Class and Inter-Class Distance Calculation}.
+\newblock  (\bibinfo{year}{2024}).
+\newblock
+\showeprint[arxiv]{2412.09922}~[cs.CL]
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2412.09922}
+\showURL{%
+\tempurl}
+
+
+\bibitem[McAuley and Leskovec(2013)]%
+        {hiddenfactors}
+\bibfield{author}{\bibinfo{person}{Julian McAuley} {and} \bibinfo{person}{Jure
+  Leskovec}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Hidden Factors and Hidden Topics: Understanding
+  Rating Dimensions with Review Text}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 7th ACM Conference on Recommender Systems}} (Hong Kong, China)
+  \emph{(\bibinfo{series}{RecSys '13})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{165–172}.
+\newblock
+\showISBNx{9781450324090}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2507157.2507163}
+\showDOI{\tempurl}
+
+
+\bibitem[Mikolov et~al\mbox{.}(2013)]%
+        {DBLP:conf/nips/MikolovSCCD13}
+\bibfield{author}{\bibinfo{person}{Tomas Mikolov}, \bibinfo{person}{Ilya
+  Sutskever}, \bibinfo{person}{Kai Chen}, \bibinfo{person}{Gregory~S. Corrado},
+  {and} \bibinfo{person}{Jeffrey Dean}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Distributed Representations of Words and Phrases
+  and their Compositionality}. In \bibinfo{booktitle}{\emph{Advances in Neural
+  Information Processing Systems 26: 27th Annual Conference on Neural
+  Information Processing Systems 2013. Proceedings of a meeting held December
+  5-8, 2013, Lake Tahoe, Nevada, United States.}} \bibinfo{pages}{3111--3119}.
+\newblock
+
+
+\bibitem[Minaee et~al\mbox{.}(2022)]%
+        {DBLP:journals/csur/MinaeeKCNCG21}
+\bibfield{author}{\bibinfo{person}{Shervin Minaee}, \bibinfo{person}{Nal
+  Kalchbrenner}, \bibinfo{person}{Erik Cambria}, \bibinfo{person}{Narjes
+  Nikzad}, \bibinfo{person}{Meysam Chenaghlu}, {and} \bibinfo{person}{Jianfeng
+  Gao}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Deep Learning-based Text Classification: {A}
+  Comprehensive Review}.
+\newblock \bibinfo{journal}{\emph{{ACM} Comput. Surv.}} \bibinfo{volume}{54},
+  \bibinfo{number}{3} (\bibinfo{year}{2022}), \bibinfo{pages}{62:1--62:40}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3439726}
+\showDOI{\tempurl}
+
+
+\bibitem[Moreo et~al\mbox{.}(2020a)]%
+        {DBLP:journals/tkde/MoreoES20}
+\bibfield{author}{\bibinfo{person}{Alejandro Moreo}, \bibinfo{person}{Andrea
+  Esuli}, {and} \bibinfo{person}{Fabrizio Sebastiani}.}
+  \bibinfo{year}{2020}\natexlab{a}.
+\newblock \showarticletitle{Learning to Weight for Text Classification}.
+\newblock \bibinfo{journal}{\emph{{IEEE} Trans. Knowl. Data Eng.}}
+  \bibinfo{volume}{32}, \bibinfo{number}{2} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{302--316}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TKDE.2018.2883446}
+\showDOI{\tempurl}
+
+
+\bibitem[Moreo et~al\mbox{.}(2020b)]%
+        {moreo2020}
+\bibfield{author}{\bibinfo{person}{Alejandro Moreo}, \bibinfo{person}{Andrea
+  Esuli}, {and} \bibinfo{person}{Fabrizio Sebastiani}.}
+  \bibinfo{year}{2020}\natexlab{b}.
+\newblock \showarticletitle{Learning to Weight for Text Classification}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge and Data
+  Engineering}} \bibinfo{volume}{32}, \bibinfo{number}{2}
+  (\bibinfo{year}{2020}), \bibinfo{pages}{302--316}.
+\newblock
+\showISSN{1558-2191}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TKDE.2018.2883446}
+\showDOI{\tempurl}
+
+
+\bibitem[Nallapati(2004)]%
+        {DBLP:conf/sigir/Nallapati04}
+\bibfield{author}{\bibinfo{person}{Ramesh Nallapati}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Discriminative models for information retrieval}.
+  In \bibinfo{booktitle}{\emph{{SIGIR} 2004: Proceedings of the 27th Annual
+  International {ACM} {SIGIR} Conference on Research and Development in
+  Information Retrieval, Sheffield, UK, July 25-29, 2004}},
+  \bibfield{editor}{\bibinfo{person}{Mark Sanderson}, \bibinfo{person}{Kalervo
+  J{\"{a}}rvelin}, \bibinfo{person}{James Allan}, {and} \bibinfo{person}{Peter
+  Bruza}} (Eds.). \bibinfo{publisher}{{ACM}}, \bibinfo{pages}{64--71}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1008992.1009006}
+\showDOI{\tempurl}
+
+
+\bibitem[Nam et~al\mbox{.}(2017)]%
+        {namMaximizingSubsetAccuracy2017}
+\bibfield{author}{\bibinfo{person}{Jinseok Nam}, \bibinfo{person}{Eneldo
+  Loza~Menc{\'i}a}, \bibinfo{person}{Hyunwoo~J Kim}, {and}
+  \bibinfo{person}{Johannes F{\"u}rnkranz}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Maximizing {{Subset Accuracy}} with {{Recurrent
+  Neural Networks}} in {{Multi-label Classification}}}. In
+  \bibinfo{booktitle}{\emph{Advances in {{Neural Information Processing
+  Systems}} 30}}, \bibfield{editor}{\bibinfo{person}{I.~Guyon},
+  \bibinfo{person}{U.~V. Luxburg}, \bibinfo{person}{S.~Bengio},
+  \bibinfo{person}{H.~Wallach}, \bibinfo{person}{R.~Fergus},
+  \bibinfo{person}{S.~Vishwanathan}, {and} \bibinfo{person}{R.~Garnett}}
+  (Eds.). \bibinfo{publisher}{{Curran Associates, Inc.}},
+  \bibinfo{pages}{5413--5423}.
+\newblock
+
+
+\bibitem[Niraula et~al\mbox{.}(2024)]%
+        {10748883-boing-aviation-paper}
+\bibfield{author}{\bibinfo{person}{Nobal Niraula}, \bibinfo{person}{Samet
+  Ayhan}, \bibinfo{person}{Balaguruna Chidambaram}, {and}
+  \bibinfo{person}{Daniel Whyatt}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Multi-Label Classification with Generative Large
+  Language Models}. In \bibinfo{booktitle}{\emph{2024 AIAA DATC/IEEE 43rd
+  Digital Avionics Systems Conference (DASC)}}. \bibinfo{pages}{1--7}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/DASC62030.2024.10748883}
+\showDOI{\tempurl}
+
+
+\bibitem[Nowak and Baggio(2016)]%
+        {nowak_emergence_2016}
+\bibfield{author}{\bibinfo{person}{Iga Nowak} {and} \bibinfo{person}{Giosuè
+  Baggio}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{The emergence of word order and morphology in
+  compositional languages via multigenerational signaling games}.
+\newblock \bibinfo{journal}{\emph{Journal of Language Evolution}}
+  \bibinfo{volume}{1}, \bibinfo{number}{2} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{137--150}.
+\newblock
+\showISSN{2058-4571, 2058-458X}
+\urldef\tempurl%
+\url{https://doi.org/10.1093/jole/lzw007}
+\showDOI{\tempurl}
+
+
+\bibitem[Ohsawa et~al\mbox{.}(1998)]%
+        {DBLP:conf/adl/OhsawaBY98}
+\bibfield{author}{\bibinfo{person}{Yukio Ohsawa}, \bibinfo{person}{Nels~E.
+  Benson}, {and} \bibinfo{person}{Masahiko Yachida}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{KeyGraph: Automatic Indexing by Co-Occurrence Graph
+  Based on Building Construction Metaphor}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the IEEE Forum on Research and
+  Technology Advances in Digital Libraries}}. \bibinfo{publisher}{{IEEE}
+  Computer Society}, \bibinfo{pages}{12--18}.
+\newblock
+
+
+\bibitem[OpenAI(2023)]%
+        {DBLP:journals/corr/abs-2303-08774}
+\bibfield{author}{\bibinfo{person}{OpenAI}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{GPT-4} Technical Report}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2303.08774}
+  (\bibinfo{year}{2023}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2303.08774}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2303.08774}
+
+
+\bibitem[Ouyang et~al\mbox{.}(2022)]%
+        {ouyangTrainingLanguageModels2022}
+\bibfield{author}{\bibinfo{person}{Long Ouyang}, \bibinfo{person}{Jeff Wu},
+  \bibinfo{person}{Xu Jiang}, \bibinfo{person}{Diogo Almeida},
+  \bibinfo{person}{Carroll~L. Wainwright}, \bibinfo{person}{Pamela Mishkin},
+  \bibinfo{person}{Chong Zhang}, \bibinfo{person}{Sandhini Agarwal},
+  \bibinfo{person}{Katarina Slama}, \bibinfo{person}{Alex Ray},
+  \bibinfo{person}{John Schulman}, \bibinfo{person}{Jacob Hilton},
+  \bibinfo{person}{Fraser Kelton}, \bibinfo{person}{Luke Miller},
+  \bibinfo{person}{Maddie Simens}, \bibinfo{person}{Amanda Askell},
+  \bibinfo{person}{Peter Welinder}, \bibinfo{person}{Paul Christiano},
+  \bibinfo{person}{Jan Leike}, {and} \bibinfo{person}{Ryan Lowe}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Training Language Models to Follow Instructions
+  with Human Feedback}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2203.02155}} (\bibinfo{year}{2022}).
+\newblock
+
+
+\bibitem[Pal et~al\mbox{.}(2020)]%
+        {DBLP:conf/icaart/PalSS20}
+\bibfield{author}{\bibinfo{person}{Ankit Pal}, \bibinfo{person}{Muru
+  Selvakumar}, {and} \bibinfo{person}{Malaikannan Sankarasubbu}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{MAGNET:} Multi-Label Text Classification using
+  Attention-based Graph Neural Network}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 12th International Conference on
+  Agents and Artificial Intelligence, {ICAART} 2020, Volume 2, Valletta, Malta,
+  February 22-24, 2020}}. \bibinfo{publisher}{{SCITEPRESS}},
+  \bibinfo{pages}{494--505}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.5220/0008940304940505}
+\showDOI{\tempurl}
+
+
+\bibitem[Pandia and Ramnath(2022)]%
+        {usc-students}
+\bibfield{author}{\bibinfo{person}{Mahak Pandia} {and} \bibinfo{person}{Sahana
+  Ramnath}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{Reproducing Bag-of-Words vs. Graph vs. Sequence in
+  Text Classification: Questioning the Necessity of Text-Graphs and the
+  Surprising Strength of a {Wide MLP} ({ACL} 2022)}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://raw.githubusercontent.com/SahanaRamnath/bow-vs-graph-vs-seq-textclassification/main/Report_final_Pandia\_Ramnath.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Pang and Lee(2005)]%
+        {pang-lee-2005-seeing}
+\bibfield{author}{\bibinfo{person}{Bo Pang} {and} \bibinfo{person}{Lillian
+  Lee}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Seeing Stars: Exploiting Class Relationships for
+  Sentiment Categorization with Respect to Rating Scales}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 43rd Annual Meeting of the
+  Association for Computational Linguistics ({ACL}{'}05)}}.
+  \bibinfo{publisher}{ACL}, \bibinfo{address}{Ann Arbor, Michigan},
+  \bibinfo{pages}{115--124}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3115/1219840.1219855}
+\showDOI{\tempurl}
+
+
+\bibitem[Parlak(2023)]%
+        {MTAPparlakNovelFeatureClassbased2023}
+\bibfield{author}{\bibinfo{person}{Bekir Parlak}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{A Novel Feature and Class-Based Globalization
+  Technique for Text Classification}.
+\newblock \bibinfo{journal}{\emph{Multimedia Tools and Applications}}
+  (\bibinfo{date}{April} \bibinfo{year}{2023}).
+\newblock
+\showISSN{1380-7501, 1573-7721}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s11042-023-15459-x}
+\showDOI{\tempurl}
+
+
+\bibitem[Patel et~al\mbox{.}(2023)]%
+        {DBLP:conf/iclr/PatelLRCRC23}
+\bibfield{author}{\bibinfo{person}{Ajay Patel}, \bibinfo{person}{Bryan Li},
+  \bibinfo{person}{Mohammad~Sadegh Rasooli}, \bibinfo{person}{Noah Constant},
+  \bibinfo{person}{Colin Raffel}, {and} \bibinfo{person}{Chris
+  Callison{-}Burch}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Bidirectional Language Models Are Also Few-shot
+  Learners}. In \bibinfo{booktitle}{\emph{The Eleventh International Conference
+  on Learning Representations, {ICLR} 2023, Kigali, Rwanda, May 1-5, 2023}}.
+  \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/pdf?id=wCFB37bzud4}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Pellegrini and Masquelier(2021)]%
+        {pellegrini2021fast}
+\bibfield{author}{\bibinfo{person}{Thomas Pellegrini} {and}
+  \bibinfo{person}{Timoth{\'e}e Masquelier}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Fast threshold optimization for multi-label audio
+  tagging using Surrogate gradient learning}. In
+  \bibinfo{booktitle}{\emph{ICASSP 2021-2021 IEEE International Conference on
+  Acoustics, Speech and Signal Processing (ICASSP)}}. IEEE,
+  \bibinfo{pages}{651--655}.
+\newblock
+
+
+\bibitem[Peng et~al\mbox{.}(2023)]%
+        {pengRWKVReinventingRNNs2023a}
+\bibfield{author}{\bibinfo{person}{Bo Peng}, \bibinfo{person}{Eric Alcaide},
+  \bibinfo{person}{Quentin Anthony}, \bibinfo{person}{Alon Albalak},
+  \bibinfo{person}{Samuel Arcadinho}, \bibinfo{person}{Stella Biderman},
+  \bibinfo{person}{Huanqi Cao}, \bibinfo{person}{Xin Cheng},
+  \bibinfo{person}{Michael Chung}, \bibinfo{person}{Leon Derczynski},
+  \bibinfo{person}{Xingjian Du}, \bibinfo{person}{Matteo Grella},
+  \bibinfo{person}{Kranthi Gv}, \bibinfo{person}{Xuzheng He},
+  \bibinfo{person}{Haowen Hou}, \bibinfo{person}{Przemyslaw Kazienko},
+  \bibinfo{person}{Jan Kocon}, \bibinfo{person}{Jiaming Kong},
+  \bibinfo{person}{Bart{\textbackslash}lomiej Koptyra}, \bibinfo{person}{Hayden
+  Lau}, \bibinfo{person}{Jiaju Lin}, \bibinfo{person}{Krishna Sri~Ipsit
+  Mantri}, \bibinfo{person}{Ferdinand Mom}, \bibinfo{person}{Atsushi Saito},
+  \bibinfo{person}{Guangyu Song}, \bibinfo{person}{Xiangru Tang},
+  \bibinfo{person}{Johan Wind}, \bibinfo{person}{Stanis{\textbackslash}law
+  Wo{\'z}niak}, \bibinfo{person}{Zhenyuan Zhang}, \bibinfo{person}{Qinghua
+  Zhou}, \bibinfo{person}{Jian Zhu}, {and} \bibinfo{person}{Rui-Jie Zhu}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{{RWKV}}: {{Reinventing RNNs}} for the
+  {{Transformer Era}}}. In \bibinfo{booktitle}{\emph{Findings of the
+  {{Association}} for {{Computational Linguistics}}: {{EMNLP}} 2023}},
+  \bibfield{editor}{\bibinfo{person}{Houda Bouamor}, \bibinfo{person}{Juan
+  Pino}, {and} \bibinfo{person}{Kalika Bali}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Singapore}, \bibinfo{pages}{14048--14077}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2023.findings-emnlp.936}
+\showDOI{\tempurl}
+
+
+\bibitem[Peng et~al\mbox{.}(2021)]%
+        {pengHierarchicalTaxonomyAwareAttentional2021}
+\bibfield{author}{\bibinfo{person}{Hao Peng}, \bibinfo{person}{Jianxin Li},
+  \bibinfo{person}{Senzhang Wang}, \bibinfo{person}{Lihong Wang},
+  \bibinfo{person}{Qiran Gong}, \bibinfo{person}{Renyu Yang},
+  \bibinfo{person}{Bo Li}, \bibinfo{person}{Philip~S. Yu}, {and}
+  \bibinfo{person}{Lifang He}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Hierarchical {{Taxonomy-Aware}} and {{Attentional
+  Graph Capsule RCNNs}} for {{Large-Scale Multi-Label Text Classification}}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge and Data
+  Engineering}} \bibinfo{volume}{33}, \bibinfo{number}{6}
+  (\bibinfo{year}{2021}), \bibinfo{pages}{2505--2519}.
+\newblock
+\showISSN{1558-2191}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TKDE.2019.2959991}
+\showDOI{\tempurl}
+
+
+\bibitem[Peng et~al\mbox{.}(2025)]%
+        {peng2025text}
+\bibfield{author}{\bibinfo{person}{Qiaojuan Peng}, \bibinfo{person}{Xiong Luo},
+  \bibinfo{person}{Yuqi Yuan}, \bibinfo{person}{Fengbo Gu},
+  \bibinfo{person}{Hailun Shen}, {and} \bibinfo{person}{Ziyang Huang}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{A text classification method combining in-domain
+  pre-training and prompt learning for the steel e-commerce industry}.
+\newblock \bibinfo{journal}{\emph{International Journal of Web Information
+  Systems}} \bibinfo{volume}{21}, \bibinfo{number}{1} (\bibinfo{year}{2025}),
+  \bibinfo{pages}{96--119}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1108/IJWIS-09-2024-0277}
+\showDOI{\tempurl}
+
+
+\bibitem[Pennington et~al\mbox{.}(2014)]%
+        {DBLP:conf/emnlp/PenningtonSM14}
+\bibfield{author}{\bibinfo{person}{Jeffrey Pennington},
+  \bibinfo{person}{Richard Socher}, {and} \bibinfo{person}{Christopher~D.
+  Manning}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Glove: Global Vectors for Word Representation}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2014 Conference on Empirical
+  Methods in Natural Language Processing, {EMNLP} 2014, October 25-29, 2014,
+  Doha, Qatar, {A} meeting of SIGDAT, a Special Interest Group of the {ACL}}}.
+  \bibinfo{publisher}{{ACL}}, \bibinfo{pages}{1532--1543}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3115/v1/d14-1162}
+\showDOI{\tempurl}
+
+
+\bibitem[Petridis(2024)]%
+        {petridis2024textclassificationneuralnetworks}
+\bibfield{author}{\bibinfo{person}{Christos Petridis}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Text Classification: Neural Networks VS Machine
+  Learning Models VS Pre-trained Models}.
+\newblock
+\newblock
+\showeprint[arxiv]{2412.21022}~[cs.LG]
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2412.21022}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Piao et~al\mbox{.}(2022)]%
+        {textssl2022}
+\bibfield{author}{\bibinfo{person}{Yinhua Piao}, \bibinfo{person}{Sangseon
+  Lee}, \bibinfo{person}{Dohoon Lee}, {and} \bibinfo{person}{Sun Kim}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Sparse {{Structure Learning}} via {{Graph Neural
+  Networks}} for {{Inductive Document Classification}}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the AAAI Conference on
+  Artificial Intelligence}} \bibinfo{volume}{36}, \bibinfo{number}{10}
+  (\bibinfo{date}{June} \bibinfo{year}{2022}), \bibinfo{pages}{11165--11173}.
+\newblock
+\showISSN{2374-3468}
+\urldef\tempurl%
+\url{https://doi.org/10.1609/aaai.v36i10.21366}
+\showDOI{\tempurl}
+
+
+\bibitem[Qaraei et~al\mbox{.}(2020)]%
+        {DBLP:conf/esann/QaraeiKB20}
+\bibfield{author}{\bibinfo{person}{Mohammadreza Qaraei}, \bibinfo{person}{Sujay
+  Khandagale}, {and} \bibinfo{person}{Rohit Babbar}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Why state-of-the-art deep learning barely works as
+  good as a linear classifier in extreme multi-label text classification}. In
+  \bibinfo{booktitle}{\emph{28th European Symposium on Artificial Neural
+  Networks, Computational Intelligence and Machine Learning, {ESANN} 2020,
+  Bruges, Belgium, October 2-4, 2020}}. \bibinfo{pages}{223--228}.
+\newblock
+\urldef\tempurl%
+\url{https://www.esann.org/sites/default/files/proceedings/2020/ES2020-207.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Qorib et~al\mbox{.}(2024)]%
+        {DBLP:conf/acl/QoribMN24}
+\bibfield{author}{\bibinfo{person}{Muhammad~Reza Qorib},
+  \bibinfo{person}{Geonsik Moon}, {and} \bibinfo{person}{Hwee~Tou Ng}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Are Decoder-Only Language Models Better than
+  Encoder-Only Language Models in Understanding Word Meaning?}. In
+  \bibinfo{booktitle}{\emph{Findings of the Association for Computational
+  Linguistics, {ACL} 2024, Bangkok, Thailand and virtual meeting, August 11-16,
+  2024}}, \bibfield{editor}{\bibinfo{person}{Lun{-}Wei Ku},
+  \bibinfo{person}{Andre Martins}, {and} \bibinfo{person}{Vivek Srikumar}}
+  (Eds.). \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{16339--16347}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/V1/2024.FINDINGS-ACL.967}
+\showDOI{\tempurl}
+
+
+\bibitem[Radford et~al\mbox{.}([n.\,d.])]%
+        {radfordLanguageModelsAre}
+\bibfield{author}{\bibinfo{person}{Alec Radford}, \bibinfo{person}{Jeffrey Wu},
+  \bibinfo{person}{Rewon Child}, \bibinfo{person}{David Luan},
+  \bibinfo{person}{Dario Amodei}, {and} \bibinfo{person}{Ilya Sutskever}.}
+  \bibinfo{year}{[n.\,d.]}\natexlab{}.
+\newblock \showarticletitle{Language {{Models}} Are {{Unsupervised Multitask
+  Learners}}}.
+\newblock  (\bibinfo{year}{[n.\,d.]}), \bibinfo{pages}{24}.
+\newblock
+
+
+\bibitem[Raffel et~al\mbox{.}(2020)]%
+        {T5}
+\bibfield{author}{\bibinfo{person}{Colin Raffel}, \bibinfo{person}{Noam
+  Shazeer}, \bibinfo{person}{Adam Roberts}, \bibinfo{person}{Katherine Lee},
+  \bibinfo{person}{Sharan Narang}, \bibinfo{person}{Michael Matena},
+  \bibinfo{person}{Yanqi Zhou}, \bibinfo{person}{Wei Li}, {and}
+  \bibinfo{person}{Peter~J. Liu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Exploring the Limits of Transfer Learning with a
+  Unified Text-to-Text Transformer}.
+\newblock \bibinfo{journal}{\emph{J. Mach. Learn. Res.}}  \bibinfo{volume}{21}
+  (\bibinfo{year}{2020}), \bibinfo{pages}{140:1--140:67}.
+\newblock
+
+
+\bibitem[Ragesh et~al\mbox{.}(2021)]%
+        {DBLP:conf/wsdm/RageshSIBL21}
+\bibfield{author}{\bibinfo{person}{Rahul Ragesh}, \bibinfo{person}{Sundararajan
+  Sellamanickam}, \bibinfo{person}{Arun Iyer}, \bibinfo{person}{Ramakrishna
+  Bairi}, {and} \bibinfo{person}{Vijay Lingam}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{HeteGCN}: Heterogeneous Graph Convolutional
+  Networks for Text Classification}. In \bibinfo{booktitle}{\emph{{WSDM} '21,
+  The Fourteenth {ACM} International Conference on Web Search and Data Mining,
+  Virtual Event, Israel, March 8-12, 2021}}. \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{860--868}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3437963.3441746}
+\showDOI{\tempurl}
+
+
+\bibitem[Raihan(2021)]%
+        {raihan2021-survey}
+\bibfield{author}{\bibinfo{person}{Diardano Raihan}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Deep Learning Techniques for Text Classification}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://towardsdatascience.com/deep-learning-techniques-for-text-classification-78d9dc40bf7c}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Rajpurkar et~al\mbox{.}(2016)]%
+        {DBLP:conf/emnlp/RajpurkarZLL16}
+\bibfield{author}{\bibinfo{person}{Pranav Rajpurkar}, \bibinfo{person}{Jian
+  Zhang}, \bibinfo{person}{Konstantin Lopyrev}, {and} \bibinfo{person}{Percy
+  Liang}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{SQuAD: 100, 000+ Questions for Machine
+  Comprehension of Text}. In \bibinfo{booktitle}{\emph{Proceedings of the 2016
+  Conference on Empirical Methods in Natural Language Processing, {EMNLP} 2016,
+  Austin, Texas, USA, November 1-4, 2016}}. \bibinfo{publisher}{The Association
+  for Computational Linguistics}, \bibinfo{pages}{2383--2392}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/d16-1264}
+\showDOI{\tempurl}
+
+
+\bibitem[Reusens et~al\mbox{.}(2024)]%
+        {DBLP:journals/eswa/ReusensSTSVBB24}
+\bibfield{author}{\bibinfo{person}{Manon Reusens}, \bibinfo{person}{Alexander
+  Stevens}, \bibinfo{person}{Jonathan Tonglet}, \bibinfo{person}{Johannes~De
+  Smedt}, \bibinfo{person}{Wouter Verbeke}, \bibinfo{person}{Seppe vanden
+  Broucke}, {and} \bibinfo{person}{Bart Baesens}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Evaluating text classification: {A} benchmark
+  study}.
+\newblock \bibinfo{journal}{\emph{Expert Syst. Appl.}}  \bibinfo{volume}{254}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{124302}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/J.ESWA.2024.124302}
+\showDOI{\tempurl}
+
+
+\bibitem[Rose et~al\mbox{.}(2010)]%
+        {Rose2010}
+\bibfield{author}{\bibinfo{person}{Stuart Rose}, \bibinfo{person}{Dave Engel},
+  \bibinfo{person}{Nick Cramer}, {and} \bibinfo{person}{Wendy Cowley}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Automatic Keyword Extraction from Individual
+  Documents}.
+\newblock In \bibinfo{booktitle}{\emph{Text Mining. Applications and Theory}}.
+  \bibinfo{publisher}{John Wiley and Sons, Ltd}, \bibinfo{pages}{1--20}.
+\newblock
+\showISBNx{9780470689646}
+
+
+\bibitem[Sandhaus(2008)]%
+        {sandhaus}
+\bibfield{author}{\bibinfo{person}{Evan Sandhaus}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{title}{{The New York Times Annotated Corpus}}.
+\newblock
+\newblock
+\newblock
+\shownote{Linguistic Data Consortium, Philadelphia, 6(12):e26752.}.
+
+
+\bibitem[Sanh et~al\mbox{.}(2019)]%
+        {distilbert}
+\bibfield{author}{\bibinfo{person}{Victor Sanh}, \bibinfo{person}{Lysandre
+  Debut}, \bibinfo{person}{Julien Chaumond}, {and} \bibinfo{person}{Thomas
+  Wolf}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{DistilBERT}, a distilled version of {BERT:}
+  smaller, faster, cheaper and lighter}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1910.01108}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1910.01108}
+
+
+\bibitem[Sarasu et~al\mbox{.}(2023)]%
+        {sf-cnn-iasc.2023.027429}
+\bibfield{author}{\bibinfo{person}{R. Sarasu}, \bibinfo{person}{K.~K.
+  Thyagharajan}, {and} \bibinfo{person}{N.~R. Shanker}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{SF-CNN}: {D}eep Text Classification and Retrieval
+  for Text Documents}.
+\newblock \bibinfo{journal}{\emph{Intelligent Automation \& Soft Computing}}
+  \bibinfo{volume}{35}, \bibinfo{number}{2} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{1799--1813}.
+\newblock
+\showISSN{2326-005X}
+\urldef\tempurl%
+\url{https://doi.org/10.32604/iasc.2023.027429}
+\showDOI{\tempurl}
+
+
+\bibitem[Sebastiani(2002)]%
+        {DBLP:journals/csur/Sebastiani02}
+\bibfield{author}{\bibinfo{person}{Fabrizio Sebastiani}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Machine learning in automated text categorization}.
+\newblock \bibinfo{journal}{\emph{{ACM} Comput. Surv.}} \bibinfo{volume}{34},
+  \bibinfo{number}{1} (\bibinfo{year}{2002}), \bibinfo{pages}{1--47}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/505282.505283}
+\showDOI{\tempurl}
+
+
+\bibitem[Shchur et~al\mbox{.}(2018)]%
+        {DBLP:journals/corr/abs-1811-05868}
+\bibfield{author}{\bibinfo{person}{Oleksandr Shchur},
+  \bibinfo{person}{Maximilian Mumme}, \bibinfo{person}{Aleksandar Bojchevski},
+  {and} \bibinfo{person}{Stephan G{\"{u}}nnemann}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Pitfalls of Graph Neural Network Evaluation}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1811.05868}
+  (\bibinfo{year}{2018}).
+\newblock
+\showeprint[arXiv]{1811.05868}
+
+
+\bibitem[Shehzad and Jannach(2023)]%
+        {DBLP:conf/recsys/ShehzadJ23}
+\bibfield{author}{\bibinfo{person}{Faisal Shehzad} {and}
+  \bibinfo{person}{Dietmar Jannach}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Everyone's a Winner! On Hyperparameter Tuning of
+  Recommendation Models}. In \bibinfo{booktitle}{\emph{Proceedings of the 17th
+  {ACM} Conference on Recommender Systems, RecSys 2023, Singapore, Singapore,
+  September 18-22, 2023}}, \bibfield{editor}{\bibinfo{person}{Jie Zhang},
+  \bibinfo{person}{Li~Chen}, \bibinfo{person}{Shlomo Berkovsky},
+  \bibinfo{person}{Min Zhang}, \bibinfo{person}{Tommaso~Di Noia},
+  \bibinfo{person}{Justin Basilico}, \bibinfo{person}{Luiz Pizzato}, {and}
+  \bibinfo{person}{Yang Song}} (Eds.). \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{652--657}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3604915.3609488}
+\showDOI{\tempurl}
+
+
+\bibitem[Shen et~al\mbox{.}(2018)]%
+        {DBLP:conf/acl/HenaoLCSSWWMZ18}
+\bibfield{author}{\bibinfo{person}{Dinghan Shen}, \bibinfo{person}{Guoyin
+  Wang}, \bibinfo{person}{Wenlin Wang}, \bibinfo{person}{Martin~Renqiang Min},
+  \bibinfo{person}{Qinliang Su}, \bibinfo{person}{Yizhe Zhang},
+  \bibinfo{person}{Chunyuan Li}, \bibinfo{person}{Ricardo Henao}, {and}
+  \bibinfo{person}{Lawrence Carin}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Baseline Needs More Love: On Simple
+  Word-Embedding-Based Models and Associated Pooling Mechanisms}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 56th Annual Meeting of the
+  Association for Computational Linguistics, {ACL} 2018, Melbourne, Australia,
+  July 15-20, 2018, Volume 1: Long Papers}}. \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{pages}{440--450}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/P18-1041}
+\showDOI{\tempurl}
+
+
+\bibitem[Shen et~al\mbox{.}(2021)]%
+        {shen-etal-2021-taxoclass}
+\bibfield{author}{\bibinfo{person}{Jiaming Shen}, \bibinfo{person}{Wenda Qiu},
+  \bibinfo{person}{Yu Meng}, \bibinfo{person}{Jingbo Shang},
+  \bibinfo{person}{Xiang Ren}, {and} \bibinfo{person}{Jiawei Han}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{T}axo{C}lass: Hierarchical Multi-Label Text
+  Classification Using Only Class Names}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2021 Conference of the North
+  American Chapter of the Association for Computational Linguistics: Human
+  Language Technologies}}. \bibinfo{publisher}{Association for Computational
+  Linguistics}, \bibinfo{address}{Online}, \bibinfo{pages}{4239--4249}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.naacl-main.335}
+\showDOI{\tempurl}
+
+
+\bibitem[Shi et~al\mbox{.}(2022)]%
+        {ilgcn}
+\bibfield{author}{\bibinfo{person}{Jinze Shi}, \bibinfo{person}{Xiaoming Wu},
+  \bibinfo{person}{Xiangzhi Liu}, \bibinfo{person}{Wenpeng Lu}, {and}
+  \bibinfo{person}{Shu Li}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Inductive {Light} {Graph} {Convolution} {Network}
+  for {Text} {Classification} {Based} on {Word}-{Label} {Graph}}. In
+  \bibinfo{booktitle}{\emph{Intelligent {Information} {Processing} {XI}}}
+  \emph{(\bibinfo{series}{{IFIP} {Advances} in {Information} and
+  {Communication} {Technology}})}. \bibinfo{publisher}{Springer International
+  Publishing}, \bibinfo{address}{Cham}, \bibinfo{pages}{42--55}.
+\newblock
+\showISBNx{978-3-031-03948-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-031-03948-5_4}
+\showDOI{\tempurl}
+
+
+\bibitem[Silva et~al\mbox{.}(2024)]%
+        {DBLP:journals/corr/abs-2403-03293}
+\bibfield{author}{\bibinfo{person}{Anjalee~De Silva},
+  \bibinfo{person}{Janaka~L. Wijekoon}, \bibinfo{person}{Rashini~K.
+  Liyanarachchi}, \bibinfo{person}{Rrubaa Panchendrarajan}, {and}
+  \bibinfo{person}{Weranga Rajapaksha}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{AI} Insights: {A} Case Study on Utilizing ChatGPT
+  Intelligence for Research Paper Analysis}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2403.03293}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2403.03293}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2403.03293}
+
+
+\bibitem[Sinha et~al\mbox{.}(2021)]%
+        {sinha2021masked}
+\bibfield{author}{\bibinfo{person}{Koustuv Sinha}, \bibinfo{person}{Robin Jia},
+  \bibinfo{person}{Dieuwke Hupkes}, \bibinfo{person}{Joelle Pineau},
+  \bibinfo{person}{Adina Williams}, {and} \bibinfo{person}{Douwe Kiela}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Masked Language Modeling and the Distributional
+  Hypothesis: Order Word Matters Pre-training for Little}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2021 Conference on Empirical
+  Methods in Natural Language Processing, {EMNLP} 2021, Virtual Event / Punta
+  Cana, Dominican Republic, 7-11 November, 2021}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{2888--2913}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.emnlp-main.230}
+\showDOI{\tempurl}
+
+
+\bibitem[Small and on~Text Classification: 100 Labelled Samples~to Achieve
+  Break-Even~Performance(2024)]%
+        {DBLP:journals/corr/abs-2402.12819}
+\bibfield{author}{\bibinfo{person}{Comparing~Specialised Small} {and}
+  \bibinfo{person}{General Large Language~Models on~Text Classification: 100
+  Labelled Samples~to Achieve Break-Even~Performance}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Branislav Pecher and Ivan Srba and Maria
+  Bielikova}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2402.12819}
+  (\bibinfo{year}{2024}).
+\newblock
+\showeprint[arXiv]{2402.12819}
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2402.12819}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Stylianou et~al\mbox{.}(2023)]%
+        {StylianouEtAl2023}
+\bibfield{author}{\bibinfo{person}{Nikolaos Stylianou},
+  \bibinfo{person}{Despoina Chatzakou}, \bibinfo{person}{Theodora Tsikrika},
+  \bibinfo{person}{Stefanos Vrochidis}, {and} \bibinfo{person}{Ioannis
+  Kompatsiaris}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Domain-Aligned Data Augmentation for Low-Resource
+  and Imbalanced Text Classification}. In \bibinfo{booktitle}{\emph{Advances in
+  Information Retrieval - 45th European Conference on Information Retrieval,
+  {ECIR} 2023, Dublin, Ireland, April 2-6, 2023, Proceedings, Part {II}}}
+  \emph{(\bibinfo{series}{Lecture Notes in Computer Science},
+  Vol.~\bibinfo{volume}{13981})}. \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{172--187}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-031-28238-6\_12}
+\showDOI{\tempurl}
+
+
+\bibitem[Sun et~al\mbox{.}(2024)]%
+        {LMTCSG-10705790}
+\bibfield{author}{\bibinfo{person}{Guoying Sun}, \bibinfo{person}{Jie Li},
+  \bibinfo{person}{Yanan Cheng}, {and} \bibinfo{person}{Zhaoxin Zhang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{LMTCSG: Multilabel Text Classification Combining
+  Sequence-Based and GNN-Based Features}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Industrial Informatics}}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{1--9}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TII.2024.3465596}
+\showDOI{\tempurl}
+
+
+\bibitem[Sun et~al\mbox{.}(2023)]%
+        {carp}
+\bibfield{author}{\bibinfo{person}{Xiaofei Sun}, \bibinfo{person}{Xiaoya Li},
+  \bibinfo{person}{Jiwei Li}, \bibinfo{person}{Fei Wu},
+  \bibinfo{person}{Shangwei Guo}, \bibinfo{person}{Tianwei Zhang}, {and}
+  \bibinfo{person}{Guoyin Wang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Text {{Classification}} via {{Large Language
+  Models}}}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:230508377}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Sun et~al\mbox{.}(2019)]%
+        {sun_ernie_2019}
+\bibfield{author}{\bibinfo{person}{Yu Sun}, \bibinfo{person}{Shuohuan Wang},
+  \bibinfo{person}{Yukun Li}, \bibinfo{person}{Shikun Feng},
+  \bibinfo{person}{Hao Tian}, \bibinfo{person}{Hua Wu}, {and}
+  \bibinfo{person}{Haifeng Wang}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{ERNIE} 2.0: {A} {Continual} {Pre}-training
+  {Framework} for {Language} {Understanding}}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1907.12412}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1907.12412}
+
+
+\bibitem[Sun et~al\mbox{.}(2022)]%
+        {DBLP:conf/ijcnn/SunHCYSM22}
+\bibfield{author}{\bibinfo{person}{Zhongtian Sun}, \bibinfo{person}{Anoushka
+  Harit}, \bibinfo{person}{Alexandra~I. Cristea}, \bibinfo{person}{Jialin Yu},
+  \bibinfo{person}{Lei Shi}, {and} \bibinfo{person}{Noura~Al Moubayed}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Contrastive Learning with Heterogeneous Graph
+  Attention Networks on Short Text Classification}. In
+  \bibinfo{booktitle}{\emph{International Joint Conference on Neural Networks,
+  {IJCNN} 2022, Padua, Italy, July 18-23, 2022}}. \bibinfo{publisher}{{IEEE}},
+  \bibinfo{pages}{1--6}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IJCNN55064.2022.9892257}
+\showDOI{\tempurl}
+
+
+\bibitem[Sun et~al\mbox{.}(2020)]%
+        {sun2020mobilebert}
+\bibfield{author}{\bibinfo{person}{Zhiqing Sun}, \bibinfo{person}{Hongkun Yu},
+  \bibinfo{person}{Xiaodan Song}, \bibinfo{person}{Renjie Liu},
+  \bibinfo{person}{Yiming Yang}, {and} \bibinfo{person}{Denny Zhou}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{MobileBERT}: {A} Compact Task-Agnostic {BERT} for
+  Resource-Limited Devices}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  58th Annual Meeting of the Association for Computational Linguistics, {ACL}
+  2020, Online, July 5-10, 2020}}. \bibinfo{publisher}{Association for
+  Computational Linguistics}, \bibinfo{pages}{2158--2170}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.acl-main.195}
+\showDOI{\tempurl}
+
+
+\bibitem[Tan et~al\mbox{.}(2023)]%
+        {DBLP:journals/apin/TanRW23}
+\bibfield{author}{\bibinfo{person}{Changgeng Tan}, \bibinfo{person}{Yuan Ren},
+  {and} \bibinfo{person}{Chen Wang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{An adaptive convolution with label embedding for
+  text classification}.
+\newblock \bibinfo{journal}{\emph{Appl. Intell.}} \bibinfo{volume}{53},
+  \bibinfo{number}{1} (\bibinfo{year}{2023}), \bibinfo{pages}{804--812}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s10489-021-02702-x}
+\showDOI{\tempurl}
+
+
+\bibitem[Tan et~al\mbox{.}(2022)]%
+        {tan2022}
+\bibfield{author}{\bibinfo{person}{Zhipeng Tan}, \bibinfo{person}{Jing Chen},
+  \bibinfo{person}{Qi Kang}, \bibinfo{person}{Mengchu Zhou},
+  \bibinfo{person}{Abdullah Abusorrah}, {and} \bibinfo{person}{Khaled
+  Sedraoui}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Dynamic {{Embedding Projection-Gated Convolutional
+  Neural Networks}} for {{Text Classification}}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Neural Networks and
+  Learning Systems}} \bibinfo{volume}{33}, \bibinfo{number}{3}
+  (\bibinfo{year}{2022}), \bibinfo{pages}{973--982}.
+\newblock
+\showISSN{2162-2388}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TNNLS.2020.3036192}
+\showDOI{\tempurl}
+
+
+\bibitem[Tang et~al\mbox{.}(2015)]%
+        {DBLP:conf/kdd/TangQM15}
+\bibfield{author}{\bibinfo{person}{Jian Tang}, \bibinfo{person}{Meng Qu}, {and}
+  \bibinfo{person}{Qiaozhu Mei}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{{PTE:} Predictive Text Embedding through
+  Large-scale Heterogeneous Text Networks}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 21th {ACM} {SIGKDD}
+  International Conference on Knowledge Discovery and Data Mining, Sydney, NSW,
+  Australia, August 10-13, 2015}}. \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{1165--1174}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2783258.2783307}
+\showDOI{\tempurl}
+
+
+\bibitem[Tarekegn et~al\mbox{.}(2021)]%
+        {DBLP:journals/pr/TarekegnGM21}
+\bibfield{author}{\bibinfo{person}{Adane~Nega Tarekegn}, \bibinfo{person}{Mario
+  Giacobini}, {and} \bibinfo{person}{Krzysztof Michalak}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{A review of methods for imbalanced multi-label
+  classification}.
+\newblock \bibinfo{journal}{\emph{Pattern Recognit.}}  \bibinfo{volume}{118}
+  (\bibinfo{year}{2021}), \bibinfo{pages}{107965}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.patcog.2021.107965}
+\showDOI{\tempurl}
+
+
+\bibitem[Thaminkaew et~al\mbox{.}(2024a)]%
+        {DBLP:journals/access/ThaminkaewLV24}
+\bibfield{author}{\bibinfo{person}{Thanakorn Thaminkaew},
+  \bibinfo{person}{Piyawat Lertvittayakumjorn}, {and} \bibinfo{person}{Peerapon
+  Vateekul}.} \bibinfo{year}{2024}\natexlab{a}.
+\newblock \showarticletitle{Prompt-Based Label-Aware Framework for Few-Shot
+  Multi-Label Text Classification}.
+\newblock \bibinfo{journal}{\emph{{IEEE} Access}}  \bibinfo{volume}{12}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{28310--28322}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ACCESS.2024.3367994}
+\showDOI{\tempurl}
+
+
+\bibitem[Thaminkaew et~al\mbox{.}(2024b)]%
+        {thaminkaew2024ieeeaccess}
+\bibfield{author}{\bibinfo{person}{Thanakorn Thaminkaew},
+  \bibinfo{person}{Piyawat Lertvittayakumjorn}, {and} \bibinfo{person}{Peerapon
+  Vateekul}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \showarticletitle{Prompt-Based Label-Aware Framework for Few-Shot
+  Multi-Label Text Classification}.
+\newblock \bibinfo{journal}{\emph{IEEE Access}}  \bibinfo{volume}{12}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{28310--28322}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ACCESS.2024.3367994}
+\showDOI{\tempurl}
+
+
+\bibitem[Tolstikhin et~al\mbox{.}(2021)]%
+        {tolstikhin2021mlp}
+\bibfield{author}{\bibinfo{person}{Ilya~O. Tolstikhin}, \bibinfo{person}{Neil
+  Houlsby}, \bibinfo{person}{Alexander Kolesnikov}, \bibinfo{person}{Lucas
+  Beyer}, \bibinfo{person}{Xiaohua Zhai}, \bibinfo{person}{Thomas Unterthiner},
+  \bibinfo{person}{Jessica Yung}, \bibinfo{person}{Andreas Steiner},
+  \bibinfo{person}{Daniel Keysers}, \bibinfo{person}{Jakob Uszkoreit},
+  \bibinfo{person}{Mario Lucic}, {and} \bibinfo{person}{Alexey Dosovitskiy}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{MLP-Mixer: An all-MLP Architecture for Vision}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems
+  34: Annual Conference on Neural Information Processing Systems 2021, NeurIPS
+  2021, December 6-14, 2021, virtual}}. \bibinfo{pages}{24261--24272}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper/2021/hash/cba0a4ee5ccd02fda0fe3f9a3e7b89fe-Abstract.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Touvron et~al\mbox{.}(2023)]%
+        {touvronLlamaOpenFoundation2023}
+\bibfield{author}{\bibinfo{person}{Hugo Touvron}, \bibinfo{person}{Louis
+  Martin}, \bibinfo{person}{Kevin Stone}, \bibinfo{person}{Peter Albert},
+  \bibinfo{person}{Amjad Almahairi}, \bibinfo{person}{Yasmine Babaei},
+  \bibinfo{person}{Nikolay Bashlykov}, \bibinfo{person}{Soumya Batra},
+  \bibinfo{person}{Prajjwal Bhargava}, \bibinfo{person}{Shruti Bhosale},
+  \bibinfo{person}{Dan Bikel}, \bibinfo{person}{Lukas Blecher},
+  \bibinfo{person}{Cristian~Canton Ferrer}, \bibinfo{person}{Moya Chen},
+  \bibinfo{person}{Guillem Cucurull}, \bibinfo{person}{David Esiobu},
+  \bibinfo{person}{Jude Fernandes}, \bibinfo{person}{Jeremy Fu},
+  \bibinfo{person}{Wenyin Fu}, \bibinfo{person}{Brian Fuller},
+  \bibinfo{person}{Cynthia Gao}, \bibinfo{person}{Vedanuj Goswami},
+  \bibinfo{person}{Naman Goyal}, \bibinfo{person}{Anthony Hartshorn},
+  \bibinfo{person}{Saghar Hosseini}, \bibinfo{person}{Rui Hou},
+  \bibinfo{person}{Hakan Inan}, \bibinfo{person}{Marcin Kardas},
+  \bibinfo{person}{Viktor Kerkez}, \bibinfo{person}{Madian Khabsa},
+  \bibinfo{person}{Isabel Kloumann}, \bibinfo{person}{Artem Korenev},
+  \bibinfo{person}{Punit~Singh Koura}, \bibinfo{person}{Marie-Anne Lachaux},
+  \bibinfo{person}{Thibaut Lavril}, \bibinfo{person}{Jenya Lee},
+  \bibinfo{person}{Diana Liskovich}, \bibinfo{person}{Yinghai Lu},
+  \bibinfo{person}{Yuning Mao}, \bibinfo{person}{Xavier Martinet},
+  \bibinfo{person}{Todor Mihaylov}, \bibinfo{person}{Pushkar Mishra},
+  \bibinfo{person}{Igor Molybog}, \bibinfo{person}{Yixin Nie},
+  \bibinfo{person}{Andrew Poulton}, \bibinfo{person}{Jeremy Reizenstein},
+  \bibinfo{person}{Rashi Rungta}, \bibinfo{person}{Kalyan Saladi},
+  \bibinfo{person}{Alan Schelten}, \bibinfo{person}{Ruan Silva},
+  \bibinfo{person}{Eric~Michael Smith}, \bibinfo{person}{Ranjan Subramanian},
+  \bibinfo{person}{Xiaoqing~Ellen Tan}, \bibinfo{person}{Binh Tang},
+  \bibinfo{person}{Ross Taylor}, \bibinfo{person}{Adina Williams},
+  \bibinfo{person}{Jian~Xiang Kuan}, \bibinfo{person}{Puxin Xu},
+  \bibinfo{person}{Zheng Yan}, \bibinfo{person}{Iliyan Zarov},
+  \bibinfo{person}{Yuchen Zhang}, \bibinfo{person}{Angela Fan},
+  \bibinfo{person}{Melanie Kambadur}, \bibinfo{person}{Sharan Narang},
+  \bibinfo{person}{Aurelien Rodriguez}, \bibinfo{person}{Robert Stojnic},
+  \bibinfo{person}{Sergey Edunov}, {and} \bibinfo{person}{Thomas Scialom}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Llama 2: {{Open Foundation}} and {{Fine-Tuned Chat
+  Models}}}.
+\newblock  \bibinfo{number}{{arXiv}:2307.09288} (\bibinfo{date}{July}
+  \bibinfo{year}{2023}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2307.09288}
+\showDOI{\tempurl}
+\showeprint[arxiv]{2307.09288}~[cs]
+
+
+\bibitem[Tran et~al\mbox{.}(2022)]%
+        {DBLP:conf/ijcnn/TranSZPB22}
+\bibfield{author}{\bibinfo{person}{Quynh Tran}, \bibinfo{person}{Krystsina
+  Shpileuskaya}, \bibinfo{person}{Elaine Zaunseder}, \bibinfo{person}{Larissa
+  Putzar}, {and} \bibinfo{person}{Sven Blankenburg}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Comparing the Robustness of Classical and Deep
+  Learning Techniques for Text Classification}. In
+  \bibinfo{booktitle}{\emph{International Joint Conference on Neural Networks,
+  {IJCNN} 2022, Padua, Italy, July 18-23, 2022}}. \bibinfo{publisher}{{IEEE}},
+  \bibinfo{pages}{1--10}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IJCNN55064.2022.9892242}
+\showDOI{\tempurl}
+
+
+\bibitem[Tsoumakas and Katakis(2009)]%
+        {Tsoumakas}
+\bibfield{author}{\bibinfo{person}{Grigorios Tsoumakas} {and}
+  \bibinfo{person}{Ioannis Katakis}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Multi-Label Classification: An Overview}.
+\newblock \bibinfo{journal}{\emph{International Journal of Data Warehousing and
+  Mining}}  \bibinfo{volume}{3} (\bibinfo{date}{09} \bibinfo{year}{2009}),
+  \bibinfo{pages}{1--13}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.4018/jdwm.2007070101}
+\showDOI{\tempurl}
+
+
+\bibitem[van~der Heijden et~al\mbox{.}(2023)]%
+        {DBLP:journals/corr/abs-2301-10481}
+\bibfield{author}{\bibinfo{person}{Niels van~der Heijden},
+  \bibinfo{person}{Ekaterina Shutova}, {and} \bibinfo{person}{Helen
+  Yannakoudakis}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{FewShotTextGCN}: {K}-hop neighborhood
+  regularization for few-shot learning on graphs}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2301.10481}
+  (\bibinfo{year}{2023}).
+\newblock
+\showeprint[arXiv]{2301.10481}
+
+
+\bibitem[Vaswani et~al\mbox{.}(2017)]%
+        {DBLP:conf/nips/VaswaniSPUJGKP17}
+\bibfield{author}{\bibinfo{person}{Ashish Vaswani}, \bibinfo{person}{Noam
+  Shazeer}, \bibinfo{person}{Niki Parmar}, \bibinfo{person}{Jakob Uszkoreit},
+  \bibinfo{person}{Llion Jones}, \bibinfo{person}{Aidan~N. Gomez},
+  \bibinfo{person}{Lukasz Kaiser}, {and} \bibinfo{person}{Illia Polosukhin}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Attention is All you Need}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems
+  30: Annual Conference on Neural Information Processing Systems 2017, December
+  4-9, 2017, Long Beach, CA, {USA}}}. \bibinfo{pages}{5998--6008}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Velickovic et~al\mbox{.}(2018)]%
+        {velickovic2018graph}
+\bibfield{author}{\bibinfo{person}{Petar Velickovic}, \bibinfo{person}{Guillem
+  Cucurull}, \bibinfo{person}{Arantxa Casanova}, \bibinfo{person}{Adriana
+  Romero}, \bibinfo{person}{Pietro Li{\`{o}}}, {and} \bibinfo{person}{Yoshua
+  Bengio}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Graph Attention Networks}. In
+  \bibinfo{booktitle}{\emph{6th International Conference on Learning
+  Representations, {ICLR} 2018, Vancouver, BC, Canada, April 30 - May 3, 2018,
+  Conference Track Proceedings}}. \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=rJXMpikCZ}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wahba et~al\mbox{.}(2022)]%
+        {DBLP:journals/corr/abs-2211-02563}
+\bibfield{author}{\bibinfo{person}{Yasmen Wahba}, \bibinfo{person}{Nazim~H.
+  Madhavji}, {and} \bibinfo{person}{John Steinbacher}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{A Comparison of {SVM} against Pre-trained Language
+  Models (PLMs) for Text Classification Tasks}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2211.02563}
+  (\bibinfo{year}{2022}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2211.02563}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2211.02563}
+
+
+\bibitem[Wang et~al\mbox{.}(2019b)]%
+        {DBLP:conf/iclr/WangSMHLB19}
+\bibfield{author}{\bibinfo{person}{Alex Wang}, \bibinfo{person}{Amanpreet
+  Singh}, \bibinfo{person}{Julian Michael}, \bibinfo{person}{Felix Hill},
+  \bibinfo{person}{Omer Levy}, {and} \bibinfo{person}{Samuel~R. Bowman}.}
+  \bibinfo{year}{2019}\natexlab{b}.
+\newblock \showarticletitle{{GLUE:} {A} Multi-Task Benchmark and Analysis
+  Platform for Natural Language Understanding}. In
+  \bibinfo{booktitle}{\emph{7th International Conference on Learning
+  Representations, {ICLR} 2019, New Orleans, LA, USA, May 6-9, 2019}}.
+  \bibinfo{publisher}{OpenReview.net}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=rJ4km2R5t7}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2023)]%
+        {wang2023graph}
+\bibfield{author}{\bibinfo{person}{Kunze Wang}, \bibinfo{person}{Yihao Ding},
+  {and} \bibinfo{person}{Soyeon~Caren Han}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Graph Neural Networks for Text Classification: A
+  Survey}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2304.11534}
+  (\bibinfo{year}{2023}).
+\newblock
+\showeprint[arXiv]{2304.11534}
+
+
+\bibitem[Wang et~al\mbox{.}(2022a)]%
+        {induct-gcn}
+\bibfield{author}{\bibinfo{person}{Kunze Wang}, \bibinfo{person}{Soyeon~Caren
+  Han}, {and} \bibinfo{person}{Josiah Poon}.} \bibinfo{year}{2022}\natexlab{a}.
+\newblock \showarticletitle{InducT-GCN: Inductive Graph Convolutional Networks
+  for Text Classification}. In \bibinfo{booktitle}{\emph{26th International
+  Conference on Pattern Recognition, {ICPR} 2022, Montreal, QC, Canada, August
+  21-25, 2022}}. \bibinfo{publisher}{{IEEE}}, \bibinfo{pages}{1243--1249}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICPR56361.2022.9956075}
+\showDOI{\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2019a)]%
+        {DBLP:conf/ijcnn/WangLCCW19}
+\bibfield{author}{\bibinfo{person}{Ruishuang Wang}, \bibinfo{person}{Zhao Li},
+  \bibinfo{person}{Jian Cao}, \bibinfo{person}{Tong Chen}, {and}
+  \bibinfo{person}{Lei Wang}.} \bibinfo{year}{2019}\natexlab{a}.
+\newblock \showarticletitle{Convolutional Recurrent Neural Networks for Text
+  Classification}. In \bibinfo{booktitle}{\emph{International Joint Conference
+  on Neural Networks, {IJCNN} 2019 Budapest, Hungary, July 14-19, 2019}}.
+  \bibinfo{publisher}{{IEEE}}, \bibinfo{pages}{1--6}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IJCNN.2019.8852406}
+\showDOI{\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2022c)]%
+        {DBLP:conf/nlpcc/WangWYZSJWZ22}
+\bibfield{author}{\bibinfo{person}{Xin Wang}, \bibinfo{person}{Chao Wang},
+  \bibinfo{person}{Haiyang Yang}, \bibinfo{person}{Xingpeng Zhang},
+  \bibinfo{person}{Qi Shen}, \bibinfo{person}{Kan Ji}, \bibinfo{person}{Yuhong
+  Wu}, {and} \bibinfo{person}{Huayi Zhan}.} \bibinfo{year}{2022}\natexlab{c}.
+\newblock \showarticletitle{{KGAT:} An Enhanced Graph-Based Model for Text
+  Classification}. In \bibinfo{booktitle}{\emph{Natural Language Processing and
+  Chinese Computing - 11th {CCF} International Conference, {NLPCC} 2022,
+  Guilin, China, September 24-25, 2022, Proceedings, Part {I}}}
+  \emph{(\bibinfo{series}{Lecture Notes in Computer Science},
+  Vol.~\bibinfo{volume}{13551})}. \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{656--668}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-031-17120-8\_51}
+\showDOI{\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2018)]%
+        {DBLP:conf/www/WangSH0Z18}
+\bibfield{author}{\bibinfo{person}{Yequan Wang}, \bibinfo{person}{Aixin Sun},
+  \bibinfo{person}{Jialong Han}, \bibinfo{person}{Ying Liu}, {and}
+  \bibinfo{person}{Xiaoyan Zhu}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Sentiment Analysis by Capsules}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2018 World Wide Web Conference
+  on World Wide Web, {WWW} 2018, Lyon, France, April 23-27, 2018}}.
+  \bibinfo{publisher}{{ACM}}, \bibinfo{pages}{1165--1174}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3178876.3186015}
+\showDOI{\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2021)]%
+        {DBLP:conf/emnlp/WangWYD21}
+\bibfield{author}{\bibinfo{person}{Yaqing Wang}, \bibinfo{person}{Song Wang},
+  \bibinfo{person}{Quanming Yao}, {and} \bibinfo{person}{Dejing Dou}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Hierarchical Heterogeneous Graph Representation
+  Learning for Short Text Classification}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2021 Conference on Empirical
+  Methods in Natural Language Processing, {EMNLP} 2021, Virtual Event / Punta
+  Cana, Dominican Republic, 7-11 November, 2021}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{3091--3101}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.emnlp-main.247}
+\showDOI{\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2022b)]%
+        {DBLP:conf/acl/WangWH0W22}
+\bibfield{author}{\bibinfo{person}{Zihan Wang}, \bibinfo{person}{Peiyi Wang},
+  \bibinfo{person}{Lianzhe Huang}, \bibinfo{person}{Xin Sun}, {and}
+  \bibinfo{person}{Houfeng Wang}.} \bibinfo{year}{2022}\natexlab{b}.
+\newblock \showarticletitle{Incorporating Hierarchy into Text Encoder: a
+  Contrastive Learning Approach for Hierarchical Text Classification}. In
+  \bibinfo{booktitle}{\emph{60th Annual Meeting of the Association for
+  Computational Linguistics, {ACL} 2022}}. \bibinfo{publisher}{ACL},
+  \bibinfo{pages}{7109--7119}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2022.acl-long.491}
+\showDOI{\tempurl}
+
+
+\bibitem[Warner et~al\mbox{.}(2024)]%
+        {warner2024smarterbetterfasterlonger}
+\bibfield{author}{\bibinfo{person}{Benjamin Warner}, \bibinfo{person}{Antoine
+  Chaffin}, \bibinfo{person}{Benjamin Clavié}, \bibinfo{person}{Orion Weller},
+  \bibinfo{person}{Oskar Hallström}, \bibinfo{person}{Said Taghadouini},
+  \bibinfo{person}{Alexis Gallagher}, \bibinfo{person}{Raja Biswas},
+  \bibinfo{person}{Faisal Ladhak}, \bibinfo{person}{Tom Aarsen},
+  \bibinfo{person}{Nathan Cooper}, \bibinfo{person}{Griffin Adams},
+  \bibinfo{person}{Jeremy Howard}, {and} \bibinfo{person}{Iacopo Poli}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Smarter, Better, Faster, Longer: A Modern
+  Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning
+  and Inference}.
+\newblock  (\bibinfo{year}{2024}).
+\newblock
+\showeprint[arxiv]{2412.13663}~[cs.CL]
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2412.13663}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wei et~al\mbox{.}(2022a)]%
+        {wei2022finetuned}
+\bibfield{author}{\bibinfo{person}{Jason Wei}, \bibinfo{person}{Maarten Bosma},
+  \bibinfo{person}{Vincent Zhao}, \bibinfo{person}{Kelvin Guu},
+  \bibinfo{person}{Adams~Wei Yu}, \bibinfo{person}{Brian Lester},
+  \bibinfo{person}{Nan Du}, \bibinfo{person}{Andrew~M. Dai}, {and}
+  \bibinfo{person}{Quoc~V Le}.} \bibinfo{year}{2022}\natexlab{a}.
+\newblock \showarticletitle{Finetuned Language Models are Zero-Shot Learners}.
+  In \bibinfo{booktitle}{\emph{International Conference on Learning
+  Representations}}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=gEZrGCozdqR}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wei and Sun(2024)]%
+        {Wei_Sun_2024}
+\bibfield{author}{\bibinfo{person}{Jia Wei} {and} \bibinfo{person}{Xiangguo
+  Sun}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Study on text classification model combining BERT
+  and convolutional neural network}.
+\newblock \bibinfo{journal}{\emph{Mathematical Modeling and Algorithm
+  Application}} \bibinfo{volume}{2}, \bibinfo{number}{3} (\bibinfo{date}{Sep.}
+  \bibinfo{year}{2024}), \bibinfo{pages}{10–12}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.54097/7h5bs772}
+\showDOI{\tempurl}
+
+
+\bibitem[Wei et~al\mbox{.}(2023)]%
+        {weiChainofThoughtPromptingElicits2023}
+\bibfield{author}{\bibinfo{person}{Jason Wei}, \bibinfo{person}{Xuezhi Wang},
+  \bibinfo{person}{Dale Schuurmans}, \bibinfo{person}{Maarten Bosma},
+  \bibinfo{person}{Brian Ichter}, \bibinfo{person}{Fei Xia},
+  \bibinfo{person}{Ed Chi}, \bibinfo{person}{Quoc Le}, {and}
+  \bibinfo{person}{Denny Zhou}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Chain-of-{{Thought Prompting Elicits Reasoning}} in
+  {{Large Language Models}}}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2201.11903}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Wei et~al\mbox{.}(2022b)]%
+        {chain-of-thought}
+\bibfield{author}{\bibinfo{person}{Jason Wei}, \bibinfo{person}{Xuezhi Wang},
+  \bibinfo{person}{Dale Schuurmans}, \bibinfo{person}{Maarten Bosma},
+  \bibinfo{person}{brian ichter}, \bibinfo{person}{Fei Xia},
+  \bibinfo{person}{Ed Chi}, \bibinfo{person}{Quoc~V Le}, {and}
+  \bibinfo{person}{Denny Zhou}.} \bibinfo{year}{2022}\natexlab{b}.
+\newblock \showarticletitle{Chain-of-Thought Prompting Elicits Reasoning in
+  Large Language Models}. In \bibinfo{booktitle}{\emph{Advances in Neural
+  Information Processing Systems}},
+  \bibfield{editor}{\bibinfo{person}{S.~Koyejo}, \bibinfo{person}{S.~Mohamed},
+  \bibinfo{person}{A.~Agarwal}, \bibinfo{person}{D.~Belgrave},
+  \bibinfo{person}{K.~Cho}, {and} \bibinfo{person}{A.~Oh}} (Eds.),
+  Vol.~\bibinfo{volume}{35}. \bibinfo{publisher}{Curran Associates, Inc.},
+  \bibinfo{pages}{24824--24837}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper_files/paper/2022/file/9d5609613524ecf4f15af0f7b31abca4-Paper-Conference.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wu et~al\mbox{.}(2019)]%
+        {DBLP:conf/icml/WuSZFYW19}
+\bibfield{author}{\bibinfo{person}{Felix Wu}, \bibinfo{person}{Amauri H.~Souza
+  Jr.}, \bibinfo{person}{Tianyi Zhang}, \bibinfo{person}{Christopher Fifty},
+  \bibinfo{person}{Tao Yu}, {and} \bibinfo{person}{Kilian~Q. Weinberger}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Simplifying Graph Convolutional Networks}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 36th International Conference on
+  Machine Learning, {ICML} 2019, 9-15 June 2019, Long Beach, California,
+  {USA}}} \emph{(\bibinfo{series}{Proceedings of Machine Learning Research},
+  Vol.~\bibinfo{volume}{97})}. \bibinfo{publisher}{{PMLR}},
+  \bibinfo{pages}{6861--6871}.
+\newblock
+\urldef\tempurl%
+\url{http://proceedings.mlr.press/v97/wu19e.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Wu et~al\mbox{.}(2024)]%
+        {DBLP:journals/corr/abs-2401-03158}
+\bibfield{author}{\bibinfo{person}{Hui Wu}, \bibinfo{person}{Yuanben Zhang},
+  \bibinfo{person}{Zhonghe Han}, \bibinfo{person}{Yingyan Hou},
+  \bibinfo{person}{Lei Wang}, \bibinfo{person}{Siye Liu},
+  \bibinfo{person}{Qihang Gong}, {and} \bibinfo{person}{Yunping Ge}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Quartet Logic: {A} Four-Step Reasoning {(QLFR)}
+  framework for advancing Short Text Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2401.03158}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2401.03158}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2401.03158}
+
+
+\bibitem[Xiao et~al\mbox{.}(2019)]%
+        {DBLP:journals/corr/abs-1902-09347}
+\bibfield{author}{\bibinfo{person}{Huiru Xiao}, \bibinfo{person}{Xin Liu},
+  {and} \bibinfo{person}{Yangqiu Song}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Efficient Path Prediction for Semi-Supervised and
+  Weakly Supervised Hierarchical Text Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1902.09347}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1902.09347}
+
+
+\bibitem[Xie et~al\mbox{.}(2024)]%
+        {Xie2024DataLT}
+\bibfield{author}{\bibinfo{person}{Zheng Xie}, \bibinfo{person}{Yiqin Lv},
+  \bibinfo{person}{Yiping Song}, {and} \bibinfo{person}{Qi Wang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Data labeling through the centralities of
+  co-reference networks improves the classification accuracy of scientific
+  papers}.
+\newblock \bibinfo{journal}{\emph{Journal of Informetrics}}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://api.semanticscholar.org/CorpusID:267116237}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Xu et~al\mbox{.}(2024)]%
+        {10.1007/978-3-031-72350-6_20}
+\bibfield{author}{\bibinfo{person}{Xiantao Xu}, \bibinfo{person}{Minghao Hu},
+  \bibinfo{person}{Yongjie Wang}, \bibinfo{person}{Wei Luo},
+  \bibinfo{person}{Shilong Liu}, \bibinfo{person}{ZhunChen Luo}, {and}
+  \bibinfo{person}{Yushan Tan}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{PLIClass: Weakly Supervised Text Classification
+  with Iterative Training and Denoisy Inference}. In
+  \bibinfo{booktitle}{\emph{Artificial Neural Networks and Machine Learning --
+  ICANN 2024}}, \bibfield{editor}{\bibinfo{person}{Michael Wand},
+  \bibinfo{person}{Krist{\'i}na Malinovsk{\'a}}, \bibinfo{person}{J{\"u}rgen
+  Schmidhuber}, {and} \bibinfo{person}{Igor~V. Tetko}} (Eds.).
+  \bibinfo{publisher}{Springer Nature Switzerland}, \bibinfo{address}{Cham},
+  \bibinfo{pages}{292--305}.
+\newblock
+\showISBNx{978-3-031-72350-6}
+
+
+\bibitem[Xu et~al\mbox{.}(2021)]%
+        {ctgcn}
+\bibfield{author}{\bibinfo{person}{Xuran Xu}, \bibinfo{person}{Tong Zhang},
+  \bibinfo{person}{Chunyan Xu}, {and} \bibinfo{person}{Zhen Cui}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Circulant Tensor Graph Convolutional Network for
+  Text Classification}. In \bibinfo{booktitle}{\emph{Pattern Recognition - 6th
+  Asian Conference, {ACPR} 2021, Jeju Island, South Korea, November 9-12, 2021,
+  Revised Selected Papers, Part {I}}} \emph{(\bibinfo{series}{Lecture Notes in
+  Computer Science}, Vol.~\bibinfo{volume}{13188})}.
+  \bibinfo{publisher}{Springer}, \bibinfo{pages}{32--46}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-031-02375-0\_3}
+\showDOI{\tempurl}
+
+
+\bibitem[Xue et~al\mbox{.}(2022)]%
+        {DBLP:conf/iccai/XueZWZ22}
+\bibfield{author}{\bibinfo{person}{Bingxin Xue}, \bibinfo{person}{Cui Zhu},
+  \bibinfo{person}{Xuan Wang}, {and} \bibinfo{person}{Wenjun Zhu}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{The Study on the Text Classification Based on Graph
+  Convolutional Network and BiLSTM}. In \bibinfo{booktitle}{\emph{{ICCAI} '22:
+  8th International Conference on Computing and Artificial Intelligence,
+  Tianjin, China, March 18 - 21, 2022}}. \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{323--331}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3532213.3532261}
+\showDOI{\tempurl}
+
+
+\bibitem[Yang et~al\mbox{.}(2023b)]%
+        {Yang-ClimateChangeClassifiert-2023}
+\bibfield{author}{\bibinfo{person}{Heng Yang}, \bibinfo{person}{Nan Wang},
+  \bibinfo{person}{Lina Yang}, \bibinfo{person}{Wei Liu}, {and}
+  \bibinfo{person}{Sili Wang}.} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{Research on the Automatic Subject-Indexing Method
+  of Academic Papers Based on Climate Change Domain Ontology}.
+\newblock \bibinfo{journal}{\emph{Sustainability}} \bibinfo{volume}{15},
+  \bibinfo{number}{5} (\bibinfo{date}{Feb} \bibinfo{year}{2023}),
+  \bibinfo{pages}{3919}.
+\newblock
+\showISSN{2071-1050}
+\urldef\tempurl%
+\url{https://doi.org/10.3390/su15053919}
+\showDOI{\tempurl}
+
+
+\bibitem[Yang et~al\mbox{.}(2023a)]%
+        {yang2023harnessing}
+\bibfield{author}{\bibinfo{person}{Jingfeng Yang}, \bibinfo{person}{Hongye
+  Jin}, \bibinfo{person}{Ruixiang Tang}, \bibinfo{person}{Xiaotian Han},
+  \bibinfo{person}{Qizhang Feng}, \bibinfo{person}{Haoming Jiang},
+  \bibinfo{person}{Bing Yin}, {and} \bibinfo{person}{Xia Hu}.}
+  \bibinfo{year}{2023}\natexlab{a}.
+\newblock \showarticletitle{Harnessing the Power of LLMs in Practice: A Survey
+  on ChatGPT and Beyond}.
+\newblock  (\bibinfo{year}{2023}).
+\newblock
+\showeprint[arxiv]{2304.13712}~[cs.CL]
+
+
+\bibitem[Yang et~al\mbox{.}(2018)]%
+        {sgm}
+\bibfield{author}{\bibinfo{person}{Pengcheng Yang}, \bibinfo{person}{Xu Sun},
+  \bibinfo{person}{Wei Li}, \bibinfo{person}{Shuming Ma}, \bibinfo{person}{Wei
+  Wu}, {and} \bibinfo{person}{Houfeng Wang}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{SGM:} Sequence Generation Model for Multi-label
+  Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 27th
+  International Conference on Computational Linguistics, {COLING} 2018, Santa
+  Fe, New Mexico, USA, August 20-26, 2018}},
+  \bibfield{editor}{\bibinfo{person}{Emily~M. Bender}, \bibinfo{person}{Leon
+  Derczynski}, {and} \bibinfo{person}{Pierre Isabelle}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{3915--3926}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/C18-1330/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Yang et~al\mbox{.}(2021)]%
+        {DBLP:journals/tois/YangHSJLN21}
+\bibfield{author}{\bibinfo{person}{Tianchi Yang}, \bibinfo{person}{Linmei Hu},
+  \bibinfo{person}{Chuan Shi}, \bibinfo{person}{Houye Ji},
+  \bibinfo{person}{Xiaoli Li}, {and} \bibinfo{person}{Liqiang Nie}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{HGAT:} Heterogeneous Graph Attention Networks for
+  Semi-supervised Short Text Classification}.
+\newblock \bibinfo{journal}{\emph{{ACM} Trans. Inf. Syst.}}
+  \bibinfo{volume}{39}, \bibinfo{number}{3} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{32:1--32:29}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3450352}
+\showDOI{\tempurl}
+
+
+\bibitem[Yao et~al\mbox{.}(2019)]%
+        {DBLP:conf/aaai/YaoM019}
+\bibfield{author}{\bibinfo{person}{Liang Yao}, \bibinfo{person}{Chengsheng
+  Mao}, {and} \bibinfo{person}{Yuan Luo}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Graph Convolutional Networks for Text
+  Classification}. In \bibinfo{booktitle}{\emph{The Thirty-Third {AAAI}
+  Conference on Artificial Intelligence, {AAAI} 2019}}.
+  \bibinfo{publisher}{{AAAI} Press}, \bibinfo{pages}{7370--7377}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1609/aaai.v33i01.33017370}
+\showDOI{\tempurl}
+
+
+\bibitem[Ye et~al\mbox{.}(2020)]%
+        {stgcn}
+\bibfield{author}{\bibinfo{person}{Zhihao Ye}, \bibinfo{person}{Gongyao Jiang},
+  \bibinfo{person}{Ye Liu}, \bibinfo{person}{Zhiyong Li}, {and}
+  \bibinfo{person}{Jin Yuan}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Document and Word Representations Generated by
+  Graph Convolutional Network and {BERT} for Short Text Classification}. In
+  \bibinfo{booktitle}{\emph{{ECAI} 2020 - 24th European Conference on
+  Artificial Intelligence, 29 August-8 September 2020, Santiago de Compostela,
+  Spain, August 29 - September 8, 2020 - Including 10th Conference on
+  Prestigious Applications of Artificial Intelligence {(PAIS} 2020)}}
+  \emph{(\bibinfo{series}{Frontiers in Artificial Intelligence and
+  Applications}, Vol.~\bibinfo{volume}{325})}. \bibinfo{publisher}{{IOS}
+  Press}, \bibinfo{pages}{2275--2281}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.3233/FAIA200355}
+\showDOI{\tempurl}
+
+
+\bibitem[Yehudai and Bendel(2024)]%
+        {yehudai2024fastfit}
+\bibfield{author}{\bibinfo{person}{Asaf Yehudai} {and} \bibinfo{person}{Elron
+  Bendel}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{When LLMs are Unfit Use FastFit: Fast and Effective
+  Text Classification with Many Classes}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2404.12365}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Yin et~al\mbox{.}(2023)]%
+        {gltc2023}
+\bibfield{author}{\bibinfo{person}{Shu Yin}, \bibinfo{person}{Peican Zhu},
+  \bibinfo{person}{Xinyu Wu}, \bibinfo{person}{Jiajin Huang},
+  \bibinfo{person}{Xianghua Li}, \bibinfo{person}{Zhen Wang}, {and}
+  \bibinfo{person}{Chao Gao}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Integrating Information by
+  {{Kullback}}\textendash{{Leibler}} Constraint for Text Classification}.
+\newblock \bibinfo{journal}{\emph{Neural Computing and Applications}}
+  (\bibinfo{date}{May} \bibinfo{year}{2023}).
+\newblock
+\showISSN{1433-3058}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s00521-023-08602-0}
+\showDOI{\tempurl}
+
+
+\bibitem[Yin et~al\mbox{.}(2019)]%
+        {DBLP:journals/corr/abs-1909-00161}
+\bibfield{author}{\bibinfo{person}{Wenpeng Yin}, \bibinfo{person}{Jamaal Hay},
+  {and} \bibinfo{person}{Dan Roth}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Benchmarking Zero-shot Text Classification:
+  Datasets, Evaluation and Entailment Approach}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1909.00161}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arXiv]{1909.00161}
+
+
+\bibitem[You et~al\mbox{.}(2019)]%
+        {xml0}
+\bibfield{author}{\bibinfo{person}{Ronghui You}, \bibinfo{person}{Zihan Zhang},
+  \bibinfo{person}{Ziye Wang}, \bibinfo{person}{Suyang Dai},
+  \bibinfo{person}{Hiroshi Mamitsuka}, {and} \bibinfo{person}{Shanfeng Zhu}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{{AttentionXML}}: {{Label Tree-based
+  Attention-Aware Deep Model}} for {{High-Performance Extreme Multi-Label Text
+  Classification}}}. In \bibinfo{booktitle}{\emph{Advances in {{Neural
+  Information Processing Systems}}}}, Vol.~\bibinfo{volume}{32}.
+  \bibinfo{publisher}{Curran Associates, Inc.}
+\newblock
+
+
+\bibitem[Younes et~al\mbox{.}(2024)]%
+        {radar}
+\bibfield{author}{\bibinfo{person}{Yousef Younes}, \bibinfo{person}{Lukas
+  Galke}, {and} \bibinfo{person}{Ansgar Scherp}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{RADAr}: A Transformer-based Autoregressive Decoder
+  Architecture for Hierarchical Text Classification}. In
+  \bibinfo{booktitle}{\emph{European Conference on Artificial Intelligence}}.
+  \bibinfo{publisher}{AAAI}.
+\newblock
+
+
+\bibitem[Yu et~al\mbox{.}(2022b)]%
+        {seq2tree}
+\bibfield{author}{\bibinfo{person}{Chao Yu}, \bibinfo{person}{Yi Shen}, {and}
+  \bibinfo{person}{Yue Mao}.} \bibinfo{year}{2022}\natexlab{b}.
+\newblock \showarticletitle{Constrained Sequence-to-Tree Generation for
+  Hierarchical Text Classification}. In \bibinfo{booktitle}{\emph{{SIGIR} '22:
+  The 45th International {ACM} {SIGIR} Conference on Research and Development
+  in Information Retrieval, Madrid, Spain, July 11 - 15, 2022}},
+  \bibfield{editor}{\bibinfo{person}{Enrique Amig{\'{o}}},
+  \bibinfo{person}{Pablo Castells}, \bibinfo{person}{Julio Gonzalo},
+  \bibinfo{person}{Ben Carterette}, \bibinfo{person}{J.~Shane Culpepper}, {and}
+  \bibinfo{person}{Gabriella Kazai}} (Eds.). \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{1865--1869}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3477495.3531765}
+\showDOI{\tempurl}
+
+
+\bibitem[Yu et~al\mbox{.}(2022c)]%
+        {yu2022constrained}
+\bibfield{author}{\bibinfo{person}{Chao Yu}, \bibinfo{person}{Yi Shen}, {and}
+  \bibinfo{person}{Yue Mao}.} \bibinfo{year}{2022}\natexlab{c}.
+\newblock \showarticletitle{Constrained Sequence-to-Tree Generation for
+  Hierarchical Text Classification}. In \bibinfo{booktitle}{\emph{{SIGIR} '22:
+  The 45th International {ACM} {SIGIR} Conference on Research and Development
+  in Information Retrieval, Madrid, Spain, July 11 - 15, 2022}},
+  \bibfield{editor}{\bibinfo{person}{Enrique Amig{\'{o}}},
+  \bibinfo{person}{Pablo Castells}, \bibinfo{person}{Julio Gonzalo},
+  \bibinfo{person}{Ben Carterette}, \bibinfo{person}{J.~Shane Culpepper}, {and}
+  \bibinfo{person}{Gabriella Kazai}} (Eds.). \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{1865--1869}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3477495.3531765}
+\showDOI{\tempurl}
+
+
+\bibitem[Yu et~al\mbox{.}(2023b)]%
+        {yu2023open}
+\bibfield{author}{\bibinfo{person}{Hao Yu}, \bibinfo{person}{Zachary Yang},
+  \bibinfo{person}{Kellin Pelrine}, \bibinfo{person}{Jean~Francois Godbout},
+  {and} \bibinfo{person}{Reihaneh Rabbany}.} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{Open, Closed, or Small Language Models for Text
+  Classification?}
+\newblock \bibinfo{journal}{\emph{{arXiv}:2308.10092}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Yu et~al\mbox{.}(2024)]%
+        {DBLP:conf/kdd/Yu00S24}
+\bibfield{author}{\bibinfo{person}{Linzhu Yu}, \bibinfo{person}{Huan Li},
+  \bibinfo{person}{Ke Chen}, {and} \bibinfo{person}{Lidan Shou}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{BoKA: Bayesian Optimization based Knowledge
+  Amalgamation for Multi-unknown-domain Text Classification}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 30th {ACM} {SIGKDD} Conference
+  on Knowledge Discovery and Data Mining, {KDD} 2024, Barcelona, Spain, August
+  25-29, 2024}}, \bibfield{editor}{\bibinfo{person}{Ricardo Baeza{-}Yates}
+  {and} \bibinfo{person}{Francesco Bonchi}} (Eds.). \bibinfo{publisher}{{ACM}},
+  \bibinfo{pages}{4035--4046}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3637528.3671963}
+\showDOI{\tempurl}
+
+
+\bibitem[Yu et~al\mbox{.}(2022a)]%
+        {DBLP:journals/corr/abs-2206-07253}
+\bibfield{author}{\bibinfo{person}{Zhizhi Yu}, \bibinfo{person}{Di Jin},
+  \bibinfo{person}{Jianguo Wei}, \bibinfo{person}{Ziyang Liu},
+  \bibinfo{person}{Yue Shang}, \bibinfo{person}{Yun Xiao},
+  \bibinfo{person}{Jiawei Han}, {and} \bibinfo{person}{Lingfei Wu}.}
+  \bibinfo{year}{2022}\natexlab{a}.
+\newblock \showarticletitle{TeKo: Text-Rich Graph Neural Networks with External
+  Knowledge}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2206.07253}
+  (\bibinfo{year}{2022}).
+\newblock
+\showeprint[arXiv]{2206.07253}
+
+
+\bibitem[Yu et~al\mbox{.}(2023a)]%
+        {am-bert}
+\bibfield{author}{\bibinfo{person}{Zhiyi Yu}, \bibinfo{person}{Hong Li}, {and}
+  \bibinfo{person}{Jialin Feng}.} \bibinfo{year}{2023}\natexlab{a}.
+\newblock \showarticletitle{Enhancing text classification with attention
+  matrices based on BERT}.
+\newblock \bibinfo{journal}{\emph{Expert Systems}} (\bibinfo{date}{11}
+  \bibinfo{year}{2023}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1111/exsy.13512}
+\showDOI{\tempurl}
+
+
+\bibitem[Yuan et~al\mbox{.}(2023)]%
+        {yuan2023revisiting}
+\bibfield{author}{\bibinfo{person}{Lifan Yuan}, \bibinfo{person}{Yangyi Chen},
+  \bibinfo{person}{Ganqu Cui}, \bibinfo{person}{Hongcheng Gao},
+  \bibinfo{person}{Fangyuan Zou}, \bibinfo{person}{Xingyi Cheng},
+  \bibinfo{person}{Heng Ji}, \bibinfo{person}{Zhiyuan Liu}, {and}
+  \bibinfo{person}{Maosong Sun}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Revisiting Out-of-distribution Robustness in NLP:
+  Benchmark, Analysis, and LLMs Evaluations}.
+\newblock \bibinfo{journal}{\emph{{arXiv}:2306.04618}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Yuan et~al\mbox{.}(2008)]%
+        {YuanEtAl-MSVM-kNN-2008}
+\bibfield{author}{\bibinfo{person}{Pingpeng Yuan}, \bibinfo{person}{Yuqin
+  Chen}, \bibinfo{person}{Hai Jin}, {and} \bibinfo{person}{Li Huang}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{MSVM-kNN}: {C}ombining {SVM} and {k-NN} for
+  Multi-class Text Classification}. In \bibinfo{booktitle}{\emph{IEEE
+  International Workshop on Semantic Computing and Systems}}.
+  \bibinfo{pages}{133--140}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/WSCS.2008.36}
+\showDOI{\tempurl}
+
+
+\bibitem[Zangari et~al\mbox{.}(2024)]%
+        {electronics13071199}
+\bibfield{author}{\bibinfo{person}{Alessandro Zangari}, \bibinfo{person}{Matteo
+  Marcuzzo}, \bibinfo{person}{Matteo Rizzo}, \bibinfo{person}{Lorenzo Giudice},
+  \bibinfo{person}{Andrea Albarelli}, {and} \bibinfo{person}{Andrea
+  Gasparetto}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Hierarchical Text Classification and Its
+  Foundations: A Review of Current Research}.
+\newblock \bibinfo{journal}{\emph{Electronics}} \bibinfo{volume}{13},
+  \bibinfo{number}{7} (\bibinfo{year}{2024}).
+\newblock
+\showISSN{2079-9292}
+\urldef\tempurl%
+\url{https://doi.org/10.3390/electronics13071199}
+\showDOI{\tempurl}
+
+
+\bibitem[Zeng et~al\mbox{.}(2022)]%
+        {ZengEtAl2022}
+\bibfield{author}{\bibinfo{person}{Fang Zeng}, \bibinfo{person}{Niannian Chen},
+  \bibinfo{person}{Dan Yang}, {and} \bibinfo{person}{Zhigang Meng}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Simplified-Boosting Ensemble Convolutional Network
+  for Text Classification}.
+\newblock \bibinfo{journal}{\emph{Neural Process. Lett.}} \bibinfo{volume}{54},
+  \bibinfo{number}{6} (\bibinfo{year}{2022}), \bibinfo{pages}{4971--4986}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s11063-022-10843-4}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2025)]%
+        {DBLP:journals/npl/ZhangDLZ25-hgbl}
+\bibfield{author}{\bibinfo{person}{Chaoqun Zhang}, \bibinfo{person}{Linlin
+  Dai}, \bibinfo{person}{Chengxing Liu}, {and} \bibinfo{person}{Longhao
+  Zhang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{HGBL:} {A} Fine Granular Hierarchical Multi-Label
+  Text Classification Model}.
+\newblock \bibinfo{journal}{\emph{Neural Process. Lett.}} \bibinfo{volume}{57},
+  \bibinfo{number}{1} (\bibinfo{year}{2025}), \bibinfo{pages}{1}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/S11063-024-11713-X}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2016)]%
+        {DBLP:conf/sigir/ZhangWYWZ16}
+\bibfield{author}{\bibinfo{person}{Dell Zhang}, \bibinfo{person}{Jun Wang},
+  \bibinfo{person}{Emine Yilmaz}, \bibinfo{person}{Xiaoling Wang}, {and}
+  \bibinfo{person}{Yuxin Zhou}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Bayesian Performance Comparison of Text
+  Classifiers}. In \bibinfo{booktitle}{\emph{Proceedings of the 39th
+  International {ACM} {SIGIR} conference on Research and Development in
+  Information Retrieval, {SIGIR} 2016, Pisa, Italy, July 17-21, 2016}}.
+  \bibinfo{publisher}{{ACM}}, \bibinfo{pages}{15--24}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2911451.2911547}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2021a)]%
+        {xml4}
+\bibfield{author}{\bibinfo{person}{Jiong Zhang}, \bibinfo{person}{Wei-Cheng
+  Chang}, \bibinfo{person}{Hsiang-Fu Yu}, {and} \bibinfo{person}{Inderjit
+  Dhillon}.} \bibinfo{year}{2021}\natexlab{a}.
+\newblock \showarticletitle{Fast {{Multi-Resolution Transformer Fine-tuning}}
+  for {{Extreme Multi-label Text Classification}}}. In
+  \bibinfo{booktitle}{\emph{Advances in {{Neural Information Processing
+  Systems}}}}, Vol.~\bibinfo{volume}{34}. \bibinfo{publisher}{Curran
+  Associates, Inc.}, \bibinfo{pages}{7267--7280}.
+\newblock
+
+
+\bibitem[Zhang et~al\mbox{.}(2024a)]%
+        {DBLP:journals/kbs/ZhangLSXTH24-halb}
+\bibfield{author}{\bibinfo{person}{Jun Zhang}, \bibinfo{person}{Yubin Li},
+  \bibinfo{person}{Fanfan Shen}, \bibinfo{person}{Chenxi Xia},
+  \bibinfo{person}{Hai Tan}, {and} \bibinfo{person}{Yanxiang He}.}
+  \bibinfo{year}{2024}\natexlab{a}.
+\newblock \showarticletitle{Hierarchy-Aware and Label Balanced Model for
+  Hierarchical Text Classification}.
+\newblock \bibinfo{journal}{\emph{Knowl. Based Syst.}}  \bibinfo{volume}{300}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{112153}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/J.KNOSYS.2024.112153}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2021b)]%
+        {DBLP:conf/emnlp/ZhangDXLZ21}
+\bibfield{author}{\bibinfo{person}{Lu Zhang}, \bibinfo{person}{Jiandong Ding},
+  \bibinfo{person}{Yi Xu}, \bibinfo{person}{Yingyao Liu}, {and}
+  \bibinfo{person}{Shuigeng Zhou}.} \bibinfo{year}{2021}\natexlab{b}.
+\newblock \showarticletitle{Weakly-supervised Text Classification Based on
+  Keyword Graph}. In \bibinfo{booktitle}{\emph{{EMNLP} {(1)}}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{2803--2813}.
+\newblock
+
+
+\bibitem[Zhang et~al\mbox{.}(2021c)]%
+        {DBLP:journals/corr/abs-1812-11270}
+\bibfield{author}{\bibinfo{person}{Lu Zhang}, \bibinfo{person}{Jiandong Ding},
+  \bibinfo{person}{Yi Xu}, \bibinfo{person}{Yingyao Liu}, {and}
+  \bibinfo{person}{Shuigeng Zhou}.} \bibinfo{year}{2021}\natexlab{c}.
+\newblock \showarticletitle{Weakly-supervised Text Classification Based on
+  Keyword Graph}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021
+  Conference on Empirical Methods in Natural Language Processing, {EMNLP} 2021,
+  Virtual Event / Punta Cana, Dominican Republic, 7-11 November, 2021}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{2803--2813}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2021.emnlp-main.222}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang and Zhou(2014)]%
+        {zhang}
+\bibfield{author}{\bibinfo{person}{Min-Ling Zhang} {and}
+  \bibinfo{person}{Zhi-Hua Zhou}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{A Review on Multi-Label Learning Algorithms}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge and Data
+  Engineering}} \bibinfo{volume}{26}, \bibinfo{number}{8}
+  (\bibinfo{year}{2014}), \bibinfo{pages}{1819--1837}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TKDE.2013.39}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2021d)]%
+        {DBLP:journals/debu/ZhangLDXSM21}
+\bibfield{author}{\bibinfo{person}{Wen Zhang}, \bibinfo{person}{Yanbin Lu},
+  \bibinfo{person}{Bella Dubrov}, \bibinfo{person}{Zhi Xu},
+  \bibinfo{person}{Shang Shang}, {and} \bibinfo{person}{Emilio Maldonado}.}
+  \bibinfo{year}{2021}\natexlab{d}.
+\newblock \showarticletitle{Deep Hierarchical Product Classification Based on
+  Pre-Trained Multilingual Knowledge}.
+\newblock \bibinfo{journal}{\emph{{IEEE} Data Eng. Bull.}}
+  \bibinfo{volume}{44}, \bibinfo{number}{2} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{26--37}.
+\newblock
+\urldef\tempurl%
+\url{http://sites.computer.org/debull/A21june/p26.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2020a)]%
+        {DBLP:journals/corr/abs-2009-10938}
+\bibfield{author}{\bibinfo{person}{Xinyi Zhang}, \bibinfo{person}{Jiahao Xu},
+  \bibinfo{person}{Charlie Soh}, {and} \bibinfo{person}{Lihui Chen}.}
+  \bibinfo{year}{2020}\natexlab{a}.
+\newblock \showarticletitle{{LA-HCN:} {L}abel-based Attention for Hierarchical
+  Multi-label Text Classification Neural Network}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2009.10938}
+  (\bibinfo{year}{2020}).
+\newblock
+\showeprint[arXiv]{2009.10938}
+
+
+\bibitem[Zhang et~al\mbox{.}(2023)]%
+        {zhang2023pretraining}
+\bibfield{author}{\bibinfo{person}{Yu Zhang}, \bibinfo{person}{Hao Cheng},
+  \bibinfo{person}{Zhihong Shen}, \bibinfo{person}{Xiaodong Liu},
+  \bibinfo{person}{Ye-Yi Wang}, {and} \bibinfo{person}{Jianfeng Gao}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Pre-training Multi-task Contrastive Learning Models
+  for Scientific Literature Understanding}.
+\newblock \bibinfo{journal}{\emph{arXiv}} (\bibinfo{year}{2023}).
+\newblock
+\showeprint{2305.14232}~[cs.CL]
+
+
+\bibitem[Zhang and Wallace(2017)]%
+        {DBLP:conf/ijcnlp/ZhangW17}
+\bibfield{author}{\bibinfo{person}{Ye Zhang} {and} \bibinfo{person}{Byron~C.
+  Wallace}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{A Sensitivity Analysis of (and Practitioners' Guide
+  to) Convolutional Neural Networks for Sentence Classification}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the Eighth International Joint
+  Conference on Natural Language Processing, {IJCNLP} 2017, Taipei, Taiwan,
+  November 27 - December 1, 2017 - Volume 1: Long Papers}}.
+  \bibinfo{publisher}{Asian Federation of Natural Language Processing},
+  \bibinfo{pages}{253--263}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/I17-1026/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2024b)]%
+        {DBLP:journals/corr/abs-2402-07470-pushing-the-limit}
+\bibfield{author}{\bibinfo{person}{Yazhou Zhang}, \bibinfo{person}{Mengyao
+  Wang}, \bibinfo{person}{Chenyu Ren}, \bibinfo{person}{Qiuchi Li},
+  \bibinfo{person}{Prayag Tiwari}, \bibinfo{person}{Benyou Wang}, {and}
+  \bibinfo{person}{Jing Qin}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \showarticletitle{Pushing The Limit of {LLM} Capacity for Text
+  Classification}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2402.07470}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2402.07470}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2402.07470}
+
+
+\bibitem[Zhang et~al\mbox{.}(2020b)]%
+        {texting_acl2020}
+\bibfield{author}{\bibinfo{person}{Yufeng Zhang}, \bibinfo{person}{Xueli Yu},
+  \bibinfo{person}{Zeyu Cui}, \bibinfo{person}{Shu Wu},
+  \bibinfo{person}{Zhongzhen Wen}, {and} \bibinfo{person}{Liang Wang}.}
+  \bibinfo{year}{2020}\natexlab{b}.
+\newblock \showarticletitle{Every Document Owns Its Structure: Inductive Text
+  Classification via Graph Neural Networks}. In \bibinfo{booktitle}{\emph{The
+  58th Annual Meeting of the Association for Computational Linguistics, {ACL}
+  2020}}. \bibinfo{publisher}{ACL}, \bibinfo{pages}{334--339}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.acl-main.31}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhao et~al\mbox{.}(2021)]%
+        {zhao2021sequential}
+\bibfield{author}{\bibinfo{person}{Ke Zhao}, \bibinfo{person}{Lan Huang},
+  \bibinfo{person}{Rui Song}, \bibinfo{person}{Qiang Shen}, {and}
+  \bibinfo{person}{Hao Xu}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{A Sequential Graph Neural Network for Short Text
+  Classification}.
+\newblock \bibinfo{journal}{\emph{Algorithms}} \bibinfo{volume}{14},
+  \bibinfo{number}{12} (\bibinfo{year}{2021}), \bibinfo{pages}{352}.
+\newblock
+
+
+\bibitem[Zheng et~al\mbox{.}(2022)]%
+        {DBLP:conf/emnlp/ZhengWYD22}
+\bibfield{author}{\bibinfo{person}{Kaixin Zheng}, \bibinfo{person}{Yaqing
+  Wang}, \bibinfo{person}{Quanming Yao}, {and} \bibinfo{person}{Dejing Dou}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Simplified Graph Learning for Inductive Short Text
+  Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 2022
+  Conference on Empirical Methods in Natural Language Processing, {EMNLP} 2022,
+  Abu Dhabi, United Arab Emirates, December 7-11, 2022}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{10717--10724}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/2022.emnlp-main.735}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2020c)]%
+        {hiagm}
+\bibfield{author}{\bibinfo{person}{Jie Zhou}, \bibinfo{person}{Chunping Ma},
+  \bibinfo{person}{Dingkun Long}, \bibinfo{person}{Guangwei Xu},
+  \bibinfo{person}{Ning Ding}, \bibinfo{person}{Haoyu Zhang},
+  \bibinfo{person}{Pengjun Xie}, {and} \bibinfo{person}{Gongshen Liu}.}
+  \bibinfo{year}{2020}\natexlab{c}.
+\newblock \showarticletitle{Hierarchy-Aware Global Model for Hierarchical Text
+  Classification}. In \bibinfo{booktitle}{\emph{Proceedings of the 58th Annual
+  Meeting of the Association for Computational Linguistics}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Online}, \bibinfo{pages}{1106--1117}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.acl-main.104}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2024)]%
+        {DBLP:journals/corr/abs-2401-01667-MLP-Compass}
+\bibfield{author}{\bibinfo{person}{Li Zhou}, \bibinfo{person}{Wenyu Chen},
+  \bibinfo{person}{Yong Cao}, \bibinfo{person}{Dingyi Zeng},
+  \bibinfo{person}{Wanlong Liu}, {and} \bibinfo{person}{Hong Qu}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{MLPs Compass: What is learned when MLPs are
+  combined with PLMs?}
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/2401.01667}
+  (\bibinfo{year}{2024}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/ARXIV.2401.01667}
+\showDOI{\tempurl}
+\showeprint[arXiv]{2401.01667}
+
+
+\bibitem[Zhou et~al\mbox{.}(2020a)]%
+        {NEURIPS2020_f3f27a32}
+\bibfield{author}{\bibinfo{person}{Pan Zhou}, \bibinfo{person}{Jiashi Feng},
+  \bibinfo{person}{Chao Ma}, \bibinfo{person}{Caiming Xiong},
+  \bibinfo{person}{Steven Chu~Hong Hoi}, {and} \bibinfo{person}{Weinan E}.}
+  \bibinfo{year}{2020}\natexlab{a}.
+\newblock \showarticletitle{Towards Theoretically Understanding Why {SGD}
+  Generalizes Better Than {Adam} in Deep Learning}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing
+  Systems}}, Vol.~\bibinfo{volume}{33}. \bibinfo{publisher}{Curran Associates,
+  Inc.}, \bibinfo{pages}{21285--21296}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper/2020/file/f3f27a324736617f20abbf2ffd806f6d-Paper.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2016)]%
+        {DBLP:conf/coling/ZhouQZXBX16}
+\bibfield{author}{\bibinfo{person}{Peng Zhou}, \bibinfo{person}{Zhenyu Qi},
+  \bibinfo{person}{Suncong Zheng}, \bibinfo{person}{Jiaming Xu},
+  \bibinfo{person}{Hongyun Bao}, {and} \bibinfo{person}{Bo Xu}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Text Classification Improved by Integrating
+  Bidirectional {LSTM} with Two-dimensional Max Pooling}. In
+  \bibinfo{booktitle}{\emph{{COLING} 2016, 26th International Conference on
+  Computational Linguistics, Proceedings of the Conference: Technical Papers,
+  December 11-16, 2016, Osaka, Japan}}. \bibinfo{publisher}{{ACL}},
+  \bibinfo{pages}{3485--3495}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/C16-1329/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2020b)]%
+        {DBLP:journals/wias/ZhouGLVTBBK20}
+\bibfield{author}{\bibinfo{person}{Xujuan Zhou}, \bibinfo{person}{Raj
+  Gururajan}, \bibinfo{person}{Yuefeng Li}, \bibinfo{person}{Revathi
+  Venkataraman}, \bibinfo{person}{Xiaohui Tao}, \bibinfo{person}{Ghazal
+  Bargshady}, \bibinfo{person}{Prabal~Datta Barua}, {and}
+  \bibinfo{person}{Srinivas Kondalsamy{-}Chennakesavan}.}
+  \bibinfo{year}{2020}\natexlab{b}.
+\newblock \showarticletitle{A survey on text classification and its
+  applications}.
+\newblock \bibinfo{journal}{\emph{Web Intell.}} \bibinfo{volume}{18},
+  \bibinfo{number}{3} (\bibinfo{year}{2020}), \bibinfo{pages}{205--216}.
+\newblock
+
+
+\bibitem[Zhu et~al\mbox{.}(2024)]%
+        {hill2024}
+\bibfield{author}{\bibinfo{person}{He Zhu}, \bibinfo{person}{Junran Wu},
+  \bibinfo{person}{Ruomei Liu}, \bibinfo{person}{Yue Hou}, \bibinfo{person}{Ze
+  Yuan}, \bibinfo{person}{Shangzhe Li}, \bibinfo{person}{Yicheng Pan}, {and}
+  \bibinfo{person}{Ke Xu}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{HILL:} {H}ierarchy-aware Information Lossless
+  Contrastive Learning for Hierarchical Text Classification}. In
+  \bibinfo{booktitle}{\emph{NAACL 2024}}. \bibinfo{publisher}{ACL},
+  \bibinfo{pages}{4731--4745}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/V1/2024.NAACL-LONG.265}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhu et~al\mbox{.}(2023)]%
+        {zhu2023}
+\bibfield{author}{\bibinfo{person}{Yi Zhu}, \bibinfo{person}{Ye Wang},
+  \bibinfo{person}{Jipeng Qiang}, {and} \bibinfo{person}{Xindong Wu}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Prompt-Learning for Short Text Classification}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge and Data
+  Engineering}} (\bibinfo{year}{2023}), \bibinfo{pages}{1--13}.
+\newblock
+\showISSN{1558-2191}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TKDE.2023.3332787}
+\showDOI{\tempurl}
+
+
+\bibitem[Zong and Sun(2022)]%
+        {bgnn-xml}
+\bibfield{author}{\bibinfo{person}{Daoming Zong} {and}
+  \bibinfo{person}{Shiliang Sun}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{BGNN-XML: Bilateral Graph Neural Networks for
+  Extreme Multi-label Text Classification}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Knowledge and Data
+  Engineering}} (\bibinfo{year}{2022}), \bibinfo{pages}{1--12}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TKDE.2022.3193657}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}

@@ -1,0 +1,58 @@
+\begin{table*}
+    \mytablefontsize
+    \centering
+    \myheader{}
+    \begin{tabular}{llllllr}
+        \toprule
+     \textbf{Transductive Setting} & \textbf{20ng} & \textbf{R8} & \textbf{R52} & \textbf{ohsumed} & \textbf{MR} & \textbf{Provenance}\\
+  \midrule
+      \textit{Graph-based Methods} & & & & & & \\
+
+    TextGCN& 86.34 & 97.07 & 93.56 & 68.36 & 76.74 & \mycite{DBLP:conf/aaai/YaoM019}\\%~\citep{DBLP:conf/aaai/YaoM019} 
+    
+SGC& 88.5\mytextsubscript{0.1}& 97.2\mytextsubscript{0.1} & 94.0\mytextsubscript{0.2} & 68.5\mytextsubscript{0.3} & 75.9 \mytextsubscript{0.3} & \mycite{DBLP:conf/icml/WuSZFYW19}\\%~\citep{DBLP:conf/icml/WuSZFYW19} 
+
+TensorGCN& 87.74 & 98.04  & 95.05  & 70.11  & 77.91 & \mycite{DBLP:conf/aaai/LiuYZWL20}\\%~\citep{DBLP:conf/aaai/LiuYZWL20} 
+
+HeteGCN& 87.15\mytextsubscript{0.15} & 97.24\mytextsubscript{0.51} & 94.35\mytextsubscript{0.25} & 68.11\mytextsubscript{0.70} & 76.71\mytextsubscript{0.33} & \mycite{DBLP:conf/wsdm/RageshSIBL21}\\%~\citet{DBLP:conf/wsdm/RageshSIBL21} 
+     HyperGAT  & 86.62\mytextsubscript{0.16} & 97.07\mytextsubscript{0.23} & 94.98\mytextsubscript{0.27} & 69.90\mytextsubscript{0.34} & 78.32\mytextsubscript{0.27} &\mycite{DBLP:conf/emnlp/DingWLLL20}\\
+    BertGCN  & 89.3 & 98.1 & 96.6 & 72.8 & 86.0 & \mycite{DBLP:conf/acl/LinMSHKLW21} \\
+    RoBERTaGCN  & 89.5 & 98.2 & 96.1 & 72.8 & 89.7 & \mycite{DBLP:conf/acl/LinMSHKLW21} \\
+    
+    TextGCN-BERT-serial-SB & --- & 97.78 & 94.08 & 68.83  & 86.69  & \mycite{ZengEtAl2022}    \\
+    
+    TextGCN-CNN-serial-SB & --- & 98.53\mytextsubscript{0.21} & 96.35\mytextsubscript{0.09} & 71.85\mytextsubscript{0.49} & 87.59\mytextsubscript{0.20} & \mycite{ZengEtAl2022} \\
+
+AGGNN & --- & 98.18\mytextsubscript{0.10}  & 94.72\mytextsubscript{0.29}  & 70.26\mytextsubscript{0.38} & 80.03\mytextsubscript{0.22} & \mycite{aggnn} \\
+    
+    STGCN & --- & 97.2  & ---  & --- & 78.2 & \mycite{stgcn} \\
+     
+    STGCN+BERT+BiLSTM & --- & 98.5  & ---  & --- & 82.5
+
+    & \mycite{stgcn} \\
+    
+    CTGCN & 86.92 & 97.85 & 94.63 & 69.73 & 77.69 & \mycite{ctgcn}\\
+    
+    TSW-GNN & --- & 97.84\mytextsubscript{0.4} & 95.25\mytextsubscript{0.1} & 71.36\mytextsubscript{0.3} & 80.26\mytextsubscript{0.6} & \mycite{tsw-gnn}\\
+    
+    KGAT & --- & 
+    97.41 & 
+    95.00 & 
+    70.24 &
+    79.03 &
+    \mycite{DBLP:conf/nlpcc/WangWYZSJWZ22} \\
+    
+IMGCN & --- & 
+98.34
+& --- & --- &
+87.81
+&
+\mycite{DBLP:conf/iccai/XueZWZ22}
+\\    
+
+BERT+SGC 
+& --- & 98.04 & 96.34 & --- & 86.63 & \cite{DBLP:conf/apweb/LiWLXY23} \\
+
+\bottomrule
+    \end{tabular}
+\end{table*}

@@ -1,0 +1,66 @@
+\contentsline {section}{Abstract}{1}{section*.1}%
+\contentsline {section}{Contents}{2}{section*.2}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivation and Background}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}What is the Problem? Why is our Study Needed?}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Methodology}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Key Results}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Remainder}{7}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Methodology}{7}{section.2}%
+\contentsline {section}{\numberline {3}BoW-based Methods}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Classical BoW Methods}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Deep BoW Methods}{9}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Sequence-based Methods}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Recurrent and Convolutional Neural Networks}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Small Language Models}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Large Language Models}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Attention-free Language Models}{11}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Graph-based Methods}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Synthetic Text-Graph Methods}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Hierarchy-based Methods}{13}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Experimental Apparatus}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Datasets}{14}{subsection.6.1}%
+\contentsline {paragraph}{Single-label Datasets}{14}{section*.4}%
+\contentsline {paragraph}{Multi-label Datasets}{15}{section*.6}%
+\contentsline {subsection}{\numberline {6.2}Methods and Complementing Experiments}{15}{subsection.6.2}%
+\contentsline {paragraph}{BoW-based Methods}{16}{section*.8}%
+\contentsline {paragraph}{Recurrent and Convolutional Neural Networks}{16}{section*.9}%
+\contentsline {paragraph}{Small Language Models}{16}{section*.10}%
+\contentsline {paragraph}{Large Language Models}{16}{section*.11}%
+\contentsline {paragraph}{Attention-free Language Models}{16}{section*.12}%
+\contentsline {paragraph}{Synthetic Text-Graph Methods}{16}{section*.13}%
+\contentsline {paragraph}{Hierarchy-based Methods}{17}{section*.14}%
+\contentsline {subsection}{\numberline {6.3}Procedure}{17}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Hyperparameters for Own Experiments}{17}{subsection.6.4}%
+\contentsline {paragraph}{Single-label Case}{17}{section*.15}%
+\contentsline {paragraph}{Multi-label Case}{18}{section*.16}%
+\contentsline {subsection}{\numberline {6.5}Measures}{18}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Quantitative Comparison}{19}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Single-label Text Classification}{19}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Sensitivity to Fine-tuning Learning Rate}{22}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Multi-label Text Classification}{23}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Hierarchical Text Classification}{23}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Parameter Count of Models}{24}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Discussion}{25}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Fine-tuned SLMs\xspace Preferable over In-context Learned LLMs\xspace }{25}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Subpar Language Model Performance Can Be Pushed via Prompting Schemes, Ensembling, and Fine-tuning}{26}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Synthetic Text-graphs Hardly Bring an Advantage}{27}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Using a Graph Encoder for the Hierarchy Hardly Brings an Advantage for Hierarchical Text Classification}{28}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}BERT Baselines are Often Undertuned}{28}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Single-label vs.\spacefactor \@m {} Multi-label Text Classification}{29}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Specific Aspects}{29}{subsection.8.7}%
+\contentsline {paragraph}{Word Order}{29}{section*.24}%
+\contentsline {paragraph}{Document Length}{30}{section*.25}%
+\contentsline {paragraph}{Reinforcement Learning}{30}{section*.26}%
+\contentsline {subsection}{\numberline {8.8}Further discussions}{30}{subsection.8.8}%
+\contentsline {section}{\numberline {9}Limitations}{30}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Dataset Selection}{30}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Pre-trained Attention-free Language Models}{31}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Data Contamination in Large Language Models}{31}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Future Directions and Challenges}{31}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Fine-tuning large language models}{31}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Scaling masked language models vs.\spacefactor \@m {} unmasking causal language models during fine-tuning}{31}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Large language models for multi-label text classification}{32}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Further Directions}{32}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Conclusion}{32}{section.11}%
+\contentsline {section}{References}{33}{section*.29}%

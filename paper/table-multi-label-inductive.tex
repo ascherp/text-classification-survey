@@ -1,0 +1,44 @@
+\begin{table*}[ht]
+    \mytablefontsize
+    \centering
+    \myheader{}
+    \begin{tabular}{llllllll}
+  \toprule
+  \textbf{Inductive Setting} & 
+  \textbf{R21578} 
+  & \textbf{RCV1-V2} & \textbf{EconBiz} & \textbf{Amaz.} & \textbf{DBPedia} & \textbf{NYT} & \textbf{GoEmo.}\\% & \textbf{Prov.}\\
+
+\midrule
+    \textit{BoW-based methods} \\
+    WideMLP & 80.41 & 69.92\mytextsubscript{0.11} & 23.15 & 59.92 & 89.47 & 62.38\mytextsubscript{0.27} & 37.13\\%& \myflag{} \\
+    TF-IDF WideMLP  & 88.15 & 81.51\mytextsubscript{0.03} & 45.38 & 80.32 & 94.91 & 75.58\mytextsubscript{0.09} & 40.07\\% & \myflag{}\\ 
+
+    \midrule
+    \multicolumn{8}{l}{\textit{Sequence-based methods}} \\
+
+    BERT-base 
+    & 92.21 & 88.16\mytextsubscript{0.16} & 42.08 & 86.69 & 97.66 & 79.11\mytextsubscript{0.22} & 54.18\\% & \myflag{}\\
+    BERT-large & 92.23 & 88.83\mytextsubscript{0.17} & 33.62 & 88.34 & 97.69 & 80.32\mytextsubscript{0.39}& 54.02\\% & \myflag{} \\ 
+    DistilBERT 
+    & 92.11 & 87.50\mytextsubscript{0.11} & 39.41 & 87.47 & 97.58 & 79.18\mytextsubscript{0.17} & 55.95\\% & \myflag{}\\
+
+    RoBERTa  
+    & 90.85 & 88.62\mytextsubscript{0.21} & 40.56 & 86.21 & 97.26 & 79.14\mytextsubscript{0.55} & 54.64\\% & \myflag{} \\
+
+    DeBERTa 
+    & 91.24 & 88.45\mytextsubscript{0.19} & 41.43 & 89.21 & 97.65 & 79.95\mytextsubscript{0.40} & 56.51\\% & \myflag{} \\
+
+    HBGL & - & 88.76\mytextsubscript{0.24} & - & - & - & 82.01\mytextsubscript{0.22} &  -  \\%&  \myflag{} \\ 
+
+gMLP w/o pre-train  & 85.39 & 79.11  & 40.53  & 83.72  & 95.07  & 72.23  & 44.92 \\%& \myflag{}\\
+    aMLP w/o pre-train  & 85.76 & 77.87 & 42.11  & 82.33  & 95.79  & 70.88 & 47.19 \\%& \myflag{}\\
+
+\midrule
+     \multicolumn{8}{l}{\textit{Hierarchy-based methods}} \\
+    
+    HiAGM-TP+GCN & --- & 85.51\mytextsubscript{0.11} & OOM & 89.05 & 97.17 & 76.57\mytextsubscript{0.17} & --- \\%& \myflag{}\\
+
+\bottomrule
+    \end{tabular}
+\end{table*}
+

@@ -1,0 +1,190 @@
+%\mytablefontsize
+%\begin{longtable}{llllllr}
+\begin{table*}
+\mytablefontsize
+\centering
+\caption{\mycaption{}}\mylabel{}
+%\caption{\mycaption{}}\mylabel{}\\
+
+\begin{tabular}{llllllr}
+
+\toprule
+\textbf{Inductive Setting} & \textbf{20ng} & \textbf{R8} & \textbf{R52} & \textbf{ohsumed} & \textbf{MR} & \textbf{Provenance}\\
+\midrule
+
+%%% Longtable
+
+%\endfirsthead
+%
+%\hline
+%\multicolumn{7}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+%
+%\toprule
+%\textbf{Inductive Setting} & \textbf{20ng} & \textbf{R8} & \textbf{R52} & \textbf{ohsumed} & \textbf{MR} & \textbf{Provenance}\\
+%\midrule
+%\endhead
+%
+%\hline \multicolumn{7}{r}{{Continued on next page}} \\ \hline
+%\endfoot
+%
+%\hline \hline
+%\endlastfoot
+
+\textit{BoW-based Methods} & & & & & & \\
+
+    Logistic regression with TF-IDF & 83.70 & 93.33 & 90.65 & 61.14 & 76.28 & \mycite{DBLP:conf/wsdm/RageshSIBL21}\\
+
+Unigram SVM with TF-IDF & 83.44 & 97.49 & 94.70 & 67.40 & 76.36 & \myflag{} \\
+    Trigram SVM with TF-IDF & 83.39 & 97.21 & 93.85 & 69.30 & 77.35 & \myflag{} \\
+
+    XGBoost with TF-IDF & 73.29 & 94.75 & 88.82 & 58.27 & 64.46 & \myflag{}\\
+    
+     \mlp with TF-IDF & 84.20\mytextsubscript{0.16} & 97.08\mytextsubscript{0.16} & 93.67\mytextsubscript{0.23} & 66.06\mytextsubscript{0.29} & 76.32\mytextsubscript{0.17} & \cite{galkescherp-acl2022}\\
+    \mlp & 83.31\mytextsubscript{0.22} & 97.27\mytextsubscript{0.12} & 93.89\mytextsubscript{0.16} & 63.95\mytextsubscript{0.13} & 76.72\mytextsubscript{0.26} & \cite{galkescherp-acl2022}\\ 
+    \mlp-2  & 81.02\mytextsubscript{0.23} & 96.61\mytextsubscript{1.22} & 93.98\mytextsubscript{0.23} & 61.71\mytextsubscript{0.33} & 75.91\mytextsubscript{0.51} & \cite{galkescherp-acl2022}\\
+    GloVe+\mlp  & 76.80\mytextsubscript{0.11} & 96.44\mytextsubscript{0.08} & 93.58\mytextsubscript{0.06} & 61.36\mytextsubscript{0.22} & 75.96\mytextsubscript{0.17} & \cite{galkescherp-acl2022}\\ 
+    GloVe+\mlp-2  & 76.33\mytextsubscript{0.18} & 96.50\mytextsubscript{0.14} & 93.19\mytextsubscript{0.11} & 61.65\mytextsubscript{0.27} & 75.72\mytextsubscript{0.45}& \cite{galkescherp-acl2022}\\
+
+SWEM & 85.16\mytextsubscript{0.29} & 95.32\mytextsubscript{0.26} & 92.94\mytextsubscript{0.24} &  63.12\mytextsubscript{0.55} & 76.65\mytextsubscript{0.63} & \mycite{DBLP:conf/emnlp/DingWLLL20}\\%~\citep{DBLP:conf/acl/HenaoLCSSWWMZ18}
+    fastText & 79.38\mytextsubscript{0.30} & 96.13\mytextsubscript{0.21} &  92.81\mytextsubscript{0.09} &  57.70\mytextsubscript{0.49} & 75.14\mytextsubscript{0.20} & \mycite{DBLP:conf/emnlp/DingWLLL20}\\%~\citet{DBLP:journals/tacl/BojanowskiGJM17}
+
+CFE-IterativeAdditive & 
+85.51\mytextsubscript{0.04} & 
+97.94\mytextsubscript{0.02} & 
+95.13\mytextsubscript{0.04} & 
+68.90\mytextsubscript{0.02} & 
+--- & 
+\mycite{ATTIEH2023110215} \\
+
+\midrule
+     
+    \textit{Sequence-based Methods} & & & & & & \\
+    CNN+GloVe & 82.15 & 95.71 & 87.59 & 58.44 & 77.75 & \mycite{DBLP:conf/coling/HuangCC22} \\
+    CNN-non-static & --- & --- & --- & --- & 81.5 & \mycite{DBLP:conf/emnlp/Kim14} \\
+
+Word2Vec+CNN & --- & --- & --- & --- & 81.24 & \mycite{DBLP:conf/ijcnlp/ZhangW17} \\
+    GloVe+CNN & --- & --- & --- & --- & 81.03 & \mycite{DBLP:conf/ijcnlp/ZhangW17} \\
+
+LSTM w/ pre-training & 75.43\mytextsubscript{1.72} & 96.09\mytextsubscript{0.19} &  90.48\mytextsubscript{0.86} &  51.10\mytextsubscript{1.50} & 77.33\mytextsubscript{0.89} & \mycite{DBLP:conf/emnlp/DingWLLL20}\\
+ Bi-LSTM (GloVe)  & --- & 96.31  &  90.54 & ---  & 77.68 & \mycite{zhao2021sequential}    \\
+
+GPT-3.5\mytextsubscript{full finetuning via OpenAI API}
+& --- & --- & 95.27\mytextsubscript{0.55} & 51.84\mytextsubscript{0.45} & --- & \cite{DBLP:journals/corr/abs-2405-11524} \\
+
+Bloom-7.1B (4-bit+LoRA)\mytextsubscript{full finetuning} & 
+--- & --- & --- & 
+67.54\mytextsubscript{0.6} & --- & \cite{DBLP:journals/corr/abs-2405-11524} \\
+
+Llama2-7B (4-bit+LoRA)\mytextsubscript{full finetuning} & 
+--- & --- & --- & 
+67.66\mytextsubscript{0.72} & --- & \cite{DBLP:journals/corr/abs-2405-11524} \\
+
+Llama3-8B (4-bit+LoRA)\mytextsubscript{full finetuning} & 
+--- & --- & --- & 
+68.02\mytextsubscript{0.26} & --- & \cite{DBLP:journals/corr/abs-2405-11524} \\ 
+
+GPT-3.5\mytextsubscript{16-shot}  & --- &  91.58 & 91.56 & --- & 89.15  & \mycite{carp} \\
+GPT-3.5+CoT\mytextsubscript{16-shot} & --- & 92.49 & 92.03  & --- &  89.91 & \mycite{carp} \\
+GPT-3.5+CARP\mytextsubscript{16-shot}& --- & 97.60  & 96.19  & --- &  90.03& \mycite{carp} \\
+
+  GPT-3.5 (R.S.)\mytextsubscript{16-shot}& --- & 95.57 & 95.79 & --- & 90.90  & \mycite{carp} \\
+  GPT-3.5+CoT (R.S.)\mytextsubscript{16-shot}& --- & 95.59 & 95.89 & --- & 90.17 & \mycite{carp} \\
+  GPT-3.5+CARP+vote (R.S.)\mytextsubscript{16-shot}& --- & 98.78  & 96.95  & --- & 92.39 & \mycite{carp}\\
+
+RGPT ``Pushing the Limit'' & --- & --- & --- & 77.41 & --- & \cite{DBLP:journals/corr/abs-2402-07470-pushing-the-limit}\\
+
+QLFR\mytextsubscript{20-shot} & --- & --- & --- &  61.10 & 81.70 & \cite{DBLP:journals/corr/abs-2401-03158}  \\
+
+LLMEmbed\mytextsubscript{bert+roberta+llama embeddings} 
+& --- & 98.22 & 95.68 & --- & d.\,f. & \cite{liu2024llmembedrethinkinglightweightllms} \\
+
+BERT-base 
+    & 87.21\mytextsubscript{0.18} & 98.03\mytextsubscript{0.24} & 96.17\mytextsubscript{0.33} & 71.46\mytextsubscript{0.54} & 86.61\mytextsubscript{0.38} & \mycite{galkescherp-acl2022}\\
+
+AM-BERT & 89.03 & 98.43 & 97.17 & 73.47 & 86.83 & \mycite{am-bert} \\
+    AM-RoBERTa & 90.32 & 98.97 & 98.12 & 73.89 & 89.75 & \mycite{am-bert} \\
+    
+    BERT-large & 85.83\mytextsubscript{0.64} & 97.98\mytextsubscript{0.29} & 96.41\mytextsubscript{0.28} & 72.69\mytextsubscript{0.63} & 88.22\mytextsubscript{0.21} & \myflag{} \\
+   
+    DistilBERT & 86.90\mytextsubscript{0.04} & 97.93\mytextsubscript{0.11} & 96.89\mytextsubscript{0.12} & 71.65\mytextsubscript{0.38} & 85.11\mytextsubscript{0.25} & \myflag{}\\
+
+    RoBERTa 
+    & 86.80\mytextsubscript{0.51} & 98.19\mytextsubscript{0.18} & 97.13\mytextsubscript{0.10} & 75.08\mytextsubscript{0.42} & 88.68\mytextsubscript{0.29} & \myflag{} \\
+
+    DeBERTa 
+    & 87.60\mytextsubscript{0.45} & 98.30\mytextsubscript{0.20} 
+      & 97.10\mytextsubscript{0.13} & 75.94\mytextsubscript{0.33} & 89.98\mytextsubscript{0.26} 
+     & \myflag{} \\
+    
+     ERNIE 2.0 
+     & 87.79\mytextsubscript{0.29} & 97.95\mytextsubscript{0.16} & 96.96\mytextsubscript{0.23} & 73.33\mytextsubscript{0.30} & 89.19\mytextsubscript{0.24} & \myflag{} \\
+    
+     ALBERTv2 
+     & 82.08\mytextsubscript{0.30} & 97.88\mytextsubscript{0.22} & 94.95\mytextsubscript{0.20} & 62.31\mytextsubscript{2.11} & 86.28\mytextsubscript{0.21} & \myflag{} \\
+    
+    gMLP w/o pre-training & 68.62\mytextsubscript{1.66} & 94.46\mytextsubscript{0.41} & 91.27\mytextsubscript{0.99} & 39.58\mytextsubscript{0.77} & 66.24\mytextsubscript{0.37} & \myflag{} \\
+
+    aMLP w/o pre-training & 72.14\mytextsubscript{1.07} & 95.40\mytextsubscript{0.20} & 91.77\mytextsubscript{0.11} & 49.29\mytextsubscript{1.13} & 66.67\mytextsubscript{0.35} & \myflag{} \\
+
+BERT w. token-level GCN \new & 80.12 & 97.62 & 94.09 & 65.98 & 82.57 & \cite{donabauer2024tokenlevelgraphsshorttext} \\
+
+LFTC (compression w. $1$-NN) \new & 81.4 & 96.5 & 90.6 & 43.5 & --- & 
+\cite{mao2024lowresourcefasttextclassification} \\
+
+\midrule
+
+\end{tabular}
+\end{table*}
+\begin{table*}
+\mytablefontsize
+\centering
+\begin{tabular}{llllllr}
+\midrule
+
+\textit{Graph-based Methods} & & & & & & \\
+Text-level GNN & --- & 97.8\mytextsubscript{0.2} &  94.6\mytextsubscript{0.3} & 69.4\mytextsubscript{0.6} & --- & 
+\mycite{DBLP:conf/emnlp/HuangMLZW19}
+\\   
+
+            TextING-M & --- & 98.13\mytextsubscript{0.31} & 95.68\mytextsubscript{0.35} &
+   70.84\mytextsubscript{0.52} &
+   80.19\mytextsubscript{0.31} &
+   \mycite{texting_acl2020}
+   \\
+
+TextGCN & 80.88\mytextsubscript{0.54} & 94.00\mytextsubscript{0.40} & 89.39\mytextsubscript{0.38} & 56.32\mytextsubscript{1.36} & 74.60\mytextsubscript{0.43} & \mycite{DBLP:conf/wsdm/RageshSIBL21}\\%~\citet{DBLP:conf/aaai/YaoM019}
+     HeteGCN & 84.59\mytextsubscript{0.14} & 97.17\mytextsubscript{0.33} & 93.89\mytextsubscript{0.45} & 63.79\mytextsubscript{0.80} & 75.62\mytextsubscript{0.26} & \mycite{DBLP:conf/wsdm/RageshSIBL21}\\%~\citet{DBLP:conf/wsdm/RageshSIBL21}
+     HyperGAT-ind & 84.63 & 97.03 & 94.55 & 67.33 & 77.08\mytextsubscript{0.27} &\mycite{DBLP:conf/coling/HuangCC22}\\%~\citet{DBLP:conf/emnlp/DingWLLL20}
+    DADGNN & --- & 98.15\mytextsubscript{0.16} & 95.16\mytextsubscript{0.22} & --- & 78.64\mytextsubscript{0.29} & \mycite{DBLP:conf/emnlp/LiuGG0F21}\\
+
+SGNN & ---  & 98.09 & 95.46 & --- & 80.58  & \mycite{zhao2021sequential}    \\
+    ESGNN & ---  & 98.23 & 95.72 & --- & 80.93 & \mycite{zhao2021sequential}    \\
+    C-BERT (ESGNN+BERT)  & --- & 98.28 & 96.52 & --- & 86.06 &         \mycite{zhao2021sequential}    \\
+
+ConTextING-RoBERTa & 85.00 & 98.13 & 96.40 & 72.53 & 89.43 &
+    \mycite{DBLP:conf/coling/HuangCC22} 
+    \\
+
+TextSSL & 85.26\mytextsubscript{0.28} & 97.81\mytextsubscript{0.14} & 95.48\mytextsubscript{0.26} & 70.59\mytextsubscript{0.38} & 79.74\mytextsubscript{0.19} & \mycite{textssl2022}\\
+
+GLTC & --- & 98.17 & 95.77 & 71.82 & 80.29 & \mycite{gltc2023} \\
+
+    InducT-GCN & 84.03\mytextsubscript{0.06}  & 96.64\mytextsubscript{0.03} & 93.16\mytextsubscript{0.13} & 65.87\mytextsubscript{0.16}  & 75.21\mytextsubscript{0.08} & \myflag{}  \\
+
+MHGAT  &
+92.68\mytextsubscript{0.30} &
+97.65\mytextsubscript{0.47} &
+94.78\mytextsubscript{0.37} &
+72.88\mytextsubscript{0.84} &
+78.09\mytextsubscript{0.73} &
+
+\cite{mhgat}
+\\ 
+
+\bottomrule
+
+\end{tabular}
+
+\end{table*}
+%\end{longtable}
+
