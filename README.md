@@ -11,9 +11,9 @@ Versions:
 
 - [Version 2023-03-03 on arXiv](https://arxiv.org/abs/2204.03954v2): added hierarchical text classification; removed appendix
 
-- [Version 2022-04-08 on arXiv](https://arxiv.org/abs/2204.03954v1): added multi-label text classification; included measurements of running time and plots of the datasets' class distributions (in appendix)
+- [Version 2022-04-08 on arXiv](https://arxiv.org/abs/2204.03954v1): added multi-label text classification; included measurements of running time and plots of the datasets' class distributions (in appendix). Additional source code released on GitHub at [https://github.com/drndr/multilabel-text-clf/](https://github.com/drndr/multilabel-text-clf/)
 
-- [Version 2022-05](https://doi.org/10.18653/v1/2022.acl-long.279) (ACL) and [update of the survey on arxiv](https://arxiv.org/abs/2109.03777v3): ACL 2022 paper on single-label text classification and introduction of WideMLP with TF-IDF as baseline
+- [Version 2022-05](https://doi.org/10.18653/v1/2022.acl-long.279) (ACL) and [update of the survey on arxiv](https://arxiv.org/abs/2109.03777v3): ACL 2022 paper on single-label text classification and introduction of WideMLP with TF-IDF as baseline. The source code is published on GitHub: [https://github.com/lgalke/text-clf-baselines](https://github.com/lgalke/text-clf-baselines)
 
 - [Version 2021-09-01](https://arxiv.org/abs/2109.03777v1): first release of the survey on single-label text classification and introduction of the TF-IDF + WideMLP baseline (dubbed the ``simple'' baseline)
  
