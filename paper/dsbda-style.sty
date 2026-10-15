@@ -53,9 +53,14 @@
 % -- no
 \IfPackageLoaded{todonotes}{}{\usepackage{todonotes}}
 \presetkeys{todonotes}
-   {inline,backgroundcolor=green}{}
+    % {backgroundcolor=green}{}
+ {backgroundcolor=green}{}
 % If you want to hide all comments
-%    {disable}{}
+%{disable}{}
+
+\newcommand{\new}{}
+%\newcommand{\new}{{\color{red}New!}}
+
 
 % -- Simple technique for short vs. long versions (avoiding extensive if-then-else)
 % Switch between short (1st line) and long (2nd line)
@@ -65,18 +70,16 @@
 
 \newcommand{\extended}[1]{{\shortorextended{}{#1}}} % Helpermethod - no need to touch
 
-%\newcommand{\new}{}
-\newcommand{\new}{{\color{red}New!}}
 
 % Arxiv Variant or not
 \newcommand{\arxivonly}[1]{}
 %\newcommand{\arxivonly}[1]{#1}
 
 % Some own todo commands
-\newcommand{\todoyellow}[1]{\todo[color=yellow,inline]{#1}}
-\newcommand{\todogreen}[1]{\todo[color=green,inline]{#1}}
-\newcommand{\todopink}[1]{\todo[color=pink,inline]{#1}}
-\newcommand{\todored}[1]{\todo[color=red,inline]{#1heterogeneous}}
+\newcommand{\todoyellow}[1]{\todo[color=yellow]{#1}}
+\newcommand{\todogreen}[1]{\todo[color=green]{#1}}
+\newcommand{\todopink}[1]{\todo[color=pink]{#1}}
+\newcommand{\todored}[1]{\todo[color=red]{#1heterogeneous}}
 \newcommand{\todosthmissing}{\todo[color=red]{Something missing.}}
 \newcommand{\todoremove}[1]{\todo[color=red,noinline]{Remove this?!: #1}}
 \newcommand{\todostopped}[1]{\todo[color=red]{@#1 STOPPED HERE!}}

@@ -1,20 +1,17 @@
 \pdfoutput=1
-%\documentclass[lettersize,journal]{IEEEtran}
-%\documentclass[onecolumn,12pt]{IEEEtran}
-\documentclass[acmsmall,nonacm]{acmart}
-
-% FOR ARXIV 
-%\documentclass[manuscript,nonacm]{acmart}
-
-% FOR Submission
-%\documentclass[manuscript,review]{acmart}
-
-% Final
-% \documentclass[acmsmall]{acmart}
-
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage[switch]{lineno}
 \usepackage{amsmath,amsfonts}
-
-\acmJournal{CSUR}
+\usepackage{algorithmic}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
+\usepackage{balance}
 
 \usepackage{dsbda-style}
 \usepackage{hyperref}
@@ -41,117 +38,1068 @@
 
 \let\mycite\cite
 \newcommand\myflag[0]{our experiment}
-%\let\mytablefontsize\small
-\let\mytablefontsize\footnotesize
+\let\mytablefontsize\small
 
-% \usepackage{cite}
+\newcommand{\best}[1]{\textbf{#1}}
+\newcommand{\secondbest}[1]{\underline{#1}}
+
+\usepackage{cite}
 
 \begin{document}
 
 \title{Are We Really Making Much Progress in Text Classification? A Comparative Review}
 
-%\author{Lukas Galke, Ansgar Scherp, Andor Diera, Bao Xin Lin, \\
-%Bhakti Khera, Tim Meuser, Tushar~Singhal, and Fabian~Karl
-%\thanks{L. Galke is with the University of Southern Denmark}
-%\thanks{A. Scherp, A. Diera, B. Lin, B. Khera, T. Meuser, and F. Karl are with the University of Ulm, Germany}
-%}
+\author{Ansgar Scherp$^\star$, 
+Andor Diera, Fabian Karl, Bao Xin Lin$^\dagger$, Bhakti Khera,
 
-\author{Lukas Galke}
-\orcid{0000-0001-6124-1092}
-\affiliation{\institution{University of Southern Denmark}
-\city{Odense}
-\country{Denmark}}
-\email{galke@imada.sdu.dk}
+Tim Meuser, Tushar Singhal, and Lukas Galke Poech$^\star$ 
+\thanks{L. Galke Poech is with the University of Southern Denmark. A. Scherp, A. Diera, F. Karl, B. Lin, B. Khera, T. Meuser, and T. Singhal are with the University of Ulm, Germany.
+$^\star$L. Galke Poech and A. Scherp contributed equally. $^\dagger$Deceased.}
 
-\author{Ansgar Scherp}
-\orcid{0000-0002-2653-9245}
-\affiliation{\institution{University of Ulm} \country{Germany}}
-\email{ansgar.scherp@uni-ulm.de}
+}
 
-\author{Andor Diera}
-\orcid{0009-0001-3959-493X}
-\affiliation{\institution{University of Ulm} \country{Germany}}
-\email{andor.diera@uni-ulm.de}
-
-\author{Fabian Karl}
-\orcid{0009-0008-0079-5604}
-\affiliation{\institution{University of Ulm} \country{Germany}}
-\email{fabian.karl@uni-ulm.de}
-
-\author{Bao Xin Lin}
-\affiliation{\institution{University of Ulm} \country{Germany}}
-\email{bao.lin@uni-ulm.de}
-
-\author{Bhakti Khera}
-\affiliation{\institution{University of Ulm} \country{Germany}}
-\email{bhakti.khera@uni-ulm.de}
-
-\author{Tim Meuser}
-\affiliation{\institution{University of Ulm} \country{Germany}}
-\email{tim.meuser@uni-ulm.de}
-
-\author{Tushar Singhal}
-\affiliation{\institution{University of Ulm} \country{Germany}}
-\email{tushar.singhal@uni-ulm.de}
-
-\begin{CCSXML}
-<ccs2012>
-   <concept>
-       <concept_id>10010147.10010257.10010258.10010259.10010263</concept_id>
-       <concept_desc>Computing methodologies~Supervised learning by classification</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
-   <concept>
-       <concept_id>10002944.10011122.10002945</concept_id>
-       <concept_desc>General and reference~Surveys and overviews</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
-   <concept>
-       <concept_id>10002951.10003317.10003347.10003356<concept_id>
-       <concept_desc>Information systems~Clustering and classification</concept_desc>
-       <concept_significance>300</concept_significance>
-       </concept>
-   <concept>
-       <concept_id>10010147.10010257.10010293.10010294</concept_id>
-       <concept_desc>Computing methodologies~Neural networks</concept_desc>
-       <concept_significance>500</concept_significance>
-       </concept>
- </ccs2012>
-\end{CCSXML}
-
-\ccsdesc[500]{Computing methodologies~Supervised learning by classification}
-\ccsdesc[500]{Computing methodologies~Neural networks}
-\ccsdesc[500]{General and reference~Surveys and overviews}
-\ccsdesc[300]{Information systems~Clustering and classification}
-
-\renewcommand{\shortauthors}{Galke et al.}
+\maketitle
 
 \begin{abstract}
+We survey the literature on single-label, multi-label, and hierarchical text classification and provide a quantitative comparison of methods categorized into bag-of-words, sequence-based, and graph- or hierarchy-based approaches.
+Despite a recent surge in graph-based methods, they do not provide an improvement over fine-tuned transformer models on most evaluated datasets. 
+Decoder-only generative language models show promise in few-shot in-context learning, but appear to lag behind fine-tuned language models when sufficient training data is available. 
+The amount of training data needed for a fine-tuned language model to exceed the performance of a generative model is task-dependent.
+We further highlight the variance in reported numbers across the literature when applying the same model to the same dataset, which can be traced to the use of different hyperparameter values, such as the fine-tuning learning rate.
+For practitioners, we recommend using a fine-tuned language model when sufficient training data is available.
+Otherwise, a frozen generative model, enhanced by few-shot in-context learning or reasoning, is preferable.
 
-We analyze various methods for single-label and multi-label text classification across well-known datasets, categorizing them into bag-of-words, sequence-based, graph-based, and hierarchical approaches. 
-Despite the surge in methods like graph-based models, encoder-only pre-trained language models, notably BERT, remain state-of-the-art. 
-However, recent findings suggest simpler models like logistic regression and trigram-based SVMs outperform newer techniques. 
-While decoder-only generative language models show promise in learning with limited data, they lag behind encoder-only models in performance. 
-We emphasize the superiority of discriminative language models like BERT over generative models for supervised tasks. 
-Additionally, we highlight the literature's lack of robustness in method comparisons, particularly concerning basic hyperparameter optimizations like learning rate in fine-tuning encoder-only language models.
-
-\noindent \textbf{Data availability}: The source code is available at \url{https://github.com/drndr/multilabel-text-clf}. All datasets used for our experiments are publicly available except the NYT dataset.
+\noindent \textbf{Data availability}: 
+The source code and further information are available at \url{https://github.com/ascherp/text-classification-survey}.
 
 \end{abstract}
 
-\maketitle
-\clearpage
-\tableofcontents
-\clearpage
+\begin{IEEEkeywords}
+Data mining, text mining, text classification, neural networks, machine learning
+\end{IEEEkeywords}
 
-%\begin{IEEEkeywords}
-%Data mining, text mining, text classification, neural networks, machine learning
-%\end{IEEEkeywords}
+\section{Introduction}
+\subsection{Motivation and Background}
 
-\input{content}
+Text classification is the task of assigning a categorical label or multiple of such labels to a given text unit~\cite{DBLP:journals/csur/Sebastiani02,DBLP:journals/tkde/MoreoES20}. 
+It is a central task in natural language processing (NLP), with numerous practical applications, such as classifying scholarly documents, social media posts, news articles, or email spam.
+Unsurprisingly, to this day, text classification remains a very active research field, with new methods appearing every week, as reflected by recent surveys~\cite{
+DBLP:journals/tkde/HuLZHNL24,
+fieldsSurveyTextClassification2024,
+electronics13071199,
+DBLP:journals/tist/LiPLXYSYH22,
+DBLP:journals/csur/MinaeeKCNCG21,
+DBLP:journals/corr/abs-2107-03158,
+DBLP:journals/wias/ZhouGLVTBBK20, 
+DBLP:journals/information/KowsariMHMBB19,
+DBLP:journals/air/Kadhim19}. 
 
-%\bibliographystyle{IEEEtran}
-\bibliographystyle{ACM-Reference-Format}
+Besides the rapid pace of research in text classification, conceptually new approaches have also emerged that are not yet sufficiently covered in existing surveys. Those include the use of graph neural networks (GNNs) to process text, which attracts increasing attention from researchers, and increasingly prevalent large language models (LLMs), which are often assumed to be the state-of-the-art in all natural language processing tasks. 
+Although there are surveys with good coverage of new methods, \eg focusing on LLMs~\cite{DBLP:journals/tkde/HuLZHNL24} or GNNs~\cite{gnns-for-nlp-survey}, those then lack a quantitative comparison. 
+Other surveys perform a quantitative comparison but focus on single-label classification and use their own splits instead of the established splits per dataset~\cite{DBLP:journals/eswa/ReusensSTSVBB24}.
+This survey covers both of these new families alongside classical approaches and provides a quantitative comparison across multi-class (or single-label), multi-label, and hierarchical text classification.
+
+Many new methods for text classification are based on graph neural networks (GNNs)~\cite{book:hamilton:grl}.
+Common to these GNN-based approaches is that they first generate a synthetic graph from the corpus that contains text-augmented vertices and edges with information on word and document co-occurrences, \eg~\cite{DBLP:conf/aaai/YaoM019,texting_acl2020}. 
+Second, the GNN is trained on this graph to carry out the text classification task.
+In hierarchical text classification, where classes are organized along a thematic hierarchical thesaurus~\cite{DBLP:journals/csur/Sebastiani02}, GNNs are often used to encode the label hierarchy, \eg~\cite{hbgl,DBLP:conf/acl/WangWH0W22}.
+
+Another group of text classification methods is based on language models, which can be organized in encoder-only, encoder-decoder, and decoder-only models~\cite{yang2023harnessing}.
+Encoder-only pre-trained language models such as BERT~\cite{DBLP:conf/naacl/DevlinCLT19} took big strides in many natural language processing tasks, including categorical text classification~\cite{galkescherp-acl2022}. 
+The encoder-only transformer language models were followed by encoder-decoder variants like T5~\cite{T5} and decoder-only generative \LLMs such as the GPT models~\cite{DBLP:journals/corr/abs-2303-08774,DBLP:conf/nips/BrownMRSKDNSSAA20}.
+Decoder-only transformer language models focus on text generation with remarkable in-context learning abilities.
+This makes them strong zero-shot and few-shot models~\cite{carp,DBLP:conf/iclr/PatelLRCRC23,wei2022finetuned,DBLP:conf/nips/BrownMRSKDNSSAA20}. 
+Yet, whether in-context learning LLMs are generally superior to fine-tuned small language models remains an open question~\cite{
+DBLP:conf/emnlp/PecherSB25-100-samples,
+DBLP:conf/acl/QoribMN24,
+bucher2024finetunedsmallllmsstill,
+lepagnol2024smalllanguagemodelsgood,
+liu2024llmembedrethinkinglightweightllms,
+edwards2024language,
+li2023label}.
+
+Decoder-only language models are usually much larger than masked language models~\cite{DBLP:conf/nips/BrownMRSKDNSSAA20}, which is because the causal language model objective architecture (left-to-right prediction) facilitates scalability through diagonal masking of the attention matrices -- enabling the model to get an error signal for each token in a batch.
+Thus, we increasingly find the distinction between \SLMs (small language models) and \LLMs, \eg~\cite{DBLP:conf/aaai/Hu0CSLW024,DBLP:journals/corr/abs-2406-17534-retrieval-style,DBLP:journals/corr/abs-2402-16844}, which is based on an arbitrarily chosen parameter count.
+
+We argue that a key distinction between \SLMs and \LLMs, particularly for classification tasks, lies in whether they are amenable to fine-tuning.
+The encoder-only and encoder-decoder \SLMs (\eg BERT and T5) are based on masked language modeling (or masked span prediction for T5 respectively) and typically undergo subsequent task-specific fine-tuning. Decoder-only \LLMs (\eg GPTs) are pre-trained using a causal language modeling objective.
+Sufficiently powerful decoder-only models are capable of tackling new tasks based on instructions in their context window at inference time~\cite{DBLP:conf/nips/BrownMRSKDNSSAA20}. That is, while still possible, fine-tuning is not strictly needed for decoder-only models to facilitate downstream tasks like text classification. 
+Task-specific fine-tuning with \LLMs is typically more prohibitive there due to the higher number of parameters.
+Thus, most current text classification approaches using \LLMs rely on few-shot in-context learning and dedicated prompting schemes~\cite{carp}.
+
+\subsection{What is the Problem? Why is our Study Needed?}
+\label{sec:questions}
+
+Encoder-only language models like BERT have led to major improvements to the state of the art on many NLP tasks, including categorical text classification~\cite{galkescherp-acl2022}.
+We ask whether the numerous newly proposed methods provide substantial improvements over encoder-only language models. 
+We pinpoint this question to three aspects analyzed in this survey:
+
+\begin{itemize}
+    \item 
+    \textit{Use of Graphs:}
+The use of GNNs has been specialized for text classification in two ways: First, using synthetic graphs induced from the text corpus, \eg TextGCN~\cite{DBLP:conf/aaai/YaoM019}.
+Those synthetic graphs may not provide additional information beyond what a neural network can directly extract from the text~\cite{galkescherp-acl2022}.
+Second, graphs are provided as additional input for hierarchical classification and processed by explicit graph-encoders, \eg HiAGM~\cite{hiagm}.
+Graph encoders may not provide added benefits to the task of hierarchical classification~\cite{hydra,radar}.
+
+\item \textit{Large Language Models:}
+The literature suggests that generative \LLMs do not generally improve over encoder-only \SLMs for text classification tasks~\cite{DBLP:conf/emnlp/PecherSB25-100-samples,
+pushing-the-limit-11346014-rgpt,
+carp,
+yuan2023revisiting,
+li2023chatgpt,
+yu2023open}.
+This comes despite the advantages of generative \LLMs of high capacity, prompt engineering techniques~\cite{carp,chain-of-thought}, 
+instruction fine-tuning~\cite{wei2022finetuned}, and prompt tuning~\cite{liu-etal-2022-p,lester-etal-2021-power}.
+
+\item \textit{Comparability of Methods:}
+A general challenge when assessing the performance of methods is the comparability of the results.
+Besides properly reporting the used datasets, splits, preprocessing, etc. an important question is if baselines are properly optimized~\cite{DBLP:conf/recsys/DacremaCJ19,leech2024questionablepracticesmachinelearning}. 
+It is especially challenging to properly compare methods for text classification when so many new papers appear using GNNs and language models.
+\end{itemize}
+
+\subsection{Methodology}
+
+We extensively review literature on modern and classical machine learning methods for single-label, multi-label, and hierarchical text classification.
+Based on the literature search, we derive the families of methods for text classification. 
+
+\begin{itemize}
+\item Methods based on Bag of Words (BoW) using, \eg a support vector machine or a multi-layer perceptron~\cite{galkescherp-acl2022}.
+
+\item Methods considering text as a sequence of tokens, \eg the encoder-only BERT~\cite{DBLP:conf/naacl/DevlinCLT19}, encoder-decoder T5~\cite{T5}, or decoder-only GPT~\cite{DBLP:conf/nips/BrownMRSKDNSSAA20}, 
+
+\item Graph-based methods that employ graph neural networks on synthetic graphs like TextGCN~\cite{DBLP:conf/aaai/YaoM019} and hierarchy-based text classification methods like HGCLR~\cite{DBLP:conf/acl/WangWH0W22}.
+\end{itemize}
+
+We identify established single-label and multi-label benchmark datasets for our comparison and identify the top-performing methods.
+We carefully assess the validity of the results for each method and each paper in the literature.
+We check, among others, the train-test split used (whether they deviate from established benchmark splits), 
+number of classes considered, 
+hyperparameter values (are they provided and comparable), 
+whether the baselines are optimized, 
+metrics applied, 
+and if there is any unusual preprocessing of the datasets that may have influenced the results.  
+
+We aggregate results from the literature, complement them with experiments where relevant, and provide a systematic comparison of methods across different method families.
+
+\subsection{Key Results}
+Our comparative survey shows that fine-tuned transformer models are generally strong models for text classification. 
+Despite their sheer number of parameters and training, \LLMs based on in-context learning generally do not outperform fine-tuned \SLMs in text classification.
+Even when pushing the limit of using such \GenLMs by applying tricks such as advanced prompting techniques~\cite{carp} or using ensembles~\cite{pushing-the-limit-11346014-rgpt}, the performance does not, or only marginally on individual datasets, outperform those of encoder-only \SLMs. 
+For example, it requires an ensemble of fine-tuned Llama models to reach or slightly outperform an encoder-only \SLM on two benchmark datasets~\cite{pushing-the-limit-11346014-rgpt}.
+
+We attribute these observations to two main factors.
+First, task-specific fine-tuning is still an important distinctive criterion.
+The encoder-only models like BERT are pre-trained with the masked language modeling objective and fine-tuned with a classifier head for specific datasets on the text classification task.
+Second, the left-to-right attention mask seems to be suboptimal for text classification tasks.
+This again relates well to the distinction between discriminative and generative approaches~\cite{DBLP:conf/sigir/Nallapati04} -- the former 
+focusing on the decision boundary directly, \ie $p(y|x)$, which we interpret here as task-specific fine-tuning, 
+and the latter 
+aiming to learn the full joint distribution $p(x,y)$, which we interpret here as in-context learning.
+
+For the GNN-based methods, despite the huge number of methods developed in recent years, the idea of exploiting a synthetically induced graph to improve text classification has not lived up to its promise.
+Many graph-based methods such as \cite{DBLP:conf/aaai/YaoM019,DBLP:conf/aaai/LiuYZWL20,DBLP:conf/wsdm/RageshSIBL21} are not only outperformed by simply applying BERT but already fall below simple baselines such as a logistic regression or a simple classifier such as a multi-layer perception on a bag-of-words representation~\cite{galkescherp-acl2022,DBLP:conf/wsdm/RageshSIBL21}.
+Such baseline models already extract relevant information for text classification from the raw text~\cite{DBLP:journals/csur/Sebastiani02}.
+Adding a synthetically generated graph from the corpus generally does not provide additional information that a neural network can exploit~\cite{galkescherp-acl2022}.
+
+A worrying observation is the lack of strong baselines and/or not properly tuning them appropriately.
+Like Dacrema, Cremonesi, and Jannach~\cite{DBLP:conf/recsys/DacremaCJ19} observed for neural recommender systems that ``works can be outperformed at least on some datasets by conceptually and computationally simpler algorithms'', the reason is also that baselines are not properly optimized~\cite{DBLP:conf/recsys/ShehzadJ23} (``everyone's a winner'').
+Classical machine learning methods such as support vector machines, logistic regression, and multi-layer perceptrons are largely ignored in papers published in the last years, despite showing consistently strong results across various datasets~\cite{galke2023really,galkescherp-acl2022,DBLP:conf/wsdm/RageshSIBL21}.
+
+There are cases where even the baseline's most basic hyperparameter, the learning rate (or fine-tuning learning rate, in the case of BERT models), is not properly considered.
+We show this in the example of BERT and its variants. 
+Despite running the same BERT model on the same datasets and splits, the numbers from the literature show a discrepancy in BERT's performance up to a $13$ points in accuracy.
+Generally, such discrepancies may be attributed to the learning rate, preprocessing, batch size, implementation details, random seeds, and tuning efforts. 
+We analyze the effect of the learning rate in more detail.
+
+Following studies in other areas of machine learning, we conclude that strong baselines must be used and their hyperparameters properly selected as it is an important means to argue about \textit{true} scientific advancement~\cite{DBLP:conf/acl/HenaoLCSSWWMZ18,DBLP:conf/recsys/DacremaCJ19}, and also their usefulness in practical settings.
+
+\subsection{Remainder}
+
+Below, we introduce our survey methodology.
+The experimental apparatus, including the considered datasets, and the procedure for running our experiments are described in \Secref{sec:apparatus}.
+Sections \ref{sec:bow}, \ref{sec:sequence}, and \ref{sec:graph} provide an overview of the literature in bag-of-words approaches, sequence-based approaches, and graph-based approaches, respectively.
+The results of our quantitative comparison are presented in \Secref{sec:results}.
+Subsequently, we discuss 
+the findings in \Secref{sec:findings},
+limitations in \Secref{sec:limitations},  and provide future directions in \Secref{sec:future}, before we conclude.
+
+\section{Methodology}
+\label{sec:methodology}
+
+This survey covers single-label text classification, multi-label text classification, and hierarchical text classification -- covering published methods up to May 2026.
+We do not consider \emph{extreme} multi-label classification, where the focus is on dealing with a very large label space, which requires a different set of specialized techniques~\cite{xml0,xml4,xml3,xml2} and different metrics (ranking metrics rather than classification metrics).
+We leave this comparison for future work. 
+
+In a first step, we have collected and analyzed recent surveys on single-label, multi-label, and hierarchical text classification and searched for research papers that include comparison studies~\cite{
+wang2023graph,
+duarte2023review,
+buguenoConnectingDotsWhat2023,
+DBLP:journals/tist/LiPLXYSYH22,
+DBLP:journals/csur/MinaeeKCNCG21,
+DBLP:journals/pr/TarekegnGM21,
+DBLP:journals/corr/abs-2107-03158,
+raihan2021-survey,
+DBLP:journals/wias/ZhouGLVTBBK20,
+DBLP:conf/esann/QaraeiKB20,
+DBLP:journals/corr/abs-2011-11197,
+DBLP:journals/information/KowsariMHMBB19,
+DBLP:journals/air/Kadhim19,
+galkescherp-acl2022,
+DBLP:conf/jcdl/MaiGS18,
+DBLP:conf/kcap/GalkeMSBS17,
+DBLP:conf/sigir/ZhangWYWZ16}.
+These cover the range from classical machine learning models to deep classification models.
+Second, we have screened for literature in key NLP and artificial intelligence venues.
+
+Based on this input, we have determined the families of methods and benchmark datasets used (see Tables~\ref{tab:datasets} and \ref{tab:multilabeldatasets}).
+The categorization of the methods is mainly based on the method signature, distinguishing whether methods operate on BoW, sequence, or graph-structured input~\cite{galkescherp-acl2022}. 
+We extend the categorization by further distinguishing 
+sequence-based methods into classical recurrent and convolution models, encoder-only (language) models, encoder-decoder models, and decoder-only models.
+Furthermore, we distinguish
+between two types of graph-based methods: 
+First, approaches that employ a graph structure derived from a corpus of text documents, which we call synthetic text-graph approaches. 
+Second, hierarchy-based methods that use a graph model to encode the hierarchical structure among classes. 
+
+We focus our analysis on methods that show strong performance and include them in our study.
+Comparing results from different studies comes with limitations regarding comparability of results.
+To ensure comparability to the extent possible, we have verified that the same train-test split of the datasets is used for all methods and that the same metrics are used.
+We have also checked whether the datasets have been modified (\eg use only a subset of the classes or have removed samples) to avoid bias and mistakenly give advantages.
+
+We do not consider papers that do not allow for a fair comparison with the state of the art.
+Reasons include that they 
+\begin{itemize}
+\item used different benchmark datasets only like \cite{
+sharma2025readreinforcementbasedadversariallearning,
+petridis2024textclassificationneuralnetworks,
+peng2025text,
+DBLP:journals/nca/JiaJDZLXC23-mhgat,
+10748883-boing-aviation-paper,
+LMTCSG-10705790,
+AGBESI2024e38515,
+10.1007/978-3-031-72350-6_20,
+DBLP:journals/corr/abs-2408-15650,
+Wei_Sun_2024,
+DBLP:conf/kdd/Yu00S24,
+DBLP:conf/sigir/DaiYCX24, 
+JAMSHIDI2024102306,
+DBLP:journals/access/ThaminkaewLV24,
+DBLP:journals/tkde/HuLZHNL24,
+DBLP:conf/coling/LyKCK24,
+DBLP:journals/corr/abs-2401-01667-MLP-Compass,
+thaminkaew2024ieeeaccess,
+li2023chatgpt,yu2023open,yuan2023revisiting,
+zhu2023,
+chae_davidson_2023,
+zhang2023pretraining,
+Yang-ClimateChangeClassifiert-2023,
+DBLP:journals/apin/TanRW23,
+bgnn-xml,
+DBLP:conf/ijcnn/TranSZPB22,
+LiuEtAl2022-LongText,
+DBLP:conf/aiia/BreazzanoC021a,
+DBLP:journals/corr/abs-2206-07253,
+DBLP:journals/corr/abs-2112-11389,
+chalkidis-etal-2020-empirical,
+DBLP:conf/eacl/SchwenkBCL17,gururangan-etal-2019-variational},
+
+\item modified the datasets to use a different number of classes as done in \cite{DBLP:conf/coling/ZhouQZXBX16,DBLP:conf/aaai/LaiXLZ15,MTAPparlakNovelFeatureClassbased2023},
+
+\item employed different train-test splits like
+\cite{
+donabauer2024tokenlevelgraphsshorttext,
+DBLP:journals/eswa/ReusensSTSVBB24,
+edwards2024language,
+StylianouEtAl2023,
+DBLP:journals/corr/abs-2211-02563,
+DBLP:conf/ijcnn/SunHCYSM22,
+raihan2021-survey,
+DBLP:conf/icaart/PalSS20,
+moreo2020,
+canutoThoroughEvaluationDistanceBased2018}, 
+
+\item conduct their own sampling of the train-test splits instead of using standardized splits~\cite{PAAM-HiA-T5}, 
+
+\item perform data augmentation from external knowledge bases~\cite{zhu2023},
+
+\item train-test splits are not reported~\cite{moreo2020,sf-cnn-iasc.2023.027429,YuanEtAl-MSVM-kNN-2008},
+
+\item used fewer training examples~\cite{
+DBLP:conf/acl/LiangZ0Z24,
+DBLP:conf/aaai/LiuZ0ZWMCYZ24,
+Xie2024DataLT,
+zhu2023,
+duarte2023review,
+DBLP:conf/emnlp/ZhengWYD22,
+DBLP:conf/ijcnn/SunHCYSM22,DBLP:conf/emnlp/WangWYD21}, 
+or
+
+\item used different evaluation measures~\cite{tan2022,DBLP:conf/emnlp/HuangGKOO21}.
+
+\end{itemize}
+
+The rationales for why certain changes are made were not always clear in the literature.
+However, it reflects a general problem of comparability in machine learning research~\cite{leech2024questionablepracticesmachinelearning}.
+
+\section{BoW-based Methods}\label{sec:bow}
+Under pure BoW-based (Bag of Words) text classification, we denote approaches that operate only on a multiset of words (or tokens) from the input document. 
+Given paired training examples $(\vx,y) \in \train$, each consisting of a vector that holds the frequency of words in its components $\vx \in \sR^{n_\mathrm{vocab}}$, which is commonly referred to as a bag (multiset) of words, and a class label $y \in \sY$. 
+The goal is to learn a generalizable function $\hat\vy = f_\theta^{(\mathrm{BoW})}(\vx)$ with parameters $\theta$ such that $\operatorname{arg\,max}(\hat\vy)$ is the true label $y$ for input $\vx$.
+For multi-label classification, the BoW-based model considers multiple class labels. 
+Instead of using $\operatorname{arg\,max}(\hat\vy)$ to decide on a label, a binary sigmoid output is commonly used per label, along with a threshold $\lambda$ that determines whether the corresponding class will be assigned. 
+The multi-label model is trained with a binary cross-entropy loss instead of a categorical cross-entropy.
+As output, the multi-label classifier can produce between $0$ and $|\sY|$ many labels~\cite{DBLP:journals/csur/Sebastiani02}, \ie it is possible that no label is predicted.
+
+\subsection{Classical BoW Methods}
+
+Classical machine learning methods that operate on a BoW-based input are extensively discussed in surveys and comparison studies~\cite{
+DBLP:conf/wsdm/RageshSIBL21,
+DBLP:journals/information/KowsariMHMBB19,
+DBLP:journals/air/Kadhim19,
+DBLP:conf/kcap/GalkeMSBS17}.
+These studies show that the best-performing classical models are Support Vector Machines (SVM) and logistic regression (LR).
+Especially, the strong performance of logistic regression is astonishing.
+For instance, Ragesh~\etal\cite{DBLP:conf/wsdm/RageshSIBL21} have shown that logistic regression outperforms the advanced graph-based TextGCN~\cite{DBLP:conf/aaai/YaoM019} method. 
+The CFE-IterativeAdditive method uses a linear SVM with term-based substring matching (from the documents) to the class names~\cite{ATTIEH2023110215}.
+It uses this label matching of the terms to adapt the global IDF weights iteratively, denoted as TF-ICF.
+
+\subsection{Deep BoW Methods}
+
+With more advanced BoW methods, Galke~\etal\cite{galkescherp-acl2022} have found that an MLP on a bag-of-words representation of the text outperforms many graph-based approaches.
+Earlier approaches are mainly based on pre-trained word embeddings~\cite{DBLP:conf/nips/MikolovSCCD13,DBLP:conf/emnlp/PenningtonSM14}.
+For instance, Iyyer~\etal\cite{DBLP:conf/acl/IyyerMBD15} proposed Deep Averaging Networks (DAN), a combination of word embeddings and deep feedforward networks.
+DAN is an MLP with one to six hidden layers, non-linear activation, dropout, and AdaGrad as an optimization method.
+The results suggest that pre-trained embeddings such as GloVe~\cite{DBLP:conf/emnlp/PenningtonSM14} would be preferable over randomly initialized neural bag-of-words~\cite{DBLP:conf/acl/KalchbrennerGB14}.
+In fastText~\cite{DBLP:journals/tacl/BojanowskiGJM17,DBLP:conf/eacl/GraveMJB17}, a linear layer is used on top of pre-trained embeddings for classification.
+Furthermore, Shen~\etal\cite{DBLP:conf/acl/HenaoLCSSWWMZ18} explore different pooling variants for the input word embeddings and find that their Simple Word Embedding Models (SWEM) can rival approaches based on recurrent (RNN) and convolutional neural networks (CNN).
+Note that approaches such as fastText and SWEM that apply a logistic regression on top of pre-trained word embeddings share a similar architecture as an MLP with one hidden layer. 
+However, the standard training protocol involves pre-training the word embedding on large amounts of unlabeled text and then freezing the word embeddings while training the logistic regression~\cite{DBLP:conf/nips/MikolovSCCD13}.
+
+\section{Sequence-based Methods}\label{sec:sequence}
+As sequence-based methods, we consider recurrent and convolutional neural networks, \SLMs (\eg BERT and T5) and \LLMs (\eg GPT-3.5). 
+These approaches aim for \emph{contextualized} word representations, for which nearby words and word order are taken into account.
+The model signature for sequence-based methods is
+$\hat{y} = f_\theta^{(\mathrm{sequence})} ( \langle x_1, x_2, \ldots, x_k \rangle )$,
+where $k$ is the (maximum) sequence length.
+
+\subsection{Recurrent and Convolutional Neural Networks}
+
+Before the era of pre-trained language models, recurrent neural networks (RNNs) were a natural choice for any NLP task.
+In particular, LSTMs~\cite{lstm} enhanced with an attention mechanism~\cite{bahdanau2014neural} and bidirectional processing~\cite{liu2016recurrent}, were considered the state of the art for NLP tasks before transformers.
+For instance, SGM~\cite{sgm} is a model for multi-label classification based on a bidirectional LSTM~\cite{lstm} with an attention mechanism, which has later been extended to use T5 as a backbone language model~\cite{seq2tree}. 
+Word embeddings, such as GloVe~\cite{DBLP:conf/emnlp/PenningtonSM14} have been used with CNNs~\cite{DBLP:conf/coling/HuangCC22} as well as Bi-LSTM~\cite{zhao2021sequential}.
+Lyu and Liu~\cite{DBLP:journals/corr/abs-2006-15795} combine a 2D-CNN with a bidirectional RNN.
+
+\subsection{Encoder-only Small Language Models}
+The transformer~\cite{DBLP:conf/nips/VaswaniSPUJGKP17}, originally developed for machine translation, introduced a key-value self-attention mechanism and had an immense impact on language modeling.
+Transformer-based language models are pre-trained with a self-supervised training objective on large text corpora and can be subsequently fine-tuned with a supervised objective on a specific task.
+Generally, transformer-based language models can be categorized into encoder-only models, encoder-decoder models, and decoder-only models~\cite{yang2023harnessing}.
+BERT and its follow-up approaches are encoder-only language models and are trained with the masked-language modeling objective~\cite{DBLP:conf/naacl/DevlinCLT19}.
+Their main purpose is encoding the text and performing a classification or regression task with a dedicated module (\eg a linear output layer) on top of the encoder.
+The output layer is trained from scratch (\ie from random initialization) during fine-tuning.
+
+Popular follow-up works of BERT are
+RoBERTa~\cite{liu_roberta:_2019}, DistilBERT~\cite{distilbert}, ALBERT~\cite{lan_albert_2020}, DeBERTa~\cite{he_deberta_2021}, and
+ERNIE~2.0~\cite{sun_ernie_2019} \emph{inter alia}.
+RoBERTa improves the pre-training procedure of BERT and removes the next sentence prediction objective. DeBERTa improves upon BERT through a disentangled attention mechanism and corresponding masking techniques.
+DeBERTaV3~\cite{DBLP:conf/iclr/HeGC23} is a modified DeBERTa with an ELECTRA-style pre-training~\cite{DBLP:conf/iclr/ClarkLLM20-electra}.
+DistilBERT~\cite{distilbert} is a distilled version of BERT with 40\% reduced parameters and 60\% faster inference time that retains 97\% of BERT's performance on the GLUE benchmark~\cite{DBLP:conf/iclr/WangSMHLB19}.
+ALBERT reduces the memory footprint and increases the training speed of BERT for improved scalability.
+DeBERTa introduces a disentangled attention mechanism, \ie keeping word position and content embeddings separate, and an enhanced mask decoder, which introduces absolute position encodings to the final softmax.
+ERNIE 2.0 employs a continual multi-task learning strategy. 
+Whenever a new task is introduced, the previous model parameters are used for initialization, and the new task is added to the multi-task learning objective.
+The AM-BERT and AM-RoBERTa models augment transformer fine-tuning for text classification with two attention matrices based on keyphrases and on the input's dependency graph~\cite{am-bert}.
+Finally, ModernBERT is a refurbished variant of the BERT model integrating various optimizations developed over the years and providing an input length of $8,192$ tokens~\cite{warner2024smarterbetterfasterlonger}.
+
+Pre-trained encoder-only language models have also found their way into hierarchical text classification.
+For instance, HBGL~\cite{hbgl} uses BERT to represent the text and represent the hierarchically organized classes.
+For the classes, HBGL first learns the label embeddings from the global hierarchy, \ie the taxonomy.
+Specifically, the label embeddings are learned by employing a masked language modeling objective on sequences that correspond to paths in the label hierarchy.
+Subsequently, it learns to predict the document labels one by one in the order of the local hierarchy, \ie level-wise from the root to the most specific label in the taxonomy.
+By this, HBGL exploits the hierarchy of the labels as defined in the taxonomy and treats the label generation as a multi-label text classification task in a similar way as Nam et al.~ \cite{namMaximizingSubsetAccuracy2017} did with sequence-to-sequence models trained from scratch.
+Thus, HBGL is essentially a \textit{hierarchy-aware} sequence-based transformer model. 
+However, as described above, the key ingredient of HBGL is making use of the sequence-based model BERT.
+HBGL \textit{does not use an external graph encoder} for representing the taxonomy.
+In contrast, the graph-based methods (described in Section~\ref{sec:graph}) always use an \textit{explicit} graph encoder for representing the taxonomy, most commonly a graph neural network, independent of what other model is being used (\eg a CNN, BERT, or other).
+Since HBGL's core is heavily based on BERT and does not have an explicit graph encoder, we consider it a sequence-based transformer method.
+
+\subsection{Encoder-decoder Small Language Models}
+\label{sec:finetune-encdec-slms}
+
+Examples of encoder-decoder language models include BART~\cite{lewis2020bart} and T5~\cite{T5}, which combine ideas from masked language models and generative transformers. 
+The idea is to cast downstream tasks, including classification, into a text-to-text framework with task-specific prompt prefixes. 
+Although these models generate text, they can also be used for classification tasks by interpreting generated tokens as class labels (generative variant, as in \cite{radar}) or through fine-tuning a dedicated new classifier head (discriminative variant).
+In multi-label classification, text-to-text (= sequence-to-sequence) models have been used even before the era of large language models~\cite{namMaximizingSubsetAccuracy2017} to facilitate the prediction of multiple labels.
+
+The encoder-decoder model Seq2Tree adopts T5 to perform hierarchical text classification~\cite{seq2tree}.
+It uses a depth-first search approach to linearize the label hierarchy in order to encode it as a sequence in the model.
+RADAr is a sequence-to-sequence model that uses RoBERTa as a text encoder and a custom two-layer Transformer-based decoder for hierarchical text classification~\cite{radar}.
+In contrast to hierarchical text classification methods, see Section~\ref{sec:rw:hierarcy-based-methods}, RADAr does not operate on a given dataset taxonomy.
+
+\subsection{Large Language Models}
+
+Decoder-only language models such as GPT-3~\cite{DBLP:conf/nips/BrownMRSKDNSSAA20} and Llama3~\cite{llama3}
+are trained with a left-to-right, \ie causal language modeling, objective. This makes decoder-only models most suitable for text generation. 
+However, decoder-only models are very flexible and can also be used to carry out other downstream tasks, including text classification~\cite{DBLP:conf/nips/BrownMRSKDNSSAA20,radfordLanguageModelsAre}. 
+This is done by specifying the task in natural language and providing a few examples in the prompt~\cite{DBLP:conf/nips/BrownMRSKDNSSAA20}. 
+This practice, known as in-context learning, does not require updating the model. 
+In-context learning has led to increased interest in the design of and working with prompts, such as Chain-of-Thought (CoT) prompting~\cite{chain-of-thought} \emph{inter alia}.
+
+Sun~\etal~\cite{carp} evaluated GPT-3.5+CoT on single-label text classification. They also introduced the prompting strategy Clue and Reasoning Prompting (CARP), where the instructions consist of first finding relevant clues in the text input and then providing a classification result based on the clues along with an explanation. 
+The authors evaluate GPT-3.5, GPT-3.5+CoT, and GPT-3.5+CARP with two different samplers for selecting the in-context examples.
+The samplers are a uniform sampler and a RoBERTa model fine-tuned on a generic natural language inference task.
+Using RoBERTa representations of the training documents, the sampler employs a $k$NN search on the examples to sample more representative documents per class to be included in the prompt.
+The best-performing CARP variant employs a 16-shot RoBERTa sampler with a majority vote over multiple runs of prompting GPT-3.5, which we denote as GPT-3.5+CARP+vote.
+
+Prompt boosting has shown promising results for single-label classification
+\cite{pmlr-v202-hou23b}, where differently prompted LLMs form an ensemble with an adaptive boosting algorithm. 
+However, the few-shot performance of large language models without any fine-tuning is still lower than that of fine-tuned small language models~\cite{edwards2024language}.
+Beyond prompting techniques,
+Zhang et al.~\cite{pushing-the-limit-11346014-rgpt} have experimented with fine-tuning an ensemble of Llama-2~\cite{touvronLlamaOpenFoundation2023} models for text classification, leading to competitive scores.
+Li et al.~\cite{li2023label} fine-tune a Llama-2 model~\cite{touvronLlamaOpenFoundation2023} without causal masking such that both left and right context can be considered during self-attention. 
+
+In the end, it is currently unknown whether in-context learning with a large language model is sufficient for a given task or whether fine-tuning is needed. 
+
+\section{Graph-based Methods}\label{sec:graph}
+
+Graphs can serve several purposes in text classification: One is to consider the input data as a graph (\ie the documents, their words), which we call synthetic text-graph approaches to distinguish them from graphs in which the structure has a natural interpretation (\eg citations graphs). Another purpose is considering an additional label hierarchy as input to the model~\cite{DBLP:journals/csur/Sebastiani02} (\ie classes organized in a hierarchy), which we call hierarchy-based methods.
+
+\subsection{Synthetic Text-Graph Methods}
+
+Using graphs induced from text has a long history in text classification. 
+An early work is the term co-occurrence graph of the KeyGraph algorithm~\cite{DBLP:conf/adl/OhsawaBY98}.
+The graph is split into segments, representing the key concepts in the document.
+Co-occurrence graphs have also been used for automatic keyword extraction~\cite{Rose2010} and classification~\cite{DBLP:conf/emnlp/ZhangDXLZ21}.
+Modern methods exploit this idea of a graph induced from the text.
+The text corpus is first transformed into a graph, which is then fed as input into a graph neural network (GNN)~\cite{book:hamilton:grl}.
+
+The synthetic text-graph approaches to text classification first set up a \emph{synthetic} graph based on the text corpus $\train$ such that an adjacency matrix is created from a document corpus $\hat\mA := \operatorname{make-graph}(\train)$.
+The graph is composed of word nodes and document nodes, each receiving its own embedding (by setting $\mX =\mI$).
+For example, in TextGCN, the graph is created from word-word edges (modeled by pointwise mutual information) and word-document edges (based on TF-IDF scores). 
+Then, a parameterized function $f_\theta^{(\mathrm{graph})}(\mX, \hat\mA)$ is learned that uses the graph as input, where $\mX$ are the node features. 
+In the case of TextGCN, the function is a standard graph convolutional network~\cite{DBLP:conf/iclr/KipfW17}. 
+Note that graph-based approaches such as TextGCN disregard word order, similar to the BoW-based models described above.
+
+Among others, methods that follow this synthetic text-graph approach include 
+TextGCN~\cite{DBLP:conf/aaai/YaoM019},
+TensorGCN~\cite{DBLP:conf/aaai/LiuYZWL20},
+Hete\-GCN~\cite{DBLP:conf/wsdm/RageshSIBL21},
+HyperGAT~\cite{DBLP:conf/emnlp/DingWLLL20}, 
+HGAT~\cite{DBLP:journals/tois/YangHSJLN21},
+DADGNN~\cite{DBLP:conf/emnlp/LiuGG0F21}, 
+STGCN~\cite{stgcn},
+SHINE~\cite{DBLP:conf/emnlp/WangWYD21}, and
+AGGNN~\cite{aggnn}.
+While many of these methods are strictly transductive such as HeteGCN and TensorGCN, other methods are 
+inductive~\cite{DBLP:conf/coling/HuangCC22,induct-gcn,texting_acl2020,DBLP:conf/emnlp/HuangMLZW19} or can be adapted to become inductive~\cite{DBLP:conf/wsdm/RageshSIBL21}.
+Transductive models need access to the unlabeled test documents at training time. 
+This requires computing the graph also on the documents of the test set and making this information available during training (but without the labels from the test set).
+In contrast, inductive models can be applied to new data. 
+Here, the graph induced from the text is computed only on the training set.
+
+Transductive training has inherent drawbacks as the models cannot be applied to new documents.
+For example, in TextGCN's original transductive formulation, the entire graph, including the unlabeled test set, must be available for training.
+This may be prohibitive in practical applications as each batch of new documents would require retraining the model.
+When TextGCN and other graph-based methods are adapted for inductive learning, where the test set is unseen, they achieve notably lower scores~\cite{DBLP:conf/wsdm/RageshSIBL21}. 
+Note that all previously described bag-of-words and sequence-based models fall in the inductive category and can be applied to new documents.
+
+We briefly discuss further selected graph-based methods.
+HeteGCN combined ideas from Predictive Text Embedding~\cite{DBLP:conf/kdd/TangQM15} and TextGCN and splits the adjacency matrix into its word-document and word-word sub-matrices and fuses the different layers' representations when needed.
+TensorGCN explores and combines multiple different ways of converting the text into a graph, such as a semantic graph created with an LSTM, a syntactic graph created by dependency parsing, and a sequential graph based on word co-occurrence. 
+HyperGAT combines graph attention~\cite{velickovic2018graph} with the concept of hyperedges based on sequential structure and topic models~\cite{DBLP:journals/jmlr/BleiNJ03}.
+AGGNN~\cite{aggnn} focuses on text pooling mechanism along with gated graph sequence neural networks~\cite{DBLP:journals/corr/LiTBZ15}.
+DADGNN is a graph-based approach that uses attention diffusion and decoupling techniques for tackling the over-smoothing problem of the GNN and building deeper models. 
+Lastly, STGCN tackles short text classification by building upon ideas from TextGCN and adding word-topic and document-topic edges from a topic model, similar to HyperGAT.
+The authors also experimented with combining STGCN with a BiLSTM and a BERT model.
+In their experiments, the combination STGCN+BERT+BiLSTM gave the best results, while pure STGCN fell behind pure BERT. MHGAT~\cite{mhgat} follows a different approach and captures word order by adding position-specific hyperedges to the graph to be processed by a graph attention network. These position edges are obtained through a sine/cosine transformation, following a similar strategy as in the Vaswani transformer's positional encoding~\cite{DBLP:conf/nips/VaswaniSPUJGKP17}.
+
+Particularly between 2022 and 2024, numerous new graph-based models have been published.
+Many of them use BERT in conjunction \textit{with an explicit graph encoder}, usually a graph neural network, such as in BertGCN~\cite{DBLP:conf/acl/LinMSHKLW21}, CTGCN~\cite{ctgcn}, ILGCN~\cite{ilgcn}, TSW-GNN~\cite{tsw-gnn}, and ConTextING~\cite{DBLP:conf/coling/HuangCC22}.
+They differ from the other GNN-based methods as the graph is not computed based on word co-occurrences but BERT's subword tokens.
+Further graph-based methods are KGAT~\cite{DBLP:conf/nlpcc/WangWYZSJWZ22}, InducT-GCN~\cite{induct-gcn}, TextSSL~\cite{textssl2022}, GLTC~\cite{gltc2023}, and others.
+A recent survey on GNNs for text classification was performed by Wang, Ding, and Han~\cite{wang2023graph}.
+Moreover, Bugue\~{n}o and de Melo~\cite{buguenoConnectingDotsWhat2023} compare different initial document representations including Word2vec~\cite{DBLP:conf/nips/MikolovSCCD13}, GloVe~\cite{DBLP:conf/emnlp/PenningtonSM14}, and frozen BERT embeddings and use them in conjunction with graph neural networks. 
+They employ frozen and fine-tuned BERT models as baselines for the categorical text classification task. 
+Their results show that---on most datasets---graph neural networks hardly compete with a fine-tuned BERT.
+
+\subsection{Hierarchy-based Methods}
+\label{sec:rw:hierarcy-based-methods}
+In addition to using text-induced graphs as described above, the dataset's classes may be organized into a graph structure.
+This is the case in hierarchical text classification, where each document should be annotated with a set of labels rather than a single class label~\cite{DBLP:journals/csur/Sebastiani02} and the classes are organized along a taxonomy. 
+The taxonomic hierarchy of labels is typically modeled as a tree or a directed acyclic graph~\cite{shen-etal-2021-taxoclass,hiagm,pengHierarchicalTaxonomyAwareAttentional2021}. 
+The goal is to predict multiple class labels that correspond to one or more nodes in the hierarchy.
+
+Following the taxonomic hierarchy to the root, the classes become more general (broader), while going towards the leaves, the classes become more specific (narrower).
+The documents are typically annotated with some specific classes in the taxonomy.
+In hierarchical text classification, this taxonomy is often used to \emph{enrich} the gold standard~\cite{hiagm}. 
+This means that all vertices along the entire path from the root to the assigned classes are added as ground truth.
+The hierarchy-based text classifier HiAGM~\cite{hiagm} and its follow-up works, such as HGCLR~\cite{DBLP:conf/acl/WangWH0W22} and HBGL~\cite{hbgl}, rely on this enrichment.
+
+The enrichment affects both the training and evaluation of hierarchy-aware methods.
+After this enrichment, the dataset consists of a set of documents $\mX$. Each document is annotated with multiple labels, typically modeled as a label indicator matrix $\hat\mY$, and a hierarchy of classes $\mH$.
+Then, the goal is to learn a function $\vx, \mH \mapsto \hat\vy$ that maps the current document $\vx$ to a set of enriched labels $\hat\vy$, while also taking into account the label hierarchy $\mH$. 
+The hierarchy-based methods make use of an explicit graph encoder to represent the taxonomy and to exploit it in the model architecture to classify the text.
+
+We briefly discuss the selected methods.
+HiAGM is a hierarchical text classifier that models the hierarchy as a directed graph along with hierarchy-aware structure encoders~\cite{hiagm}.  
+It comes in two variants: HiAGM-LA, which is a multi-label attention model that uses an inductive approach.  
+HiAGM-TP is a text feature propagation model that uses a deductive approach to extract hierarchy-aware text features. It uses a GNN-based encoder to obtain a representation for each class and compare it with a Tree-LSTM representation of the text.  
+In early 2021, several other hierarchical label-based attention models were published.  For example, HLAN \cite{dong2021explainable}, LA-HCN \cite{DBLP:journals/corr/abs-2009-10938}, RLHR~\cite{liu2021improving}, and the
+weakly-supervised Taxo\-Class~\cite{shen-etal-2021-taxoclass}.
+Other hierarchy-based methods are
+\cite{DBLP:journals/corr/abs-1812-11270,DBLP:conf/www/XiaoLS19,DBLP:journals/corr/abs-1909-00161}.
+Further methods that use BERT for text encoding and a graph neural
+network for the hierarchy are BERT+HiMATCH~\cite{DBLP:conf/acl/ChenMLY20}, as well as HGCLR.
+The latter uses contrastive learning to align text and graph representations.
+K-HTC combines BERT as a text encoder with a knowledge graph based on entities relevant to the classification task~\cite{DBLP:conf/acl/LiuZHWZ0C23-k-htc}. 
+
+The hierarchy-aware and label-balanced (HALB) model extends HGCLR by replacing the classification with asymmetric loss and adding another loss for separating samples with similar representation but different labels~\cite{DBLP:journals/kbs/ZhangLSXTH24-halb}.
+The Hierarchy-aware Information Lossless contrastive Learning (HILL) model uses BERT as a text encoder and a graph encoder together with a hierarchy-aware contrastive loss~\cite{hill2024}.
+HGBL (note, different from HBGL described earlier) is another model based on contrastive learning on the label and text features using a graph-encoder and BERT as text encoder~\cite{DBLP:journals/npl/ZhangDLZ25-hgbl}.
+RADAr uses an encoder-decoder architecture for hierarchical text classification without requiring a graph encoder~\cite{radar}.
+It uses RoBERTa as a text encoder and a custom autoregressive decoder with two transformer layers to generate the labels in level-wise order.
+HYDRA simplifies this architecture and relies solely on RoBERTa as the text encoder, together with level-wise losses to model the taxonomy~\cite{hydra}.  
+
+The methods discussed so far rely on a small encoder-only language model.
+Retrieval-style ICL is an approach for hierarchical text classification using a large-language model and few-shot in-context learning~\cite{DBLP:journals/corr/abs-2406-17534-retrieval-style}.
+
+\section{Experimental Apparatus}\label{sec:apparatus}
+
+We introduce the benchmark datasets we identified for single-label, multi-label, and hierarchical text classification.
+We provide an overview of the models considered from the different families of text classification approaches. 
+While the vast majority of results are taken from the literature, we also conduct our own runs. 
+For these, we describe our procedure, choice of hyperparameters and their optimization, and evaluation measures.
+
+\subsection{Datasets}\label{sec:datasets}
+
+Our quantitative comparison focuses on topic classification, while including popular sentiment analysis datasets as control: 
+MovieReviews for single-label classification, and GoEmotions for multi-label classification.
+
+\paragraph{Single-label Datasets} 
+We use the benchmark datasets 20ng, R8, R52, ohsumed, and MR with their standard train-test splits.
+Twenty Newsgroups (20ng)\footnote{\url{http://qwone.com/~jason/20Newsgroups/}} (bydate version) contains long posts categorized into 20 newsgroups.
+R8 and R52 are subsets of the R21578~\cite{reuters} news dataset with 8 and 52 classes, respectively.  
+It is a collection of documents that appeared on Reuters newswire in 1987. 
+Ohsumed\footnote{\url{http://disi.unitn.it/moschitti/corpora.htm}} is a corpus of medical abstracts from the MEDLINE database that are categorized into diseases (one per abstract). 
+Movie Reviews (MR)\footnote{\url{https://www.cs.cornell.edu/people/pabo/movie-review-data/}}~\cite{pang-lee-2005-seeing}, split by Tang~\etal~\cite{DBLP:conf/kdd/TangQM15}, is a binary sentiment analysis dataset on sentence level. 
+Table~\ref{tab:datasets} shows the dataset characteristics. 
+
+\begin{table}[ht]
+    \centering
+    \caption{Characteristics of the single-label text classification datasets. 
+    We show the number of documents N and
+    the standard train-test split.
+    \#C is the number of classes.
+    Finally, we report the documents' average length and standard deviation.
+    }
+    \label{tab:datasets}
+    \begin{tabular}{lrrrrr}
+    \toprule
+    \textbf{Dataset} & \textbf{N}       & \textbf{\#Train} & \textbf{\#Test}  & \textbf{\#C} & \textbf{Avg. length}   \\
+    \midrule                                                              
+    20ng    & 18,846  & 11,314  & 7,532   & 20        & 551 $\pm$ 2,047 \\
+    R8      & 7,674   & 5,485   & 2,189   & 8         & 119 $\pm$ 128   \\
+    R52     & 9,100   & 6,532   & 2,568   & 52        & 126 $\pm$ 133   \\
+    ohsumed & 7,400   & 3,357   & 4,043   & 23        & 285 $\pm$ 123   \\
+    MR      & 10,662  & 7,108   & 3,554   & 2         & 25 $\pm$ 11     \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\paragraph{Multi-label and Hierarchical Datasets}
+\label{sec:multi-label-datasets}
+Table~\ref{tab:multilabeldatasets} shows the characteristics of the multi-label and hierarchical datasets.
+Reuters-21578 (R21578)~\cite{reuters} is a popular dataset for multi-label classification.
+We use the train-test split from NLTK.\footnote{\url{https://www.nltk.org/book/ch02.html}}
+The labels in R21578 are not hierarchically organized.
+RCV1-V2 is a newer version of the R21578 dataset containing a much larger amount of hierarchically categorized newswire stories. 
+For RCV1-V2, we use the train-test split proposed by Lewis et al.~\cite{rcv1-v2}. 
+EconBiz~\cite{DBLP:conf/jcdl/MaiGS18} is a dataset containing scientific papers in economics.
+It provides the titles of a metadata export as well as the full text of papers up to 2017.
+We use the split provided by the authors for comparability.
+GoEmotions is a corpus of comments extracted from Reddit, with human annotations to 27 emotion categories~\cite{demszky2020goemotions}. 
+We use the same train-test split as in the original paper. 
+GoEmotions does not have a hierarchical label structure. Amazon-531~\cite{hiddenfactors} contains
+49,145 product reviews and a three-level class taxonomy consisting of 531 classes. 
+DBPedia-298~\cite{Lehmann2015DBpediaA} includes 245,832 Wikipedia articles and a three-level class taxonomy with 298 classes. For Amazon-531 and DBPedia-298, we use the same train-test split as in TaxoClass~\cite{shen-etal-2021-taxoclass}.
+NYT AC~\cite{sandhaus} contains New York Times articles from 1987 to 2007. We use the train-validation-test split from HiAGM~\cite{hiagm}.
+The Web of Science (WOS) dataset contains 46,985 scientific papers~\cite{DBLP:conf/icmla/KowsariBHMGB17}, each with exactly one parent and one child label.
+In the hierarchical datasets (Hier.=Y), each label set includes the more general labels along the path up to the root of the hierarchy.
+
+\begin{table*}[ht]
+    \centering
+    \caption{Characteristics of the multi-label and hierarchical classification datasets. 
+    We show the same statistics for the single-label datasets.
+    In addition, we report the average number of class labels per document and whether the dataset comes with a hierarchy (Hier.).
+    }
+    \label{tab:multilabeldatasets}
+    \begin{tabular}{lrrrrrrr}
+    \toprule
+    \textbf{Dataset} & \textbf{Hier.} & \textbf{N} & \textbf{\#Train} & \textbf{\#Test} & \textbf{\#C}  & \textbf{Labels per doc.} \\    
+    \midrule                                                               
+    R21578   & N & 10,788  & 7,769  & 3,019 & 90  &  1.24 $\pm$ 0.75   \\ 
+    RCV1-V2  & Y   &  804,414  & 23,149   & 781,265 & 103  & 3.24 $\pm$ 1.40  \\ 
+    EconBiz  &  Y & 1,064,634  & 994,015  & 70,619 & 5,661  & 4.36 $\pm$ 1.90  \\ 
+    GoEmotions  & N  & 48,837  & 43,410  & 5,427 & 28   & 1.18 $\pm$ 0.42   \\ 
+    Amazon-531  &  Y   & 49,145  &  29,487  &  19,658  & 531 & 2.93 $\pm$ 0.26  \\  
+    DBPedia-298  &  Y   &  245,832  &  196,665  & 49,197 & 298   & 3.00 $\pm$ 0.00\\ 
+    NYT AC  & Y   &  36,471  & 29,179    & 7,292 & 166 &  7.59 $\pm$ 5.61  \\   
+    WOS & Y & 46,985 & 37,588 & 9,397 & 141 & 2.00 $\pm$ 0.00\\
+   \bottomrule
+    \end{tabular}
+\end{table*}
+
+\subsection{Methods and Complementing Experiments}
+
+We build our quantitative comparison on existing studies such as Ding~\etal\cite{DBLP:conf/emnlp/DingWLLL20}, Ragesh~\etal\cite{DBLP:conf/wsdm/RageshSIBL21}, Li~\etal\cite{DBLP:journals/corr/abs-2405-11524}, and Galke~\etal\cite{galkescherp-acl2022}.
+
+\paragraph{BoW-based Methods}
+For the methods based on Bag of Words (BoW), we rely on the study by Galke~\etal\cite{galkescherp-acl2022}, who have evaluated various variants of an MLP operating on a bag-of-words.
+These include an MLP with one wide hidden layer
+ and two hidden layers and different text representations as input, such as TF-IDF weighting, and using pre-trained word embeddings such as GloVe.
+We further list the numbers for fastText, SWEM, and logistic regression from Ding \etal~\cite{DBLP:conf/emnlp/DingWLLL20}.
+Motivated by \cite{DBLP:journals/corr/abs-2211-02563}, we complement these numbers by running SVMs on unigram and trigram features to include strong classical machine learning methods~\cite{DBLP:conf/kcap/GalkeMSBS17}.
+
+\paragraph{Recurrent and Convolutional Neural Networks} We include scores of sequence-based models such as LSTMs~\cite{DBLP:conf/emnlp/DingWLLL20,zhao2021sequential} and CNNs~\cite{DBLP:conf/ijcnlp/ZhangW17,DBLP:conf/emnlp/Kim14}.
+In contrast to the BoW-based models, these consider the sequence of the textual input and exploit this to train the classifier.
+
+\paragraph{Small Language Models}
+We run experiments with various pre-trained language models.
+The numbers reported in the literature for BERT applied to the same datasets vary widely across papers. 
+We fine-tune BERT and some of the most popular encoder-only language models, including DistilBERT, RoBERTa, DeBERTa,  ALBERTv2, and ERNIE 2.0 ourselves.
+Furthermore, we conducted runs with the encoder-decoder models BART and T5, as there were no numbers available in the literature.
+
+\paragraph{Large Language Models}
+We found numbers for \LLMs including GPT-3.5 (\texttt{text-davinci-003}) with the CARP prompting strategy~\cite{carp}, a sophisticated few-shot learning technique that relies on sampling examples based on RoBERTa-large embeddings (R.S. variant) and voting among multiple runs. 
+Note that in-context learning evaluations of LLMs, such as CARP, do not make use of the full training set but only a few examples. 
+A different strategy we include here is to fine-tune the parameters of LLMs for text classification, as done in RGPT~\cite{pushing-the-limit-11346014-rgpt}. Specifically, RGPT consists of an ensemble of fine-tuned Llama-2 models~\cite{touvronLlamaOpenFoundation2023}.
+
+\paragraph{Synthetic Text-Graph Methods}
+
+We review both transductive and inductive graph-based methods for text classification.
+These include TextGCN along with its successors HeteGCN, TensorGCN, HyperGAT,
+DADGNN, Simplified GCN (SGC)~\cite{DBLP:conf/icml/WuSZFYW19}, and many others.
+Ragesh~\etal\cite{DBLP:conf/wsdm/RageshSIBL21} evaluated a variant of TextGCN that is capable of inductive learning, which we include in our results. 
+
+\paragraph{Hierarchy-based Methods}
+\label{sec:hiagm}
+\label{sec:Hierarchy-based-Text-Classification}
+For hierarchy-based text classification, we report results for models that use graph encoders such as BERT+HiMatch, HiAGM, HGCLR, and HBGL.
+We report models that do not use a graph encoder, \eg the encoder-decoder-based Seq2Tree and RADAr, as well as HYDRA, which uses layer-wise losses on RoBERTa.
+For comparison, we run experiments with the BoW-based method WideMLP~\cite{galkescherp-acl2022}, which considers the classes as a set.
+More training is needed for transformer-based models on hierarchical datasets than on multi-label datasets~\cite{hydra}.
+
+\subsection{Procedure}
+
+We distinguish between single-label and multi-label text classification settings.
+We apply standard train-test splits unless there is no default split provided (see Section~\ref{sec:datasets}).
+
+We consider an inductive setting, where the test documents remain unseen until test time, \ie they are not available for training or preprocessing. The distinction only matters for graph-based approaches because BoW-based and sequence-based models are usually inductive.
+
+To avoid bias in the comparability of the results, we carefully checked all relevant parameters, such as the train/test splits, the number of classes in the datasets, whether datasets have been pre-processed to make the task substantially easier, and the evaluation metrics (see methodology in Section~\ref{sec:methodology}). 
+
+We repeat all of our own experiments five times with a different random initialization of the parameters and report the mean and standard deviation of these five runs.
+To tune the hyperparameters of the multi-label classification models, we choose randomly 20\% of the train set as a validation set. 
+Below, we provide a detailed description of the hyperparameter optimization and evaluation procedures for the models that we have run ourselves.
+
+\subsection{Hyperparameters}
+
+Generally, we rely on the hyperparameter values and hyperparameter optimization strategies reported by the original works.
+In cases where we run experiments, we describe below how we set the hyperparameter values for the single-label, multi-label, and hierarchical text classification tasks.
+For each case, we follow the families of classification approaches.
+
+\paragraph{Single-label Case}
+For the unigram and word-trigram SVM models, we first transform the features via TF-IDF and then employ a linear support vector classifier with hinge loss and default hyperparameters (l2 penalty, regularization strength $C=1$).
+
+For \textit{fine-tuning the small language models} such as 
+BERT-base, DistilBERT, 
+RoBERTa-base, 
+DeBERTa-base, ERNIE, and ALBERT, we adopt the fine-tuning strategy of Galke and Scherp~\cite{galkescherp-acl2022}:
+We fine-tune each model for 10 epochs with a linearly decaying learning rate. We conduct a manual search among learning rates between $10^{-5}$ and $5 \cdot 10^{-5}$, as common for fine-tuning pre-trained language models~\cite{DBLP:conf/naacl/DevlinCLT19,T5}. Our search range for batch sizes was between $4$ and $128$ -- which in turn control the number of optimizer steps. 
+Specifically, we use $\mathrm{lr}=4.5\cdot 10^{-5}$ for DistilBERT, $4 \cdot 10^{-5}$ and for RoBERTa, $2 \cdot 10^{-5}$ for DeBERTa, $2.5 \cdot 10^{-5}$ for ERNIE, and $1 \cdot 10^{-5}$ for ALBERT and BERT-large. 
+The effective batch sizes (i.e., taking gradient accumulation into account) are 128 for DistilBERT, 16 for DeBERTa and BERT-large, and 32 for RoBERTa, ERNIE, and ALBERT.
+The transformers' output sequence is pooled according to the respective model's suggested strategy.
+For example, for BERT and most BERT-like models, the final representation of the first token is used (the inserted special CLS token) and fed into an MLP module. 
+We use the uncased versions where available, \eg BERT, and the cased variants of later models, \eg RoBERTa, which no longer provide a separate uncased variant.
+We fine-tune BART and T5 for $10$ epochs with a learning rate of $5\cdot
+10^{-5}$. 
+For this, we use the discriminative variant, see Section~\ref{sec:finetune-encdec-slms}, \ie attach a newly initialized classifier head that processes the last token's representation and fine-tune all model parameters against a categorical cross-entropy loss.
+
+\paragraph{Multi-label Case}
+For \textit{training the \mlp{}} in the multi-label case, we tune the hyperparameters using a manual search on the R21578 dataset with learning rates between $10^{-3}$ and $10^{-1}$ and batch sizes between $8$ and $256$.
+We noticed that higher learning rates are beneficial combined with a TF-IDF input representation and $100$ epochs of training. We thus train the MLPs consistently with a learning rate of $10^{-1}$ for all datasets.  We increase the batch size according to the dataset size in order to limit the overall training time: For the smaller datasets (R21578, GoEmotions, Amazon-531, NYT AC, RCV1-V2), we use a batch size of 8. 
+For DBPedia-298, the batch size is $32$, and for EconBiz, it is $256$.
+
+All models are trained with Adam~\cite{DBLP:journals/corr/KingmaB14} to minimize binary cross-entropy loss. 
+At test time, class labels are assigned depending on a threshold on the class-specific output.
+It is common to threshold the sigmoidal output units at values of $\lambda = 0.5$~\cite{zhang,Tsoumakas}. 
+However, Galke~\etal\cite{DBLP:conf/kcap/GalkeMSBS17} had found that a smaller threshold such as $\lambda=0.2$ can be advantageous, especially in setups with an imbalanced label distribution.
+In pre-experiments with \mlp, we tested different thresholds from $\lambda=0.5$ to $\lambda=0.1$ ($0.1$ steps) and experienced similar results as reported in Galke~\etal\cite{DBLP:conf/kcap/GalkeMSBS17}.
+
+For the \emph{encoder-only models}, \ie the variants of BERT, we use a manual search to find the best hyperparameters using a search range in learning rate between $10^{-5}$ and $5 \cdot 10^{-5}$, batch sizes between $4$ and $128$, and epochs in $\{5,10,15\}$. 
+We again fine-tune all parameters of the model, as we do for single-label classification, with Adam to
+minimize binary cross-entropy loss. 
+In the pre-experiments with R21578, we found that small batch sizes are preferable for fine-tuning these models.
+We used a learning rate of $5 \cdot 10^{-5}$ 
+with a batch size of $4$ for all data sets.
+We fine-tune the models on the datasets for either $5$ or $15$ epochs for multi-label training, following~\cite{galkescherp-acl2022}.
+DBPedia-298 and GoEmotions had the best results with $5$ epochs as the validation loss increased in subsequent iterations.
+The encoder models employ a threshold of $\lambda=0.5$ after pre-experiments with $0.2$ and $0.5$. 
+
+For the encoder-decoder models BART and T5, we use Adam to optimize all parameters (incl. classifier head) against binary cross-entropy with a learning rate of $5 \cdot 10^{-5}$. We use the best identified number of epochs and batch sizes as determined for the encoder-only models, and we again test thresholds for class assignment $\lambda = 0.2$ and $0.5$, out of which the $0.2$ threshold led to better results. 
+
+\paragraph{Hierarchical Case}
+The runs on the datasets NYT and RCV1-v2 use the same hyperparameters as described for the multi-label case above. For WOS, we train WideMLP for 100 epochs with a learning rate of $3 \cdot 10^{-1}$ and a batch size of 128.
+The discriminative variants of BART and T5 on WOS were trained with a linearly decaying learning rate of $2 \cdot 10^{-5}$, weight decay of $0.1$, and gradient clipping to $1.0$.
+For other hierarchy-based methods, we rely on numbers from the literature.
+
+\subsection{Measures}
+We report accuracy as the evaluation metric for single-label datasets.
+Note that the accuracy is equivalent to Micro-F1 in single-label classification~\cite{galkescherp-acl2022}.
+We report the mean accuracy and standard deviation (SD) over five runs for neural network methods, which rely on random initialization and other noise sources during training, such as dropout. 
+For those models where we rely on numbers from the literature, we check if multiple runs are reported and include the corresponding information in our report. 
+Note that the exact number of runs may differ from paper to paper. Most papers report five runs (if they have multiple runs), but others report ten runs.
+
+For the multi-label datasets, we follow Galke~\etal\cite{DBLP:conf/kcap/GalkeMSBS17} and report the sample-based F1 measure. 
+We chose this sample-based evaluation measure because it reflects the classification quality of each document separately~\cite{DBLP:conf/jcdl/MaiGS18}. 
+The sample-based F1 measure is calculated by the harmonic mean of precision and recall for each example individually, and then these scores are averaged.
+For hierarchical text classification, we report globally averaged Micro-F1 and class-averaged Macro-F1, as common in the hierarchical text classification literature.
+
+\section{Quantitative Comparison}\label{sec:results}
+
+We present the results of our quantitative comparison, starting with single-label text classification.
+Subsequently, we present our results of a sensitivity analysis of transformer models regarding the fine-tuning learning rate.
+This is followed by the results on multi-label and hierarchical text classification.
+We bold the best numbers and underline the second best per model family.
+
+\subsection{Single-label Text Classification}
+
+\renewcommand{\mytextsubscript}[1]{{\color{black}~\textsubscript{#1}}}
+\newcommand\mycaption{Results for the single-label
+text classification datasets. For our experiments, we report the mean accuracy
+and standard deviation (SD) over five runs. For numbers from the literature, we
+report the SD if available. GPT-3.5 methods use 16 examples per class for
+in-context learning, and the (R.S)-variant uses a Sup-SimCSE-RoBERTa-Large sampler to select
+these examples. Column ``Provenance'' reports the source. d.\,f. is short for the use of a different variant of the dataset or a different split, and thus, the number is omitted to ensure comparability.}
+\newcommand\mylabel{\label{tab:results_textclf_micro}}
+\input{table-single-label-inductive}
+
+Table~\ref{tab:results_textclf_micro} shows the results of the single-label text classification on the five datasets.
+We see that sequence-based transformers are generally the best methods, followed by the graph-based methods and BoW methods.
+
+Among the BoW-based methods, the SVM variants are the strongest on ohsumed and MR, followed by WideMLP and SWEM.
+The CFE-IterativeAdditive with its use of label matching to compute adapted global IDF weights TF-ICF is the best BoW model on 20ng, R8, and R52.
+The strength of TF-IDF weighting is also shown by the Trigram SVM with TF-IDF and WideMLP with TF-IDF.
+We further observe that pure BoW and TF-IDF-weighted BoW yield better results than approaches that exploit pre-trained word embeddings such as GloVe-MLP, fastText, and SWEM.
+
+Regarding the sequence-based methods, a GPT~3.5 with 16 shots and CARP and voting achieves the best results on MR.
+It requires a fine-tuned RoBERTa, which is used to select the most relevant shots.
+RGPT achieves the highest score on ohsumed with a sequence of seven fine-tuned Llama 2 models and low-rank adaptation.
+AM-RoBERTa, using two additional attention matrices for keywords and term dependencies, achieves the best results on 20ng, R8, and R52. 
+DeBERTa-base attains the highest scores among the encoder-only models. 
+The margin to a BERT-base model is most notable on ohsumed ($75.9$ vs. $71.5$) and on MR ($90.0$ vs. $86.6$).
+ BERT-large improves the scores over BERT-base by a small 1 point for the ohsumed and MR datasets, but the inverse of a performance decrease of 1 point is recorded for 20ng. 
+For R8 and R52, both BERT-base and BERT-large achieve about the same performance. 
+BART-base is a strong single-label classifier, outperforming BERT-base on all single-label datasets and BERT-large on four datasets. 
+T5-base generally falls behind BART-base, except for the MR datasets, where it has a $2.69$-point advantage. 
+BART and T5 cannot beat DeBERTa, except for MR, where T5 shows a marginal improvement of $0.12$ points over DeBERTa.
+
+The graph-based MHGAT obtains the highest scores on the 20ng dataset among all method families.
+However, numbers for GPT-3.5 with CARP and RGPT were not available for this dataset for comparison.
+With the help of a pre-trained language model, models like C-BERT and ConTextING-RoBERTa attain higher scores on R8, R52, and MR.
+The largest difference is found on the MR sentiment analysis dataset, where ConTextING-RoBERTa reaches $89.43$ compared to $77.08$ of HyperGAT-ind.
+The best-performing graph-based model not using a pre-trained language model is TextSSL, closely followed by HyperGAT.
+TextGCN is outperformed by a BoW-based logistic regression on four out of five datasets~\cite{DBLP:conf/wsdm/RageshSIBL21}.
+
+The best pure graph-based method TextSSL is outperformed by T5-base by 10 points on the MR dataset.
+Comparing DeBERTa with the best graph-based method ConTextING-RoBERTa, there is still superiority of the pure transformer, but the margin is smaller.
+
+\subsection{Sensitivity Analysis to Fine-tuning Learning Rate for Single-label Classification}
+
+Analyzing the results on single-label datasets reported in the literature, we noticed that the performances of BERT and other transformer models on the same datasets differ from paper to paper.
+To shed light on the differences between BERT results on the same datasets, we provide an overview in Table~\ref{tab:transformer-comparison} and conduct additional runs with different learning rates.
+In our additional runs, we kept preprocessing and other parameters like batch size and tuning effort the same.
+
+We observe that there are substantial differences between the supposedly same BERT models applied on the same datasets reported in the literature.
+For BERT-base, the difference is, in many cases, 2 and 3 points on the 20ng and ohsumed datasets, respectively.
+For RoBERTa, we even observe deviations of more than 3 points on 20ng and 5 points on ohsumed despite using the same learning rate.
+
+Some of the reported numbers for fine-tuned BERT models are even far behind the others.
+For example, Yin et al.~\cite{gltc2023} report BERT-base results that are more than ten points behind the other papers on MR and ohsumed.
+We hypothesize that this discrepancy is caused by a suboptimal choice of hyperparameters, \eg a too-high learning rate, which are unfortunately not provided.
+
+On the R8, R52, and MR datasets, the results differ by not more than 1 point.
+Remarkably, DistilBERT is quite sensitive to a small change in the learning rate by only $0.5 \cdot 10^{-5}$.
+The difference is more than 1 point on R52 and even 2 points on ohsumed.
+
+\renewcommand{\myheader}{
+  \caption{Comparison of different transformer models and hyperparameter settings. We report mean accuracy and standard deviation over five runs on the single-label text classification datasets (inductive). Column ``Provenance'' reports the source.
+    N/P refers to the case where the paper (or potential supplementary materials) did not provide information about the learning rate.
+    }
+    
+    \label{tab:transformer-comparison}
+}
+\input{table-transformer-learning-rates}
+
+\subsection{Multi-label Text Classification}
+
+\renewcommand{\myheader}{
+\caption{Results for the inductive multi-label text classification datasets. 
+    We report the sample-based F1 metric to reflect how well the classifier performs on average per a set of new documents.
+    Standard deviation across runs is denoted in braces.}\label{tab:results_multi-label_classification}
+}
+\input{table-multi-label-inductive}
+
+\renewcommand{\myheader}{
+    \caption{Micro and Macro F1 scores with standard deviation (where available) across five runs for hierarchical multi-label classification on three common benchmark datasets using Micro-F1 and Macro-F1 scores.}\label{tab:results_multi-label_classification-extra}
+}
+\input{table-wos-nyt-rcv-datasets}
+
+For multi-label classification, we show the sample-based F1 scores in Table~\ref{tab:results_multi-label_classification}.
+We argue that the sample-based F1 represents real-world applications where each document needs to be annotated one document after the other, such as in subject indexing in digital libraries~\cite{DBLP:conf/kcap/GalkeMSBS17,DBLP:conf/jcdl/MaiGS18}.  
+
+\
+The T5-base model is the strongest or second-strongest of the sequence-based models for multi-label datasets, except GoEmotions.
+This differs from the results on the single-label datasets, where T5-base was behind encoder-only models, except for MR.
+
+A WideMLP with TF-IDF is falling behind the sequence-based models. 
+For some datasets, like DBpedia, the differences among the sequence-based methods are very small, while for others, a difference of up to three points can be observed. 
+
+Many of the multi-label datasets are hierarchical, \ie have hierarchically organized labels.
+We report the use of hierarchy-based methods for three multi-label classification datasets with hierarchy in the next section.
+Furthermore, we report results involving \LLMs in the next section, too. 
+
+\subsection{Hierarchical Text Classification}
+Table~\ref{tab:results_multi-label_classification-extra} shows results for Micro-F1 and Macro-F1 metrics for the three hierarchical datasets: Web of Science (WOS)~\cite{DBLP:conf/icmla/KowsariBHMGB17}, NYT, and RCV1-V2 (see Section~\ref{sec:datasets}).
+
+Sequence-based models perform better than the hierarchy-based methods, except for Micro-F1 on WOS. 
+The BoW-based methods clearly fall behind, most notably on the more difficult-to-improve F1-Macro measure.
+
+As with single-label and multi-label classification, TF-IDF with BoW is stronger than pure BoW.
+In terms of the sequence-based methods, the best performer depends on the dataset and measure.
+But all of them are based on an encoder-only model like HBGL or an encoder-decoder like Seq2Tree.
+The \LLM-based Retrieval-style ICL uses a 16-shot in-context learning, clearly falling behind.
+A fine-tuned and unmasked Llama-7B cannot reach the performance of smaller language models like encoder-only variants.
+The difference is particularly notable on F1-Macro.
+
+Regarding the hierarchy-based methods, the strongest method is HyILR.
+It is followed by other hierarchy-based methods as close runners-up, such as HILL, and is barely outperformed in two cases by HALB.
+
+\section{Discussion}\label{sec:findings}
+
+\subsection{Key Findings} 
+
+The results highlight that, overall, the strongest model variants are sequence-based language models. 
+For single-label classification, encoder-only SLMs and encoder-decoder SLMs remain highly competitive to dedicated LLM pipelines.
+Data augmentation and carefully designed ensembles using LLMs yield the strongest overall results, while graph-based approaches provide only dataset-specific advantages.
+For multi-label classification, the encoder-decoder T5 model is the strongest approach (except for GoEmotions).
+In hierarchical datasets, one observes benefits from hierarchy-aware modeling in sequence-based models, which obtain the highest scores of all model families.
+Dedicated hierarchical methods using the given taxonomy generally fail to consistently outperform strong fine-tuned language models.
+Below we discuss the results in detail along the three tasks and per model families.
+
+\paragraph{Single-label Classification}
+As shown in Table~\ref{tab:results_textclf_micro}, encoder-only \SLMs show strong results. 
+The graph-based MHGAT is the best method on the 20ng dataset.
+The \LLM-based 16-shot ensemble GPT-3.5+CARP+voting using a fine-tuned RoBERTa-Large is the best on the MR dataset, while RGPT with an ensemble of $k$=7 Llama 2 models is the strongest model on ohsumed.
+Both \LLM-based models were not evaluated on 20ng. 
+We were not able to independently verify the results of MHGAT 
+due to the lack of source code and the authors' accessibility, we can only infer from the reported ablations that the hypergraph-based positional embedding may be a beneficial factor for the 20ng dataset~\cite{mhgat}.
+Regarding GPT-3.5+CARP+voting, the use of an ensemble and supervised fine-tuned RoBERTa-Large to select the 16-shot provides the advantages as shown in the results of the different GPT-3.5 model variants in Table~\ref{tab:results_textclf_micro}.
+For RGPT, it requires an ensemble of Llama 2 models to outperform the second-best model, a pure DeBERTa-base model, by $1.47$ points.
+
+Regarding the encoder-only models, BERT-large does not improve more than 1 point over BERT-base, despite having three times more parameters.
+On 20ng, the performance even drops by one point.
+Presumably, the capacity of BERT-base is already sufficient to tackle the single-label classification tasks, especially for the R8 and R52 datasets, and there are reports that BERT-large is harder to fine-tune on small datasets~\cite{DBLP:conf/naacl/DevlinCLT19}.
+
+Augmentation improves the results and makes the \SLM AM-RoBERTa model the overall strongest single-label classifier.
+A similar observation is made for the BoW methods, where the use of concept-based TF-ICF features with SVM in CFE-IterativeAdditive~\cite{ATTIEH2023110215} improves the results in three datasets. 
+Such an observation was also made by Galke~\etal\cite{DBLP:conf/kcap/GalkeMSBS17}, who used CTF-IDF features for text classification.
+
+\paragraph{Multi-label Classification}
+
+The strongest multi-label classifier is T5-base, outperforming the encoder-only RoBERTa and DeBERTa, in contrast to the general observation for the single-label datasets.
+An interesting observation can be made on the multi-label sentiment prediction dataset GoEmotions, where \mlp achieves the worst performance across all models and the highest margin compared to BERT regarding all datasets. 
+Similarly, BERT outperforms \mlp on the single-label MR dataset with the largest margin compared to other datasets. 
+However, \mlp is a surprisingly strong model on the EconBiz dataset with the most number of labels. 
+This may be due to the highly imbalanced (long tail) label distribution of the thousands of labels in the EconBiz dataset~\cite{DBLP:conf/jcdl/MaiGS18}, which may be easier to reflect in a model trained from scratch than in a pre-trained model, such as BERT.
+
+We assume that BoW-based MLP models are at a disadvantage in sentiment prediction compared to sequence-based models, where word order is relevant for the task.
+Note that most graph-based methods also discard word order when setting up the graph~\cite{galkescherp-acl2022}, except for models that combine the GNN with a sequence-based transformer model.
+
+Since there are no sample-based F1 results in the literature for hierarchical multi-label datasets, we conducted an additional analysis (not shown in the table) and ran the best-performing HiAGM-TP variant with GCN as graph encoder~\cite{hiagm} and the sequence-based HBGL~\cite{hbgl} on the  RCV1-V2 and NYT datasets.
+We use the optimized hyperparameters from the papers.
+The results are, HiAGM with a graph-encoder GCN obtained strong results (RCV1-V2: 85.51, Amazon: 89.05, DBPedia: 97.17, NYT: 76.57) but is outperformed by the best encoder-only models.
+It ran out of memory on EconBiz on a 40 GB RAM NVIDIA A100 HGX GPU.
+HBGL with BERT-base achieves on RCV1-V2 a sample-based F1 score of $88.76$ 
+and on NYT a score of $82.01$. 
+The former is outperformed by a T5-base, as shown in Table~\ref{tab:results_multi-label_classification}, while the latter surpasses all encoder-only and encoder-decoder models considered, demonstrating that hierarchy-aware methods can be beneficial for hierarchical datasets.
+Note that HBGL and HiAGM cannot be applied to the flat multi-label datasets R21578 and GoEmotions as they do not have a label hierarchy.
+
+Existing studies using \LLMs focus on single-label datasets only, \eg \cite{pushing-the-limit-11346014-rgpt,DBLP:conf/emnlp/PecherSB25-100-samples}.
+But we were able to include \LLMs for the hierarchical multi-label datasets, which we discuss below.
+
+\paragraph{Hierarchical Classification}
+
+For hierarchical multi-label text classification, we conclude that sequence-based methods are best.
+Except for a slim margin of $0.12$ for the hierarchy-based HyILR method regarding Micro-F1 on WOS, the best-performing models are sequence-based methods.
+Which sequence-based method performs best depends on the dataset and metric, but generally they are methods using fine-tuned \SLMs. 
+The hierarchy-based methods incorporating graph neural networks, \eg to use a GNN to encode the class hierarchy as in HiAGM, fail to outperform the best of our tested language models.
+
+A fine-tuned \LLM unLlama with 7B parameters cannot outperform the \SLMs. 
+However, it should be noted that \LLM-based methods with in-context learning are effective with small amounts of labeled data, which we further discuss below.
+
+\subsection{Fine-tuning \SLMs vs. In-Context Learning in \LLMs}
+
+An important discussion regarding model performance is the distinction between fine-tuning and in-context learning. 
+When a sufficiently large training dataset is available, it is reported for single-label datasets that \SLMs outperform the use of \LLMs~\cite{DBLP:conf/emnlp/PecherSB25-100-samples}.
+While SLMs \emph{need} fine-tuning to obtain their good results, LLMs can also do in-context learning with few examples~\cite{DBLP:conf/emnlp/PecherSB25-100-samples}, which gives them an advantage when little training data is available.  
+The \LLM-based method  CARP~\cite{carp}, \ie the variant of GPT-3.5+CARP+vote (16-shot, RoBERTa sampler) requires a fine-tuned \SLM (the RoBERTa model) for sampling the 16 most representative examples per class.
+This implies the need for contextualized embeddings from a fine-tuned encoder-only language model prior to prompting the decoder-only language model. 
+While analyzing the importance of example selection is of scientific interest, practitioners should take into account that one could use the fine-tuned SLM model directly for the classification task.
+One would get results close to the fine-tuned SLM, while avoiding running an \LLM at inference time.
+
+The best-performing method on the single-label ohsumed dataset, RGPT, uses an ensemble of $k$=7 Llama 2 models, each of which is fine-tuned and applied sequentially.  
+Each model has about 2.1~M effective trainable parameters (with LoRA rank = 8)~\cite{pushing-the-limit-11346014-rgpt}, which shows that fine-tuning LLMs can be promising. 
+Recent work supports the notion that fine-tuned models are generally advantageous over few-shot prompting when a minimum of labeled data is available~\cite{edwards2024language,bucher2024finetunedsmallllmsstill,lepagnol2024smalllanguagemodelsgood,yehudai2024fastfit}.
+Pecher et al.~\cite{DBLP:conf/emnlp/PecherSB25-100-samples} find for single-label datasets that in some cases already 100 labeled examples per class are sufficient for fine-tuned models to outperform in-context learning. However, the case for multi-label must be treated with more nuance as the sample complexity grows when a single example may be annotated with more than one label.
+
+A key trick for effectively fine-tuning a \LLM directly for a classification task may be to remove the constraint of the left-to-right attention mask~\cite{li2023label}.
+However, experiments on fine-tuning unLlama with 7B parameters and LoRA on hierarchical text classification datasets~\cite{hydra} do not confirm this assumption.
+Rather, fine-tuning an \SLM like the BERT-base model already outperforms it.
+
+Regarding reasoning capabilities in \LLMs, Guo, Zhang, and Qin~\cite{guo2026textreasoningbenchdoesreasoningreally} conclude that reasoning generally does not improve classification performance. 
+Simpler strategies like Chain of Thought (CoT) yield consistent but limited gains of 1 to 3 percentage points on large models. 
+More complex reasoning approaches often fail to outperform simpler baselines, and adding reasoning to small models may even degrade performance~\cite{guo2026textreasoningbenchdoesreasoningreally}. 
+This comes at additional costs of using reasoning strategies, which consume up to two orders of magnitude more tokens for only marginal performance improvements. 
+It seems that while sophisticated prompting strategies can be to some extent beneficial, longer reasoning does not necessarily lead to better classification performance and may even degrade performance. 
+
+\subsection{Synthetic Text-graphs Hardly Bring an Advantage}
+
+Methods that generate a synthetic text graph and apply graph-based neural networks (GNNs) for text classification incur high training costs.
+First, the graph has to be computed.
+Second, a GNN has to be trained. 
+For standard GNN methods, the whole graph has to fit into the GPU memory, and mini-batching is non-trivial but possible with dedicated sampling techniques for GNNs~\cite{DBLP:conf/icml/FeyLWL21}. 
+Computing the word-document graphs requires $\mathcal{O}(N^2)$ space, where $N$ is the number of documents plus the vocabulary size, which is a hurdle for large-scale applications.
+
+Our experiments show that simple BoW-based models like WideMLP and SVM already outperform graph-based models like TextGCN, HeteGCN, and Induct-GCN in the inductive text classification setting.
+An exception is 20ng, where MHGAT performs better.
+An explanation may be that transforming a text corpus into a graph cannot add any new information according to the data processing inequality~\cite{cover_elements_1991}.
+
+The seminal paper on graph convolution by Kipf \& Welling~\cite{DBLP:conf/iclr/KipfW17} argued that graph neural networks are most effective when the edges provide additional information that cannot be modeled otherwise.
+Therefore, it is important to distinguish between text-induced graphs for text classification, which seem to provide little to no gain, and tasks where the \emph{natural} structure of the graph data provides more information than the mere text, \eg citation networks. 
+When extra information is encoded in the graph, graph neural networks are the state of the art~\cite{DBLP:conf/iclr/KipfW17,velickovic2018graph} and superior to MLPs that use only the node features and not the graph structure~\cite{DBLP:journals/corr/abs-1811-05868}.
+
+Our survey suggests that a graph induced from pure text generally
+does \emph{not} improve text classification. 
+Recently, Bugue\~{n}o and de Melo~\cite{buguenoConnectingDotsWhat2023} compared different document representations (Word2vec, GloVe, and frozen BERT) for graph neural networks.
+Using different datasets, they confirm that on most datasets, graph neural networks did \emph{not} outperform a fine-tuned BERT regardless of the choice of input representation. 
+The finding was also confirmed in a study on short text classification~\cite{DBLP:conf/cdmake/KarlS23},
+where several graph-based methods have been compared to \SLMs on six benchmark datasets (including R8 and MR) and four new datasets.
+
+\subsection{Using a Graph Encoder for the Hierarchy Hardly Brings an Advantage for Hierarchical Text Classification}
+
+In hierarchical text classification, we make similar observations as with single-label classification. 
+Encoder-only models like DeBERTa and RoBERTa, the HBGL method (which incorporates the hierarchy into a standard BERT model), RADAr (which uses an autoregressive decoder instead of a classifier head), and HYDRA (which represents the hierarchy in level-wise losses), are overall best-performing depending on the dataset and metric. 
+HiAGM uses a GNN to encode the class hierarchy but fails to outperform the hierarchy-agnostic sequence-based DeBERTa model.
+More modern models like HALB and HILL outperform DeBERTa-base, but fall behind other encoder-only models like HYDRA.
+
+Ablations by
+Wang~\etal\cite{DBLP:conf/acl/WangWH0W22} have shown that removing the graph encoder reduces the performance only by about 1 point
+(Micro/Macro-F1)~\cite{DBLP:conf/acl/WangWH0W22}.  
+Similarly, RADAr~\cite{radar} and HYDRA~\cite{hydra} also provide empirical results that an explicit graph encoder is not needed for hierarchical text classification.
+
+\subsection{BERT Baselines are Often Undertuned}
+
+We found that BERT baselines are often undertuned in the literature. This can be declared as ``baseline nerfing'' and may be accidental~\cite{leech2024questionablepracticesmachinelearning}. 
+We hope that our comparison sheds new light on the various proposed methods with solid BERT baselines. What we argue to be particularly problematic is omitting encoder-only baselines as soon as some prior work has a marginal advantage over BERT, as this practice prohibits readers from properly contextualizing the results, \eg when the new method is also only marginally better than BERT. Based on the results of our quantitative comparison, we argue that simple baselines such as BERT, an MLP, or an SVM should not be omitted in text classification.
+
+\section{Limitations}\label{sec:limitations}
+
+A limitation of our comparison may be the selection of datasets on which we base this comparative survey. 
+Although the selection of specific datasets could potentially bias the comparison, we chose the most common datasets for maximum coverage of the methods.
+The current dataset collection was made to ensure broad coverage of approaches for single-label text classification, multi-label text classification, and hierarchical text classification. 
+But we observe that the choice of multi-label datasets in the literature is more scattered than in the single-label case, which harms comparability. 
+In order to balance this, we have included the most prominent multi-label datasets that provide a hierarchy, namely, WOS, NYT, and RCV1-V2.
+We also include datasets that go beyond the news domain, such as EconBiz, DBPedia, and even non-topical classification tasks, such as GoEmotions. 
+For comparability, we have reported three variants of the F measure, namely sample-based, micro, and macro F1.
+Generally, we expect similar observations to be made on other text classification datasets because we already covered a wide range of text classification settings from long, medium, to short texts, topic and sentiment classification, and from single-label, multi-label, to hierarchical classification in the domains of forum postings, news, movie reviews, scholarly articles, and product reviews. 
+
+We further emphasize that the experimental datasets are limited to English.
+While word order is important in the English language, 
+it is notable that methods that discard word order still work very well for topical text classification.
+We assume that BoW-based models perform even better for languages with a richer morphology, where word order is less important.
+It would be interesting to see to what extent our results of comparing BoW-based vs. sequence-based vs. graph-based vs. hierarchy-based methods for text classification transfer to other languages.
+Towards this direction, Gonz\'{a}lez-Carvajal and Garrido-Merch\'{a}n~\cite{gonzales-2020-comparing-bert} show that BERT outperforms classic TF-IDF BoW approaches on English, Chinese, and Portuguese text classification datasets.
+But other methods are yet to be considered.
+Another direction is to consider specifically designed text classifiers for a single language, \eg in Chinese~\cite{9837023-chinese} where methods are tailored to the characteristics of Chinese characters, words, and radical information.
+Furthermore, there is room for an even larger coverage of datasets in future work~\cite{Bhatia16}. 
+
+Lastly, a major problem with evaluating \GenLMs is that benchmark datasets may have leaked into their training data~\cite{balloccuLeakCheatRepeat2024}.
+It is not (always) clear if certain test sets are included in the language models' pre-training data.
+
+\section{Future Directions}\label{sec:future}
+
+As argued in the previous section, \SLMs benefit from fine-tuning on a training set, while \GenLMs can do in-context learning with few examples. 
+However, a large language model like Llama can also be fine-tuned for text classification~\cite{li2023label}.
+This strengthens the view that the main distinction is whether the model is fine-tuned or not and hints at fine-tuning of \GenLMs as a direction of future work, \eg via group relative policy optimization~\cite{shao2024deepseekmath}.
+
+A different direction is to increase the model size of masked language models. That is, train larger versions of BERT on modern dataset collections. However, masked language models have lower ``throughput'' than causal language models. This is because causal language models obtain a training signal from every token, whereas masked language models only receive a training signal from masked tokens. Still, encoding left and right context has been shown to be important for text classification performance~\cite{li2023label}.
+It remains unclear which strategy is better: training a large masked language model or unmasking a large causal language model during fine-tuning.
+
+Existing studies on using \LLMs are mostly considering single-label datasets, \eg~\cite{pushing-the-limit-11346014-rgpt,carp,DBLP:conf/emnlp/PecherSB25-100-samples}. 
+Expanding large language models for multi-label and hierarchical text classification raises interesting questions: how to feed the multi-label hierarchy into the input context of a language model, \eg as in \cite{fatemi2024talk}.
+Existing approaches so far underperform, such as the 16-shot Retrieval-style ICL~\cite{DBLP:journals/corr/abs-2406-17534-retrieval-style} or TaxMorph~\cite{taxmorph}, of which the latter even modifies the provided taxonomy for the \LLM.
+Thus, an open question is how to effectively use \LLMs for multi-label classification and provide the hierarchy as input.
+
+Another challenging setting is few-shot classification as in prompt-based large language models~\cite{DBLP:conf/nips/BrownMRSKDNSSAA20}.
+Here, generative \LLMs can exploit their advantage by accessing large numbers of parameters trained on large amounts of data.
+As a study on single-label datasets showed~\cite{DBLP:conf/emnlp/PecherSB25-100-samples}, sufficient training data is needed for \SLMs to outperform \LLMs.
+Thus, an interesting direction may be to investigate approaches that allow \SLMs to perform better in a few-shot regime, \eg end-task-aware pre-training vs. fine-tuning after pre-training~\cite{dery2021should}.
+
+\section{Conclusion}
+The introduction of sequence-based transformer models, starting with the seminal BERT paper by Devlin \etal~\cite{DBLP:conf/naacl/DevlinCLT19} in late 2018, has, as with other NLP tasks, strongly advanced the field. 
+From our survey, we see that among the single-label, multi-label, and hierarchical text classification tasks, the top performers are fine-tuned language models.
+We argue that discriminative \SLMs and generative \LLMs have individual strengths, influenced by factors such as the availability of sufficient training data.
+
+Reflecting back on our three central questions from Section~\ref{sec:questions}, we see that beyond the introduction of transformer models, today's methods operating on graphs generally provide no benefit over pre-trained language models.
+This is regardless of whether the graph is synthetically induced from text or if a hierarchy is provided with a multi-label dataset.
+Even worse, many new approaches fail to outperform straightforward baselines, such as an SVM or a multilayer perceptron.
+
+Moreover, despite the astounding performance of \LLMs in few-shot prompting, the best or close-to-best performance in single-label classification can be achieved through fine-tuning.
+This requires that sufficient training data is available~\cite{DBLP:conf/emnlp/PecherSB25-100-samples}.
+The amount of training data needed depends on the task. 
+It shows that despite advanced techniques for \LLMs, like prompting and selecting in-context examples, text classification with fine-tuning \SLMs is competitive.
+We argue that research in text classification should employ a pre-trained, encoder-only \SLM such as a fine-tuned BERT as baseline. 
+
+Regarding the question of comparability, we found that, particularly for the strong baselines BERT and RoBERTa, the reported numbers vary across the literature.
+This is despite using benchmark datasets and apparently identical experimental settings.
+While it is not clear in all cases what caused these differences, our experiments have shown that already small changes in the learning rate can have a comparatively large effect on downstream performance.
+Thus, one has to carefully study a new method and check if experimental setups are comparable in order to derive conclusions about the advancements claimed.
+
+Our study immediately impacts practitioners seeking to employ robust text classification models in research projects and industrial operational environments. 
+Our recommendation to practitioners is to use a pre-trained \SLM when sufficient training data are available.
+If this condition is not met, a frozen \LLM with zero-shot or in-context classification may be used via few-shot learning. 
+The trade-off lies between computational cost for fine-tuning vs\@. continued token cost for in-context learning.
+
+\subsubsection*{Acknowledgments}
+We thank Yousef Younes and Gregor Donabauer for discussions and experiments on hierarchical and graph-based models.
+This work was co-funded by the DFG as part of the SmartER project (No. 515537520). L.G.P.\ acknowledges support from the Novo Nordisk Foundation under grant reference number NNF25OC0103204.
+
+\bibliographystyle{IEEEtran}
 \bibliography{main}
+
+\begin{IEEEbiographynophoto}{Ansgar Scherp} is Full Professor for Data Science and Big Data Analytics with Ulm University, Germany, since 2020. He has long-standing experience in interdisciplinary projects in Germany as well as the USA and UK. His main interests are in graph machine learning and natural language processing, often with applications in information retrieval and extraction.
+
+\end{IEEEbiographynophoto}
+
+\begin{IEEEbiographynophoto}{Andor Diera, Fabian Karl, Bao Xin Lin, Bhakti Khera, Tim Meuser, and Tushar Singhal} contributed as students in computer science and cognitive systems at Ulm University. Bao passed away during the preparation of this manuscript; her colleagues and co-authors dedicate this work to her memory.
+\end{IEEEbiographynophoto}
+
+\begin{IEEEbiographynophoto}{Lukas Galke Poech} 
+(formerly published as L. Galke) received the Ph.D. degree in computer science from Kiel University, Germany in 2023.
+He was a Doctoral Researcher with Kiel University, Germany and with the Leibniz Information Centre for Economics, and from 2022 to 2024 a Postdoctoral Researcher at the Max Planck Institute for Psycholinguistics, Nijmegen. Since 2024 he has been with the University of Southern Denmark where he is currently
+an Associate Professor. His research interests include AI safety, interpretability, and representation learning in language models.
+For more information, see \url{https://lgalke.github.io}.
+\end{IEEEbiographynophoto}
 
 \end{document}

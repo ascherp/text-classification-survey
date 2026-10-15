@@ -1,3 +1,4 @@
+% running Bert-base on WOS I got micor-f1: 84.7 and macro-f1: 76.09 which are lower than the reported results in the literature.
 
 \begin{table*}[ht]
     \mytablefontsize
@@ -11,102 +12,305 @@
          \midrule
     \textit{BoW-based methods} & & & & \\
 
-WideMLP & --- & 57.18\mytextsubscript{0.28} / 21.96\mytextsubscript{0.19}  & 68.31\mytextsubscript{0.12} / 27.88\mytextsubscript{0.49}  & \myflag{} \\
+% WideMLP on WoS has threshold 0.2
+WideMLP & \best{73.36}\mytextsubscript{0.14} / \best{62.61}\mytextsubscript{0.23} & \secondbest{57.18}\mytextsubscript{0.28} / \secondbest{21.96}\mytextsubscript{0.19}  & \secondbest{68.31}\mytextsubscript{0.12} / \secondbest{27.88}\mytextsubscript{0.49}  & \myflag{} \\
 
-TF-IDF WideMLP & --- & 74.53\mytextsubscript{0.07} / 56.11\mytextsubscript{0.16} & 80.45\mytextsubscript{0.02} / 53.27\mytextsubscript{0.09} & \myflag{} \\
+TF-IDF WideMLP & \secondbest{72.25}\mytextsubscript{0.08} / \secondbest{59.85}\mytextsubscript{0.19} & \best{74.53}\mytextsubscript{0.07} / \best{56.11}\mytextsubscript{0.16} & \best{80.45}\mytextsubscript{0.02} / \best{53.27}\mytextsubscript{0.09} & \myflag{} \\
+
+
 
 \midrule
          
     \multicolumn{5}{l}{\textit{Sequence-based methods}}\\
 
-BERT-base 
+% BERT-base (Andor) ($lr=5\cdot10^{-5}, \lambda = 0.5, eps=5/15$) -- but with F1 Micro as optimization target
+%& 84.70 / 76.09 & 77.35\mytextsubscript{0.10} / 58.36\mytextsubscript{0.11}  & 86.48\mytextsubscript{0.19} / 60.71\mytextsubscript{0.62} & \myflag{} \\
+
+BERT-base %($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{bert} 
 &  
 86.19\mytextsubscript{0.11} / 80.23\mytextsubscript{0.20} &
 79.07\mytextsubscript{0.22} / 67.63\mytextsubscript{0.42} & 
 86.38\mytextsubscript{0.23} / 67.89\mytextsubscript{1.42} &
-\myflag{} \\
+\cite{hydra} \\
 
-BERT-base 
+
+BERT-base % {\color{red}todo: delete?} 
 & 85.63 / 79.07 & 78.24 / 65.62 & 85.65 / 67.02 & \mycite{DBLP:conf/acl/WangWH0W22} \\ 
 
-BERT-base 
+BERT-base  % {\color{red}todo: delete?}
 & 86.26 / 80.58 & ---  & 86.26 / 67.35 & \mycite{DBLP:conf/acl/ChenMLY20} \\ 
 
-BERT-large 
+BERT-large % ($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{bert} 
 & 
 86.66\mytextsubscript{0.31} / 80.80\mytextsubscript{0.38} &
 80.69\mytextsubscript{0.08} / 70.27\mytextsubscript{0.39} & 
-87.40\mytextsubscript{0.11} / 70.15\mytextsubscript{0.39} &
-\myflag{} \\
+\secondbest{87.40}\mytextsubscript{0.11} / 70.15\mytextsubscript{0.39} &
+\cite{hydra} \\
          
-DeBERTa-base 
+DeBERTa-base % ($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{deberta} 
 & 
 86.82\mytextsubscript{0.11} / 80.85\mytextsubscript{0.48} &
 81.21\mytextsubscript{0.17} / 71.33\mytextsubscript{0.26} & 
 87.24\mytextsubscript{0.18} / 69.66\mytextsubscript{0.52} &
-\myflag{} \\
+\cite{hydra} \\
    
-DeBERTaV3-base 
+DeBERTaV3-base % ($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{debertav3}  
 & 
 86.58\mytextsubscript{0.24} / 80.41\mytextsubscript{0.69} &
 79.96\mytextsubscript{0.20} / 67.30\mytextsubscript{0.23} & 
 86.77\mytextsubscript{0.18} / 67.49\mytextsubscript{1.87} &
-\myflag{} \\
+\cite{hydra} \\
         
 RoBERTa-base 
+% ($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{roberta}  
 & 
 86.35\mytextsubscript{0.15} / 80.16\mytextsubscript{0.13} & 
-81.47\mytextsubscript{0.15} / 71.45\mytextsubscript{0.45} &
+\secondbest{81.47}\mytextsubscript{0.15} / 71.45\mytextsubscript{0.45} &
 87.38\mytextsubscript{0.17} / 68.60\mytextsubscript{1.40} &
-\myflag{} \\
+\cite{hydra} \\
+
+%ModernBERT-base ($lr=3.5\cdot10^{-5}, \lambda = 0.5$) 
+% 86.17 & 79.82 & 78.37 & 65.72 & 85.49 & 64.95 \\
+%ModernBERT-base ($lr=5\cdot10^{-5}, \lambda = 0.5$) & 
+% 86.00 & 80.33 & 78.91 & 67.08 & 85.62 & 65.17 &  \\
 
 ModernBERT-base \new &
+% \cite{warner2024smarterbetterfasterlonger}  
+%($lr=8\cdot10^{-5}, \lambda = 0.5$) & 
 86.15\mytextsubscript{0.33} / 80.34\mytextsubscript{0.22} &	
 79.83\mytextsubscript{0.53} / 68.99\mytextsubscript{0.54} & 86.20\mytextsubscript{0.42} / 67.43\mytextsubscript{0.66} & 
-\myflag{}
+\cite{hydra}
 \\
 
-BART & 84.08 / 77.43 & 19.21 / 6.49 & 86.20 / 65.11 & \cite{radar} \\
-T5   & 82.03 / 74.62 & 46.71 / 20.06 & 84.9 / 57.01 & \cite{radar} \\
+HYDRA\mytextsubscript{RoBERTa-base} &   86.91\mytextsubscript{0.18} / 81.22\mytextsubscript{0.40}  &  \best{81.96}\mytextsubscript{0.06} / 72.35\mytextsubscript{0.22} & \best{87.79}\mytextsubscript{0.11} / 70.08\mytextsubscript{0.76}   & \mycite{hydra} \\
 
-SGM & 67.74 / 74.01 & 64.68 / 72.78 & 71.85 / 35.29 & \cite{radar} \\
-SGM-T5 & 85.83 / 80.79 & --- & 84.39 /  65.09 & \cite{yu2022constrained}\\
-Seq2Tree & 87.20 / 82.50 & --- & 86.88 / 70.01 & \cite{yu2022constrained} \\
+% -- BART & T5 
+BART-base\mytextsubscript{discriminative}
+& 85.25\mytextsubscript{0.30} / 77.22\mytextsubscript{0.82} & 72.39\mytextsubscript{0.61} / 52.04\mytextsubscript{1.90} & 84.77\mytextsubscript{0.21} / 63.63\mytextsubscript{0.91} & our experiment \\
+T5-base\mytextsubscript{discriminative}
+& 79.21\mytextsubscript{1.09} / 60.98\mytextsubscript{3.41} & 79.06\mytextsubscript{0.16} / 66.04\mytextsubscript{0.10} & 87.41\mytextsubscript{0.14} / 69.54\mytextsubscript{0.56} & our experiment \\
 
-RADAr & $87.17_{0.04}$ / $81.84_{0.08}$ & $79.84_{0.07}$ / $68.64_{0.28}$ & $87.23_{0.05}$ / $69.64_{0.12}$ & \cite{radar} \\
+BART-base\mytextsubscript{generative}
+& 84.08 / 77.43 & 19.21 / 6.49 & 86.20 / 65.11 & \mycite{radar} \\
+T5-base\mytextsubscript{generative}
+& 82.03 / 74.62 & 46.71 / 20.06 & 84.9 / 57.01 & \mycite{radar} \\
 
-HBGL  & 87.36 / 82.00 & 80.47 / 70.19 & 87.23 / 71.07 & \mycite{hbgl} \\  
-HBGL  & 87.68 / 82.01  & 80.01\mytextsubscript{0.22} / 70.14\mytextsubscript{0.27} & 86.94\mytextsubscript{0.26} / 70.49\mytextsubscript{0.58} & \myflag{} \\
+HiGen\mytextsubscript{BART} & 87.39 / 81.45 & 80.89 / \secondbest{72.41} & --- & \mycite{higen} \\
+%PAAM-HiA-T5  {\color{red} split OK, random on ...} & 90.36 / 81.64 &  77.52 / 65.97 & 87.22 / 70.02   & \mycite{PAAM-HiA-T5} \\
+% more
 
-Retrieval-style ICL\mytextsubscript{16-shot}  \new &
+SGM & 67.74 / 74.01 & 64.68 / \best{72.78} & 71.85 / 35.29 & \mycite{radar} \\
+SGM w. T5-base & 85.83 / 80.79 & --- & 84.39 /  65.09 & \mycite{yu2022constrained}\\
+Seq2Tree\mytextsubscript{T5-base} & \secondbest{87.20} / \best{82.50} & --- & 86.88 / 70.01 & \mycite{yu2022constrained} \\
+
+% RADar
+% using RoBERTa-base, $lr=5 \cdot 10^{-5}$)
+RADAr\mytextsubscript{RoBERTa-base}  & $87.17\mytextsubscript{0.04}$ / $81.84\mytextsubscript{0.08}$ & $79.84\mytextsubscript{0.07}$ / $68.64\mytextsubscript{0.28}$ & $87.23\mytextsubscript{0.05}$ / $69.64\mytextsubscript{0.12}$ & \cite{radar} \\
+
+% HBGL
+HBGL\mytextsubscript{BERT-base} & \best{87.36} / \secondbest{82.00} & 80.47 / 70.19 & 87.23 / 71.07 & \mycite{hbgl} \\  
+% HBGL  & 87.68 / 82.01  & 80.01\mytextsubscript{0.22} / 70.14\mytextsubscript{0.27} & 86.94\mytextsubscript{0.26} / 70.49\mytextsubscript{0.58} & \myflag{} \\
+
+HLPD\mytextsubscript{T5-base} & 87.05\textsuperscript{1)} / 81.84\textsuperscript{1)}  &  --- / ---  &  88.22\mytextsubscript{0.12} \secondbest{71.19}\mytextsubscript{0.55}  & \mycite{hlpd} \\
+
+LH-Mix\mytextsubscript{BERT-base} & 87.15\mytextsubscript{0.14} / 81.82\mytextsubscript{0.18} & 80.51\mytextsubscript{0.15} / 71.03\mytextsubscript{0.24} & 87.39\mytextsubscript{0.12} / \best{71.49}\mytextsubscript{0.50} & \mycite{lh-mix} \\
+
+GPT 3.5 Turbo\mytextsubscript{zero-shot}  & ---  & --- &  51.35\mytextsubscript{0.18} / 32.20\mytextsubscript{0.30} & \cite{DBLP:conf/emnlp/UHGP23} \\
+
+% Retrieval
+% I am not sure of LLM Lama that takes prompts, but I am sure of BERT that was the best retrieber. since the entire paper is about Llama I assume the prompt is provided to Llama
+Retrieval-style ICL\mytextsubscript{16-shot Vicuna-7b + BERT-base}  \new &
 81.12\mytextsubscript{0.26} / 73.72\mytextsubscript{0.17} & 
---- & --- & \cite{DBLP:journals/corr/abs-2406-17534} \\
+--- & --- & \cite{DBLP:journals/corr/abs-2406-17534-retrieval-style} \\
+
+unLlama-7B\mytextsubscript{LLama 2 7B, LoRA-rank 12} &   84.13 / 74.32   & 77.20 / 61.68 & 84.45 / 61.42  & \mycite{hydra} \\
 
 \midrule
 
 \multicolumn{5}{l}{\textit{Hierarchy-based methods}} \\
 
-BERT+HiMatch & 86.70 / 81.06 & ---  & 86.33 / 68.66 & \mycite{DBLP:conf/acl/ChenMLY20} \\ 
+% ... again, cite Devlin et al without specific info on large or base... so I assuem base
+BERT+HiMatch\mytextsubscript{BERT-base} & 86.70 / 81.06 & ---  & 86.33 / 68.66 & \mycite{DBLP:conf/acl/ChenMLY20} \\ 
 
-HiAGM-TP+GCN & 85.82 / 80.28 & 74.97 / 60.83  &  83.96 / 63.35 & \mycite{hiagm}\cite{hiagm}  \\
+HiAGM-TP+GCN & 85.82 / 80.28 & 74.97 / 60.83  &  83.96 / 63.35 & \mycite{hiagm}  \\
 
-HiAGM-TP+GCN & --- & 74.73\mytextsubscript{0.08} / 58.44\mytextsubscript{0.25} &  83.95\mytextsubscript{0.11} / 62.13\mytextsubscript{0.35} & \myflag{} \\
+% HiAGM-TP+GCN & --- & 74.73\mytextsubscript{0.08} / 58.44\mytextsubscript{0.25} &  83.95\mytextsubscript{0.11} / 62.13\mytextsubscript{0.35} & \myflag{} \\
 
-HGCLR & 87.11 / 81.20 & 78.86 / 67.96 & 86.49 / 68.31 & \mycite{DBLP:conf/acl/WangWH0W22} \\ 
+HGCLR\mytextsubscript{BERT-base} & 87.11 / 81.20 & 78.86 / 67.96 & 86.49 / 68.31 & \mycite{DBLP:conf/acl/WangWH0W22} \\ 
 
-HGBL \new & 87.07 / 81.10 & 78.55 / 67.08 & 87.55 / 68.10 & \mycite{DBLP:journals/npl/ZhangDLZ25-hgbl} \\
+% HGBL
+% Micro / Macro
+% WOS: 87.07 / 81.10
+% NYT: 78.55 / 67.08
+% RCV1-V2: 87.55 / 68.10
+HGBL\mytextsubscript{BERT-base} \new & \secondbest{87.07} / 81.10 & 78.55 / 67.08 & \best{87.55} / 68.10 & \mycite{DBLP:journals/npl/ZhangDLZ25-hgbl} \\
 
-HALB & 87.45 / 82.04 & 79.56 / 69.28 & 86.94 / 69.32 & \mycite{DBLP:journals/kbs/ZhangLSXTH24-halb} \\
+% found in the paper mention of BERT, but no explicit variant, so I assume base
+HALB\mytextsubscript{BERT-base} & 87.45 / \best{82.04} & 79.56 / 69.28 & 86.94 / 69.32 & \mycite{DBLP:journals/kbs/ZhangLSXTH24-halb} \\
 
-HILL & 87.28 / 81.77 & 80.47 / 69.96 & 87.31 / 70.12 & \mycite{hill2024} \\
+% cite Devlin et al. so I assume BERT-base
+HILL\mytextsubscript{BERT-base} & 87.28 / 81.77 & \secondbest{80.47} / \secondbest{69.96} & 87.31 / \secondbest{70.12} & \mycite{hill2024} \\
 
 HE-AGCRCNN & --- & --- & 77.8 / 51.3 & \mycite{pengHierarchicalTaxonomyAwareAttentional2021}\\
 
 K-HTC \new & 87.29 / 81.69 & --- & --- & \cite{DBLP:conf/acl/LiuZHWZ0C23-k-htc} \\
 
+% explicitly mentioned
+HyILR\mytextsubscript{BERT-base} &  \best{87.48}\mytextsubscript{0.19} / \secondbest{81.96}\mytextsubscript{0.22}  & \best{81.26}\mytextsubscript{0.23} / \best{70.71}\mytextsubscript{0.28}   &  \secondbest{87.41}\mytextsubscript{0.23} / \best{71.20}\mytextsubscript{0.30} &   \mycite{hyilr} \\
+
+TaxMorph\mytextsubscript{Sonnet-3.5} & --- / 80.2\textsuperscript{2)} & --- / --- & --- / --- & \mycite{taxmorph} \\
+
 \bottomrule
 
 \end{tabular}
+
+\begin{tablenotes} 
+\item \textsuperscript{1)} We report numbers directly obtained by the authors after some personal conversation.
+\item \textsuperscript{2)} Use a 32.9k train, 7k val, and 7k test split.
+\end{tablenotes} 
+            
 \end{table*}
+
+
+%\todo{fab's numbers}
+%\begin{table*}[]
+%    \centering
+%    \begin{tabular}{lccccccr}
+%         \toprule
+%          \multirow{2}{*}{\textbf{Model}} & \multicolumn{2}{c}{\textbf{WOS}} & \multicolumn{2}{c}{\textbf{NYT}} & \multicolumn{2}{c}{\textbf{RCV1-V2}} & \multirow{2}{*}{\textbf{Provenance}} \\ \cline{2-7} 
+%                                & \textbf{Micro-F1} & \textbf{Macro-F1} & \textbf{Micro-F1} & \textbf{Macro-F1} & \textbf{Micro-F1} & \textbf{Macro-F1} \\ 
+ %        \midrule
+
+         %BERT-base ($lr=2\cdot10^{-5}, \lambda = 0.5$) & 
+         % 86.03 & 79.89\\
+         % 79.43 & 67.68 & 
+         % 85.97 & 66.35 & 
+         
+ %        BERT-base %($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{bert} 
+  %       &  
+%86.19\mytextsubscript{0.11} & 80.23\mytextsubscript{0.20}	&
+%79.07\mytextsubscript{0.22} & 67.63\mytextsubscript{0.42} & 86.38\mytextsubscript{0.23} & 67.89\mytextsubscript{1.42} 
+%\\
+         
+         %BERT-large ($lr=1\cdot10^{-5}, \lambda = 0.5$) & 
+         % 86.55 & 80.64 \\
+         % 80.53 & 69.38 & 
+         % 87.39 & 69.09 & 
+         
+ %         BERT-large % ($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{bert} 
+   %       & 
+  %        86.66\mytextsubscript{0.31} & 80.80\mytextsubscript{0.38}	&
+    %      80.69\mytextsubscript{0.08} & 70.27\mytextsubscript{0.39} & 87.40\mytextsubscript{0.11} & 70.15\mytextsubscript{0.39} & 
+     %     \\
+         
+         %BERT-base ($lr=2\cdot10^{-5}, \lambda = 0.3$) & 
+         % 85.74 & 80.17 \\
+         % 79.19 & 67.97 & 
+         % 85.66 & 67.47 & 
+         
+         %BERT-base ($lr=3.5\cdot10^{-5}, \lambda = 0.3$) & 
+         % 85.84 & 79.86\\
+         % 79.17 & 68.39 & 
+         % 85.93 & 68.46 & 
+      
+      %   DeBERTa-base ($lr=5\cdot10^{-5}, \lambda = 0.5, epoch=5/15$)  & 
+      % & --- & --- \\
+      % 78.02 & 64.11 & 
+      % 86.61 & 67.55 
+  
+        %       DeBERTa-base ($lr=2\cdot10^{-5}, \lambda = 0.5$)  & 
+        % 86.81 & 80.92 \\
+        % 80.99 & 70.26 & 
+        % 87.27 & 69.54 &  
+          
+%         DeBERTa-base  
+         % ($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{deberta} 
+%         & 
+%         86.82\mytextsubscript{0.11} & 80.85\mytextsubscript{0.48}	&
+%         81.21\mytextsubscript{0.17} & 71.33\mytextsubscript{0.26} & 87.24\mytextsubscript{0.18} & 69.66\mytextsubscript{0.52} 
+%         \\
+   
+   %      DeBERTa-base ($lr=2\cdot10^{-5}, \lambda = 0.3$)  & 
+   % 86.36 & 80.41\\
+   % & & 
+   % 87.14 & 70.22 &
+   
+    %     DeBERTa-base ($lr=3.5\cdot10^{-5}, \lambda = 0.3$)  & 
+    % 86.16 & 80.31\\
+    % 81.03 & 71.03 & 
+    % 86.67 & 69.97 &
+    
+%         DeBERTaV3-base % ($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{debertav3}  
+%         & 
+%         86.58\mytextsubscript{0.24} & 80.41\mytextsubscript{0.69}	&
+%         79.96\mytextsubscript{0.20} & 67.30\mytextsubscript{0.23} & 86.77\mytextsubscript{0.18} & 67.49\mytextsubscript{1.87}
+%         \\
+         
+         % DeBERTav3-large ($lr=3.5\cdot10^{-5}, \lambda = 0.5$, batch size=16) &
+         % 43.82 & 03.63 \\
+         % 81.05 & 70.82 &
+         % 87.26 & 70.34 &
+         
+%         RoBERTa-base 
+         % ($lr=3.5\cdot10^{-5}, \lambda = 0.5$)~\cite{roberta}  
+%         & 
+%        86.35\mytextsubscript{0.15} & 80.16\mytextsubscript{0.13}	&
+%         81.47\mytextsubscript{0.15} & 71.45\mytextsubscript{0.45} &
+%         87.38\mytextsubscript{0.17} & 68.60\mytextsubscript{1.40} 
+%         \\
+         
+%LS-unLLaMA 
+% with max token ($lr=8\cdot10^{-5}, \lambda = 0.5, rank = 12$ 
+% & \textbf{TODO} \\
+ 
+ %   \end{tabular}
+%    \caption{HTC-Fab}
+%    \label{tab:htc}
+%\end{table*}
+
+%\todo{yousef's table}
+%\begin{table*}[!t]
+%\centering
+%\caption{Yousef: The ablation experiment's nomenclature reflects feature deviation from our RADAr model. RADAr features include using RoBERTa as an encoder and focal loss on the batch level. It also include working on labels ordered from child-parent hierarchy level-wise using the \texttt{<unk>} token to separate labels from different levels and without using label semantics.}
+ %\vspace{3mm}
+%\label{tab:ablation}
+%
+%\resizebox{\textwidth}{!}{%
+%
+%\begin{tabular}{l|c|c|c|c|c|c}
+%\hline
+%Experiment    & \multicolumn{2}{c}{\textbf{WOS}} & \multicolumn{2}{c}{\textbf{NYT}}    & \multicolumn{2}{c}{\textbf{RCV1-V2}}\\
+%
+%& Micro-F1 & Macro-F1 & 
+%Micro-F1 & Macro-F1 & 
+%Micro-F1-nnnew & Macro-F1\\
+%
+%\hline
+%RADAR model\ldots &87.19&81.84&79.88&\textbf{69.09}&87.22&69.48\\
+%\hline
+%\ldots but parent-to-child ordering &86.55&81.20&79.22&66.43&87.04&68.57\\
+%\ldots w/o <unk> token separators &\textbf{87.20}&\textbf{81.85}&76.28&65.40&85.88&64.05\\
+%\ldots using <unk> to seperate paths instead of levels &87.19&81.84&77.35&62.95&79.35&63.64\\
+%\ldots but shuffled labels w/o <unk> &86.16&80.77&67.08&47.50&86.12&64.30\\
+%\ldots children only + hierarchy &87.11&81.61&\textbf{79.94}&68.49&87.13&\textbf{69.61}\\
+%\hline
+%\ldots focal loss on label level &86.64&81.10&80.11&69.0&87.10&69.36\\
+%\ldots w/o focal loss &87.01&81.41&79.55&68.37&\textbf{87.25}&69.40\\
+%\hline
+%\ldots with labels semantics &86.58&81.49&79.60&67.52&86.96&69.51\\
+%\hline
+
+%\ldots with BERT Encoder &86.51&80.77&78.93&67.19&87.05&68.64\\
+%\ldots XLNET Encoder &86.98&81.60&79.32&67.26& 86.60 & 68.15 \\
+%\ldots Sentence Transformer Encoder &86.76&81.15&76.77&63.89&84.68&62.31\\
+%\ldots DeBERTa Encoder lr=3.5e-5 dec\_lr=3e-4 & 86.93 & 81.55& 79.52 & 68.32&87.08 &68.78 \\
+%\ldots DeBERTa Encoder lr=5.5e-5 dec\_lr=3e-4 &86.70&81.36&79.32&68.14&86.98&69.01\\
+%\ldots DeBERTa Encoder lr=3.5e-5 dec\_lr=1e-4 & 86.32 &80.76 & 79.13&66.93 & 86.99&68.72 \\
+%\ldots DeBERTa Encoder lr=3.5e-5 dec\_lr=4e-4 & 86.87 & 81.51 &72.92 & 56.20 & 87.13&69.32 \\
+
+%\hline
+%\end{tabular}
+%}
+%\end{table*} 
 
 
