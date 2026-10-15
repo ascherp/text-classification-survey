@@ -6,6 +6,8 @@ Access to the latest version of the [text classification survey compiled as PDF]
 Larger updates are also released on the text classification [survey's arXiv](https://arxiv.org/abs/2204.03954) landing page.
 
 Versions:
+
+- [Version 2026-09-21](https://doi.org/10.1109/TKDE.2026.3735248) (TKDE) and [update on arXiv](https://arxiv.org/abs/2204.03954v7): IEEE Transactions on Knowledge and Data Engineering (TKDE) early access version of the survey article extended in 2025 and completely rewritten in summer 2026
  
 - [Version 2025-01-19 on arXiv](https://arxiv.org/abs/2204.03954v6): extending into results from methods using large language models; added methods up to and including January 2025
 
