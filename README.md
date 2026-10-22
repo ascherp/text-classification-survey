@@ -23,44 +23,17 @@ Versions:
 
 Please cite this work as follows:
 
-For **single-label text classificatiomn, multi-label classification, and hierarchical classification, including the use of large language models**:
-
 ```
-@misc{galke2025reallymakingprogresstext,
-      title={Are We Really Making Much Progress in Text Classification? A Comparative Review}, 
-      author={Lukas Galke and Ansgar Scherp and Andor Diera and Fabian Karl and Bao Xin Lin and Bhakti Khera and Tim Meuser and Tushar Singhal},
-      year={2025},
-      eprint={2204.03954},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2204.03954}, 
-}
-```
-
-Please cite this work as follows **for single-label text classificatiomn and TF-IDF + WideMLP baseline**:
-
-```
-@inproceedings{DBLP:conf/acl/GalkeS22,
-  author       = {Lukas Galke and
-                  Ansgar Scherp},
-  editor       = {Smaranda Muresan and
-                  Preslav Nakov and
-                  Aline Villavicencio},
-  title        = {Bag-of-Words vs. Graph vs. Sequence in Text Classification: Questioning
-                  the Necessity of Text-Graphs and the Surprising Strength of a Wide
-                  {MLP}},
-  booktitle    = {Proceedings of the 60th Annual Meeting of the Association for Computational
-                  Linguistics (Volume 1: Long Papers), {ACL} 2022, Dublin, Ireland,
-                  May 22-27, 2022},
-  pages        = {4038--4051},
-  publisher    = {Association for Computational Linguistics},
-  year         = {2022},
-  url          = {https://doi.org/10.18653/v1/2022.acl-long.279},
-  doi          = {10.18653/V1/2022.ACL-LONG.279},
-  timestamp    = {Wed, 07 Dec 2022 23:10:02 +0100},
-  biburl       = {https://dblp.org/rec/conf/acl/GalkeS22.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
-}
+@ARTICLE{11701407,
+  author={Scherp, Ansgar and Diera, Andor and Karl, Fabian and Lin, Bao Xin and Khera, Bhakti and Meuser, Tim and Singhal, Tushar and Poech, Lukas Galke},
+  journal={IEEE Transactions on Knowledge and Data Engineering}, 
+  title={Are We Really Making Much Progress in Text Classification? a Comparative Review}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-20},
+  keywords={Labeling;Modeling;Text categorization;Bit error rate;Training;Learning (artificial intelligence);Multi label classification;Tuning;Sequences;Sequential analysis;Data mining;machine learning;neural networks;text classification;text mining},
+  doi={10.1109/TKDE.2026.3735248}}
 ```
 
 
