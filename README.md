@@ -2,7 +2,7 @@
 
 Companion website to a long-running survey on text classification. We have been working on text classification since over ten years. 
 
-Access to the latest version of the [text classification survey compiled as PDF](https://github.com/ascherp/text-classification-survey/blob/main/paper/main-textclassification.pdf).
+Access to the latest version of the [text classification survey compiled as PDF](https://raw.githubusercontent.com/ascherp/text-classification-survey/main/paper/main-textclassification.pdf).
 Larger updates are also released on the text classification [survey's arXiv](https://arxiv.org/abs/2204.03954) landing page.
 
 Versions:
